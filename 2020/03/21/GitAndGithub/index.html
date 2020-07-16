@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="generator" content="Hexo 4.2.1"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>【双剑合璧】Git和Github使用教程 - Tina blog</title><meta description="是否有遇到过写着写着想回到之前版本，却又不记得具体实现；又或是想和队友共享代码，每次修改发送文件；抑或是想换个电脑写却不想用email等搬运全部文件这类烦不胜烦类似的问题，伟大的程序员们自然早就为我们造好了轮子，那就是版本控制的利器——Git以及cloud based Github。本教程也主要讲Git与Github的使用。"><meta property="og:type" content="blog"><meta property="og:title" content="【双剑合璧】Git和Github使用教程"><meta property="og:url" content="http://cutepikachu.github.io/2020/03/21/GitAndGithub/"><meta property="og:site_name" content="Tina blog"><meta property="og:description" content="是否有遇到过写着写着想回到之前版本，却又不记得具体实现；又或是想和队友共享代码，每次修改发送文件；抑或是想换个电脑写却不想用email等搬运全部文件这类烦不胜烦类似的问题，伟大的程序员们自然早就为我们造好了轮子，那就是版本控制的利器——Git以及cloud based Github。本教程也主要讲Git与Github的使用。"><meta property="og:locale" content="en_US"><meta property="og:image" content="http://cutepikachu.github.io/img/og_image.png"><meta property="article:published_time" content="2020-03-21T06:00:00.000Z"><meta property="article:modified_time" content="2020-07-16T16:39:22.731Z"><meta property="article:author" content="Tina"><meta property="article:tag" content="Git"><meta property="article:tag" content="Github"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://cutepikachu.github.io/2020/03/21/GitAndGithub/"},"headline":"Tina blog","image":["http://cutepikachu.github.io/img/og_image.png"],"datePublished":"2020-03-21T06:00:00.000Z","dateModified":"2020-07-16T16:39:22.731Z","author":{"@type":"Person","name":"Tina"},"description":"是否有遇到过写着写着想回到之前版本，却又不记得具体实现；又或是想和队友共享代码，每次修改发送文件；抑或是想换个电脑写却不想用email等搬运全部文件这类烦不胜烦类似的问题，伟大的程序员们自然早就为我们造好了轮子，那就是版本控制的利器——Git以及cloud based Github。本教程也主要讲Git与Github的使用。"}</script><link rel="canonical" href="http://cutepikachu.github.io/2020/03/21/GitAndGithub/"><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.svg" alt="Tina blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a></div><div class="navbar-end"><a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-03-21T06:00:00.000Z" title="2020-03-21T06:00:00.000Z">2020-03-21</time><span class="level-item"><a class="link-muted" href="/categories/%E6%95%99%E7%A8%8B/">教程</a></span><span class="level-item">30 minutes read (About 4436 words)</span></div></div><h1 class="title is-3 is-size-4-mobile">【双剑合璧】Git和Github使用教程</h1><div class="content"><blockquote>
+<p>是否有遇到过写着写着想回到之前版本，却又不记得具体实现；又或是想和队友共享代码，每次修改发送文件；抑或是想换个电脑写却不想用email等搬运全部文件这类烦不胜烦类似的问题，伟大的程序员们自然早就为我们造好了轮子，那就是版本控制的利器——Git以及cloud based Github。本教程也主要讲Git与Github的使用。</p>
+</blockquote>
+<a id="more"></a>
+
+
+<h1 id="1-背景介绍"><a href="#1-背景介绍" class="headerlink" title="1. 背景介绍"></a>1. 背景介绍</h1><p>本来想粗暴写一下安装使用教程，想了想还是先写一点背景介绍，不感兴趣可以直接跳过。</p>
+<h2 id="版本控制"><a href="#版本控制" class="headerlink" title="版本控制"></a>版本控制</h2><p>首先我们需要了解一个概念——Version Control，也就是版本控制。当我们写代码的时候总会有意无意制造出一些bug，有时候我们会想返回前一次没有问题的时候，因此这就是我们为什么需要版本控制。</p>
+<p>简单来说，版本控制就是在不同时间节点保存你的程序，然后你可以通过它回看甚至回到之前保存的版本。</p>
+<h2 id="什么是Git"><a href="#什么是Git" class="headerlink" title="什么是Git"></a>什么是Git</h2><p>Git是在2005年的时候初次开发出来的版本控制利器，并风靡全球。Git是一个安装并管理本地系统的工具而且可以给你提供现有文件的你保存的不同版本。因为是本地的，下载之后就不再需要网络也可以使用。</p>
+<h2 id="什么是Github"><a href="#什么是Github" class="headerlink" title="什么是Github"></a>什么是Github</h2><p>Github有一点像可视化的Git，并且是在线的服务。让你可以在线管理你的Git仓库（这个具体会在后面讲）。通过Github，你可以分享你的程序，让其他合作者一起进行编辑。它不仅保存了Git的全部功能，还进行了扩充，它可以让你在任意电脑任意地区访问，只要你有权限。它最大的优点就是它是一个很庞大的数据库，你可以搜索，阅读甚至使用别人写好的程序。当然Github还有很多替代物如Gitlab之类，本文就不赘述了。</p>
+<h2 id="Git-vs-Github"><a href="#Git-vs-Github" class="headerlink" title="Git vs. Github"></a>Git vs. Github</h2><p>简单的说，Git是一个帮助你管理和追踪本地源码历史的版本控制工具，而Github则是一个基于云端运用Git技术的让你管理Git仓库的服务。</p>
+<h1 id="2-Git"><a href="#2-Git" class="headerlink" title="2. Git"></a>2. Git</h1><p>首先，我们来康康Git的使用。</p>
+<p><em>注意：所有和Git相关的命令都是<code>git</code>开头噢。</em></p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>如果已经安装过，可以跳过。</p>
+<p><strong>Linux</strong></p>
+<p>如果是Fedora或其他类似的 RPM-based distribution, 譬如RHEL 和 CentOS：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo dnf install git-all</span></span><br></pre></td></tr></table></figure>
+
+<p>或Debian-based distribution像Ubuntu</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo apt install git-all</span></span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>macOS</strong></p>
+<p>可以先试</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git --version</span></span><br></pre></td></tr></table></figure>
+
+<p>如果没有安装，应该会弹出安装请求，也可以去<a href="https://git-scm.com/download/mac">https://git-scm.com/download/mac</a> 下载。</p>
+<p><strong>Windows</strong></p>
+<p>这个稍微有点烦，见<a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">https://git-scm.com/book/en/v2/Getting-Started-Installing-Git</a> 。</p>
+<h2 id="新建一个Git仓库"><a href="#新建一个Git仓库" class="headerlink" title="新建一个Git仓库"></a>新建一个Git仓库</h2><p>安装好之后我们就可以开始用了，Git的一个仓库（Repo）就是你的一个项目。我们首先新建一个文件夹</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> mkdir firstRepo</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> firstRepo</span></span><br></pre></td></tr></table></figure>
+
+<p>初始化一个仓库</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git init</span></span><br></pre></td></tr></table></figure>
+
+<p>这时候会显示这么一行</p>
+<p><code>Initialized empty Git repository in /Users/tina/Desktop/firstRepo/.git/</code>, </p>
+<p>后面一部分是你当前仓库的路径，会根据路径不同进行变化。通过<code>.git</code>我们可以知道Git其实是创建了一个隐藏文件夹，所以我们运行<code>ls</code>这个命令，并不会看到有关Git的信息。</p>
+<h2 id="添加文件"><a href="#添加文件" class="headerlink" title="添加文件"></a>添加文件</h2><p>我们依然先在当前目录建文件，文件类型无所谓。这里就用<code>txt</code>文件了。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> touch first.txt</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> ls</span></span><br><span class="line">first.txt</span><br></pre></td></tr></table></figure>
+
+<p>此时我们可以看见文件里有一个文件叫<code>first.txt</code>，但是这个文件并不在我们Git仓库里（划重点），为了看仓库里有什么，我们使用</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git status</span></span><br><span class="line">On branch master</span><br><span class="line"></span><br><span class="line">Initial commit</span><br><span class="line"></span><br><span class="line">Untracked files:</span><br><span class="line">  (use "git add &lt;file&gt;..." to include in what will be committed)</span><br><span class="line"></span><br><span class="line">	first.txt</span><br><span class="line"></span><br><span class="line">nothing added to commit but untracked files present (use "git add" to track)</span><br></pre></td></tr></table></figure>
+
+<p>这个命令我们之后具体讲，现在我们看到<code>untracked files</code>这里，这个的意思就是说这些个文件在当前目录下但是没有保存到我们仓库里，所以Git不会对它的改变进行追踪。把文件添加到仓库里，我们使用</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git add first.txt</span></span><br></pre></td></tr></table></figure>
+
+<p>此时<code>first.txt</code>已经被加进去了。如果我们想添加多个文件呢，可以把想加入的文件用空格隔开，写在后面，像这样</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git add file1 file2</span></span><br></pre></td></tr></table></figure>
+
+<p>不过我们还有一个更简单的方法，那就是<code>.</code></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git add .</span></span><br></pre></td></tr></table></figure>
+
+<p>这样可以把当前目录下全部的没有track的文件都加进来（是不是很方便！）</p>
+<h2 id="删除文件"><a href="#删除文件" class="headerlink" title="删除文件"></a>删除文件</h2><p>提到添加就不得不说删除，如果一个文件不想被跟踪了怎么办呢，那就删掉啦。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git rm file</span></span><br></pre></td></tr></table></figure>
+
+<p><em>注意：这个操作不会在当前目录删除文件</em></p>
+<p>一个比较重要的flag</p>
+<p><code>--force</code></p>
+<p><del>顾名思义</del>, 这个flag是用来强制删除文件的。一般来说，如果你的文件没有被commit（下面就讲这个），是不可以被删除的，但是加上这个flag就可以删除了。</p>
+<h2 id="“截图”"><a href="#“截图”" class="headerlink" title="“截图”"></a>“截图”</h2><p><del>咳，实话实话，我也不知道commit怎么准确翻译成中文。</del>现在我们来看Git非常非常重要的一个命令，<code>commit</code>。它其实就是类似一个截图，存下来你当前的项目完成情况并保存下来，以后可以回顾甚至回到当前节点。至于怎么回到我们后面再讲，现在就来进行“截图”。这个截图只是对于Git追踪的文件，所以它与add是不可分割的。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git commit -m <span class="string">"Your message about the commit"</span></span></span><br><span class="line">[master (root-commit) b345d9a] This is my first commit!</span><br><span class="line"> 1 file changed, 1 insertion(+)</span><br><span class="line"> create mode 100644 first.txt</span><br></pre></td></tr></table></figure>
+
+<p>这样就建了一个新的commit啦，看到这个<code>b345d9a</code>东西了么，这个是一个<code>commit id</code>。但是如果你对文件进行了修改，又运行了这个语句，你会看到这么一行<code>Already Up to date</code>. Bug？Nonono， 这就是需要我们<code>add</code>来参与了。因为在Git心里，你的文件还是上一次<code>add</code>来的，他一看，文件和上一次<code>commit</code>的没有变化呀，不截图不截图。所以我们要重新<code>add</code>一遍，这个时候的<code>add</code>就是一个更新的操作了，我们每次<code>commit</code>之前都要先<code>add</code>再commit。</p>
+<p>不过，这两步某些情况下是可以合并的，变成</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git commit -am <span class="string">"Your message about the commit"</span></span></span><br></pre></td></tr></table></figure>
+
+<p>这样做就是更新我跟踪的所有文件并进行现有成果截图，但是如果你新建的文件还是要用单独的<code>add</code>来进行添加哦。</p>
+<p><em>注意：这个语句千万不要瞎写哦，以后你可能会用到</em></p>
+<h2 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h2><p>虽然我一直<del>刻意</del>没有提到上面出现过几次的一个词<code>master</code>，它是什么呢，它是我们的主分支。想象一棵树，它就是我们的树干。分支的作用是当你想修改某个部分的代码，添加新功能，但却不想影响之前写好的代码，就可以分出一个<code>branch</code>，在上面进行。不同分支之间不会相互干扰，除非你进行合并等操作。</p>
+<p>我们初始化一个Git仓库时，主分支就已经存在，在此基础上，我们可以新建自己的branch。使用</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git branch branchName</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git branch</span></span><br><span class="line">* master</span><br><span class="line">  branchName</span><br></pre></td></tr></table></figure>
+
+<p>第一个命令是新建，第二个是列出全部分支。<em>表示当前所在分支。切换分支我们使用</em></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git checkout branchName</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git branch</span></span><br><span class="line">  master</span><br><span class="line">* branchName</span><br></pre></td></tr></table></figure>
+
+<p>通常来说，我们新建一个分支就是为了切换到新分支，所以我们可以把上两步合二为一</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git checkout -b &lt;my branch name&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><em>注意：我们新建分支的内容是和你建分支时所在的一致，要注意新建分支时所在的branch哦，通常情况我们都是在master上加分支。</em></p>
+<p>在进行写代码，修改之后，我们想把分支上内容合并至master，使用</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git checkout master</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git merge branchName</span></span><br></pre></td></tr></table></figure>
+
+<p>这里稍微有一些饶人，我们需要在master上进行<code>merge</code>操作来使得master与分支一致。现在我们来简单讲解下<code>merge</code>。</p>
+<p>假设在master上我们有几次commit后，新建一个分支A，几次commit之后，我们想把A合并到master上。合并之前，</p>
+<p>common base—— — commit —— commit (master)</p>
+<p>​                                ｜— commit —— commit (A)</p>
+<p>合并后</p>
+<p>common base—— — commit —— commit (master) —— new merge commit</p>
+<p>​                                ｜— commit —— commit (A) ——｜</p>
+<p>这个时候master上就有了A上面的内容啦。</p>
+<p>merge分为两种，一种是<code>fast forward</code>, 另外一种是<code>3-way merge</code>。</p>
+<p>第一种很直接，合并前</p>
+<p>common base——                                              (master)</p>
+<p>​                                ｜— commit —— commit (A)</p>
+<p>合并后</p>
+<p>common base——                                                            —— new merge commit</p>
+<p>​                                ｜— commit —— commit (A) ——｜</p>
+<p>就不细讲Git原理，康图。</p>
+<p>第二种其实就是第一个那个图。<del>小朋友，你是否有很多问号，为什么就这样合并起来，而没有冲突</del>。merge的过程很容易产生的问题就是冲突！尽管Git的merge已经很nb了，但依然不可避免产生冲突，但这些我们可以很容易地解决。</p>
+<h2 id="冲突"><a href="#冲突" class="headerlink" title="冲突"></a>冲突</h2><p>这是Git里经常遇到并且要解决的问题！当你merge不同分支时，很容易遇到。为了让大家直观感受，我们创造一个冲突。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git checkout master</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">echo</span> <span class="string">'this is conflicted text from master'</span> &gt; first.txt</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git commit -am <span class="string">'added one line'</span></span></span><br><span class="line">[master 8cc7111] added one line</span><br><span class="line"> 1 file changed, 1 insertion(+)</span><br><span class="line"><span class="meta">$</span><span class="bash"> git checkout branchName</span></span><br><span class="line">Switched to branch 'branchName'</span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">echo</span> <span class="string">'this is conflicted text from feature branch'</span> &gt; first.txt</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git commit -am <span class="string">'added one line'</span></span></span><br><span class="line">[a 23f5790] added one line</span><br><span class="line"> 1 file changed, 1 insertion(+)</span><br><span class="line"><span class="meta">$</span><span class="bash"> git checkout master</span></span><br><span class="line">Switched to branch 'master'</span><br><span class="line"><span class="meta">$</span><span class="bash"> git merge branchName</span></span><br><span class="line">Auto-merging first.txt</span><br><span class="line">CONFLICT (content): Merge conflict in first.txt</span><br><span class="line">Automatic merge failed; fix conflicts and then commit the result.</span><br></pre></td></tr></table></figure>
+
+<p>YES!!冲突出现了，现在我们要解决它。这个时候打开此文件</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> vim first.txt</span></span><br></pre></td></tr></table></figure>
+
+<p><del>vim是最好的text editor！</del></p>
+<p>我们会看到这个</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</span><br><span class="line">this is conflicted text from master</span><br><span class="line">&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;</span><br><span class="line">this is conflicted text from feature branch</span><br><span class="line">&gt;&gt;&gt;&gt;&gt;&gt;&gt; branchName</span><br></pre></td></tr></table></figure>
+
+<p><code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code> 和<code>=======</code>是告诉我们哪里有冲突，并且是哪个branch。就这个而言前第二行是master上内容而第四行则是branchName上的内容，我们选取需要内容后记得删除135行哦！</p>
+<p>Vim使用<code>i</code>进行编辑，完成后<code>esc</code>然后打<code>:q</code>推出。这个时候冲突已经解决完啦，我们需要进行一次commit来结束这次的合并操作。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git commit -am <span class="string">'solve conflict'</span></span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="git-status"><a href="#git-status" class="headerlink" title="git status"></a>git status</h3><p>其实算是看当前分支的一个状态吧，可以看到是否有未被追踪的文件，有没有变化没有被commit。使用</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git status</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="git-log"><a href="#git-log" class="headerlink" title="git log"></a>git log</h3><p>简单粗暴，显示commit记录，使用</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git <span class="built_in">log</span></span></span><br></pre></td></tr></table></figure>
+
+<p>会显示出一串commit记录，每个包括id，作者，时间，分支，以及commit的时候的那个message。</p>
+<h3 id="切换到某次commit"><a href="#切换到某次commit" class="headerlink" title="切换到某次commit"></a>切换到某次commit</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git checkout specific-commit-id</span></span><br></pre></td></tr></table></figure>
+
+<p>这个<code>commit id</code>就需要我们去<code>git log</code>里面找来，嗯就是那一长串看不懂的hash。至于你具体想切换到哪个，就看你commit的时间以及你自己写的commit信息啦（滑稽）<del>瞎写的话现在就作茧自缚了嘻嘻</del>。</p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>Git大致就讲这么多啦，想更了解具体的Git，阔以参考document。<a href="https://git-scm.com/doc">https://git-scm.com/doc</a></p>
+<h1 id="3-Github"><a href="#3-Github" class="headerlink" title="3. Github"></a>3. Github</h1><p>不得不说Github是真的好用，造好的轮子随便用，<del>甚至还可以找到作业答案，当然要自己写作业了！</del>，而且Github推出的Github desktop是真香。使用很简单，无师自通。言归正传，我们来康康Github怎么用。</p>
+<h2 id="注册及安装"><a href="#注册及安装" class="headerlink" title="注册及安装"></a>注册及安装</h2><p>想注册的话你需要准备的东西有：一个或多个邮箱。一个账号可以绑定N个邮箱，然后去<a href="https://github.com/">https://github.com/</a> 进行注册。如果是学生且想免费申请Github pro可以访问<a href="https://education.github.com/pack">https://education.github.com/pack</a> 。</p>
+<p>申请完之后我们打开命令行</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git config --global user.name <span class="string">"&lt;your_name_here&gt;"</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git config --global user.email <span class="string">"&lt;your_email@email.com&gt;"</span></span></span><br></pre></td></tr></table></figure>
+
+<p><em>注意：写名字时去除括号但保留引号，邮箱使用申请时的邮箱。以及，如果只是想在当前仓库用的话，去掉<code>global</code>就ok了</em></p>
+<p>现在我们连接ssh到Github，这样就可以通过ssh进行clone操作而不是http。先复制ssh key</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> pbcopy &lt; ~/.ssh/id_rsa.pub</span></span><br></pre></td></tr></table></figure>
+
+<p>然后去Github网页，点击头像，出现下拉菜单，点击<code>Settings</code>，在用户设置的菜单栏选择<code>SSH and GPG keys</code>，点击<code>New SSH key</code>，在<code>title</code>栏写上你设备的名字，方便你辨认，把刚刚复制好的key复制到<code>key</code>那里。然后点击添加，如果出现输密码框就输入密码。</p>
+<h2 id="新建仓库"><a href="#新建仓库" class="headerlink" title="新建仓库"></a>新建仓库</h2><p>先去Github上建立一个新仓库，点击<code>Repositories</code>旁<code>New</code>按钮，填写Repo的名字后就可以确认建立。新建完后自动跳转到这个初始页面，在这里我们可以看到这个仓库的https地址，点击旁边的复制按钮备用。</p>
+<h2 id="连接仓库"><a href="#连接仓库" class="headerlink" title="连接仓库"></a>连接仓库</h2><p>现在，之前Git里的操作都可以正常用了，不过效果依然存在本地，想要和云端连接，我们需要学一些新操作。首先和remote连接</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git remote add origin [remote repository URL]</span></span><br></pre></td></tr></table></figure>
+
+<p>这里的URL就是上一步操作复制得到的。然后</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git push -u origin master</span></span><br></pre></td></tr></table></figure>
+
+<p>运行完之后，我们就可以在Github上看到啦。每当我们想要发布一个新的分支的时候，都需要运行这个命令，要将master改成分支的名字即可。</p>
+<h2 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h2><p>当remote和本地的版本不一致时，我们会需要进行更新，可能是本地快于remote也可能是remote快于本地。我们使用<code>git pull</code>来拉取remote的更新，使用前要记得先commit本地的版本哦。如果要更新remote版本，我们直接用<code>git push</code>就可以做到了。</p>
+<h2 id="克隆"><a href="#克隆" class="headerlink" title="克隆"></a>克隆</h2><p>在Github上打开你要克隆的仓库主页，点击Clone or Download，然后可以选择用<code>https</code>还是<code>ssh</code>进行克隆，复制链接，打开命令行</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git <span class="built_in">clone</span> url</span></span><br></pre></td></tr></table></figure>
+
+<p>如果不是你的仓库，只能使用<code>https</code>哦，或者也可以选择下载。</p>
+<h2 id="Github网页"><a href="#Github网页" class="headerlink" title="Github网页"></a>Github网页</h2><p>既然他是有网页版的，那自然不能忽略网页版提供的服务。</p>
+<h3 id="搜索"><a href="#搜索" class="headerlink" title="搜索"></a>搜索</h3><p>我要说的搜索是在页面顶部Navigation bar里的那个搜索框，在哪里可以进行关键词搜索，能检索到有相关信息的公开仓库。在搜索结果的页面，我们可以选取特定语言（这个项目使用的语言），结果的排序方法等等。还有其他一些信息，就自己去看啦。</p>
+<p>每个仓库都会显示<code>stars</code>，一般来说<code>stars</code>越多，认可度越高，也就越好。</p>
+<h3 id="关于Repo"><a href="#关于Repo" class="headerlink" title="关于Repo"></a>关于Repo</h3><p>因为<del>要素过多</del>有很多内容，我就选取部分说明，其他的功能自己康康就好啦。</p>
+<p><strong>文件</strong></p>
+<p>点到自己的任意一个仓库，我们可以直接在网上编辑文件。点开文件A，然后点击<code>Edit</code>就可以进行修改，修改完成后使用下方的<code>commit</code>进行保存。也可以直接新建文件，上传文件，删除文件等。不过比较神奇的操作是新建文件夹。具体如下：</p>
+<p>点击<code>Create New File</code>，在文件名的地方输入文件夹名称并加上<code>/</code>, <del>神奇的事情发生了</del>，文件夹就建好了。不过不可以建空文件夹哦，所以它会强行让你写一个文件名。</p>
+<p><strong>合作</strong></p>
+<p>如果想和组员共同编辑一个仓库，我们点击<code>settings</code>，然后<code>Manage Access</code>，这个时候会让你输入一下密码。进去后可以修改当前仓库权限以及邀请合作者，提供输入合作人的Github名字来进行查找和添加。</p>
+<h2 id="其他-1"><a href="#其他-1" class="headerlink" title="其他"></a>其他</h2><p><strong>怎么fetch一个云端的分支（不在本地的）？</strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git checkout --track origin/daves_branch</span></span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>如果不想用命令行怎么办？</strong></p>
+<p>Github Desktop你值得拥有：<a href="https://desktop.github.com/">https://desktop.github.com/</a></p>
+<h1 id="4-写在最后"><a href="#4-写在最后" class="headerlink" title="4. 写在最后"></a>4. 写在最后</h1><p>感谢大家看完我的<del>废话</del>教程，这大概是本人<del>多年</del>一年的使用经常用到的部分，希望可以给你们带来帮助。</p>
+</div><div class="article-tags size-small mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/Git/">Git</a><a class="link-muted mr-2" rel="tag" href="/tags/Github/">Github</a></div><div class="notification is-danger">You need to set <code>install_url</code> to use ShareThis. Please set it in <code>_config.yml</code>.</div></article></div><div class="card"><div class="card-content"><h3 class="menu-label has-text-centered">Like this article? Support the author with</h3><div class="buttons is-centered"><a class="button is-info donate"><span class="icon is-small"><i class="fab fa-alipay"></i></span><span>Alipay</span><span class="qrcode"><img src="/" alt="Alipay"></span></a><a class="button donate" href="/" style="background-color:rgba(255,128,62,.87);border-color:transparent;color:white;" target="_blank" rel="noopener"><span class="icon is-small"><i class="fas fa-coffee"></i></span><span>Buy me a coffee</span></a><a class="button is-danger donate" href="/" target="_blank" rel="noopener"><span class="icon is-small"><i class="fab fa-patreon"></i></span><span>Patreon</span></a><div class="notification is-danger">You forgot to set the <code>business</code> or <code>currency_code</code> for Paypal. Please set it in <code>_config.yml</code>.</div><a class="button is-success donate"><span class="icon is-small"><i class="fab fa-weixin"></i></span><span>Wechat</span><span class="qrcode"><img src="/" alt="Wechat"></span></a></div></div></div><div class="card"><div class="card-content"><h3 class="title is-5">Comments</h3><div class="notification is-danger">You forgot to set the <code>shortname</code> for Disqus. Please set it in <code>_config.yml</code>.</div></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><div class="card widget"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="/img/avatar.png" alt="Tina"></figure><p class="title is-size-4 is-block line-height-inherit">Tina</p><p class="is-size-6 is-block">A student</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>A secret</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Post</p><a href="/archives"><p class="title">1</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Category</p><a href="/categories"><p class="title">1</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags"><p class="title">2</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/CutePikachu" target="_blank" rel="noopener">Follow</a></div><div class="level is-mobile"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/CutePikachu"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://facebook.com"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Twitter" href="https://twitter.com"><i class="fab fa-twitter"></i></a></div></div></div><div class="card widget" id="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">Catalogue</h3><ul class="menu-list"><li><a class="is-flex" href="#1-背景介绍"><span class="mr-2">1</span><span>1. 背景介绍</span></a><ul class="menu-list"><li><a class="is-flex" href="#版本控制"><span class="mr-2">1.1</span><span>版本控制</span></a></li><li><a class="is-flex" href="#什么是Git"><span class="mr-2">1.2</span><span>什么是Git</span></a></li><li><a class="is-flex" href="#什么是Github"><span class="mr-2">1.3</span><span>什么是Github</span></a></li><li><a class="is-flex" href="#Git-vs-Github"><span class="mr-2">1.4</span><span>Git vs. Github</span></a></li></ul></li><li><a class="is-flex" href="#2-Git"><span class="mr-2">2</span><span>2. Git</span></a><ul class="menu-list"><li><a class="is-flex" href="#安装"><span class="mr-2">2.1</span><span>安装</span></a></li><li><a class="is-flex" href="#新建一个Git仓库"><span class="mr-2">2.2</span><span>新建一个Git仓库</span></a></li><li><a class="is-flex" href="#添加文件"><span class="mr-2">2.3</span><span>添加文件</span></a></li><li><a class="is-flex" href="#删除文件"><span class="mr-2">2.4</span><span>删除文件</span></a></li><li><a class="is-flex" href="#“截图”"><span class="mr-2">2.5</span><span>“截图”</span></a></li><li><a class="is-flex" href="#分支"><span class="mr-2">2.6</span><span>分支</span></a></li><li><a class="is-flex" href="#冲突"><span class="mr-2">2.7</span><span>冲突</span></a></li><li><a class="is-flex" href="#其他"><span class="mr-2">2.8</span><span>其他</span></a><ul class="menu-list"><li><a class="is-flex" href="#git-status"><span class="mr-2">2.8.1</span><span>git status</span></a></li><li><a class="is-flex" href="#git-log"><span class="mr-2">2.8.2</span><span>git log</span></a></li><li><a class="is-flex" href="#切换到某次commit"><span class="mr-2">2.8.3</span><span>切换到某次commit</span></a></li></ul></li><li><a class="is-flex" href="#结语"><span class="mr-2">2.9</span><span>结语</span></a></li></ul></li><li><a class="is-flex" href="#3-Github"><span class="mr-2">3</span><span>3. Github</span></a><ul class="menu-list"><li><a class="is-flex" href="#注册及安装"><span class="mr-2">3.1</span><span>注册及安装</span></a></li><li><a class="is-flex" href="#新建仓库"><span class="mr-2">3.2</span><span>新建仓库</span></a></li><li><a class="is-flex" href="#连接仓库"><span class="mr-2">3.3</span><span>连接仓库</span></a></li><li><a class="is-flex" href="#更新"><span class="mr-2">3.4</span><span>更新</span></a></li><li><a class="is-flex" href="#克隆"><span class="mr-2">3.5</span><span>克隆</span></a></li><li><a class="is-flex" href="#Github网页"><span class="mr-2">3.6</span><span>Github网页</span></a><ul class="menu-list"><li><a class="is-flex" href="#搜索"><span class="mr-2">3.6.1</span><span>搜索</span></a></li><li><a class="is-flex" href="#关于Repo"><span class="mr-2">3.6.2</span><span>关于Repo</span></a></li></ul></li><li><a class="is-flex" href="#其他-1"><span class="mr-2">3.7</span><span>其他</span></a></li></ul></li><li><a class="is-flex" href="#4-写在最后"><span class="mr-2">4</span><span>4. 写在最后</span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Categories</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/categories/%E6%95%99%E7%A8%8B/"><span class="level-start"><span class="level-item">教程</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><h3 class="menu-label">Recent</h3><article class="media"><div class="media-content size-small"><p><time dateTime="2020-03-21T06:00:00.000Z">2020-03-21</time></p><p class="title is-6"><a class="link-muted" href="/2020/03/21/GitAndGithub/">【双剑合璧】Git和Github使用教程</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/%E6%95%99%E7%A8%8B/">教程</a></p></div></article></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Archives</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/archives/2020/03/"><span class="level-start"><span class="level-item">March 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/Git/"><span class="tag">Git</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Github/"><span class="tag">Github</span><span class="tag is-grey-lightest">1</span></a></div></div></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.svg" alt="Tina blog" height="28"></a><p class="size-small"><span>&copy; 2020 Tina</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Email" href="mailto:tinayutong0310@gmail.com"><i class="fa fa-envelope"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            site: {
+                url: 'http://CutePikachu.github.io',
+                external_link: {"enable":true,"exclude":[]}
+            },
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script src="/js/animation.js"></script><a id="back-to-top" title="Back to Top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body></html>
