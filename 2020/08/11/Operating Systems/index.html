@@ -1,0 +1,1616 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="generator" content="Hexo 4.2.1"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Operating Systems - Tina blog</title><meta description="The more you know about operating system, the better you can cooperate with it."><meta property="og:type" content="blog"><meta property="og:title" content="Operating Systems"><meta property="og:url" content="https://cutepikachu.github.io/2020/08/11/Operating%20Systems/"><meta property="og:site_name" content="Tina blog"><meta property="og:description" content="The more you know about operating system, the better you can cooperate with it."><meta property="og:locale" content="en_US"><meta property="og:image" content="https://i.loli.net/2020/08/11/PSC79mFMgHtBJka.png"><meta property="og:image" content="https://i.loli.net/2020/08/11/PGARtc4jS3ZaTw2.png"><meta property="og:image" content="https://i.loli.net/2020/08/11/2JnaABHRtuLzsFe.png"><meta property="og:image" content="https://i.loli.net/2020/08/11/ktRXLZrOBs3SqfG.png"><meta property="og:image" content="https://i.loli.net/2020/08/11/Le91OJ7ucdvDCSH.png"><meta property="og:image" content="https://i.loli.net/2020/08/11/EKDX9qVAuTWLnOz.png"><meta property="og:image" content="https://i.loli.net/2020/08/11/MlD64Kr7HdQcU8k.png"><meta property="og:image" content="https://i.loli.net/2020/08/11/isXUFBeqLTcGmp3.png"><meta property="og:image" content="https://i.loli.net/2020/08/11/knB6cJT9ZeqrCI3.png"><meta property="og:image" content="https://i.loli.net/2020/08/11/JeLm8X3VGC2n7pq.png"><meta property="og:image" content="https://i.loli.net/2020/08/11/DZzw3m6SFgTqpl8.png"><meta property="og:image" content="https://i.loli.net/2020/08/11/Ex5KcXF1yrqpf8S.png"><meta property="og:image" content="https://i.loli.net/2020/08/11/U1ex7Gy8n5E9wVX.png"><meta property="og:image" content="https://i.loli.net/2020/08/11/bDZvzo62eSswWGC.png"><meta property="og:image" content="https://i.loli.net/2020/08/11/LQtb9AFBuiUDM4v.png"><meta property="og:image" content="https://i.loli.net/2020/08/11/8mCWRXsqgQeTMV9.png"><meta property="og:image" content="https://i.loli.net/2020/08/11/4FdkPJrNBqoZp6E.png"><meta property="og:image" content="https://i.loli.net/2020/08/11/21zuAcOstYon6U4.png"><meta property="og:image" content="https://i.loli.net/2020/08/11/CcVnqFvNhegibot.jpg"><meta property="og:image" content="https://i.loli.net/2020/08/11/3Zor8IVpRyS9CB4.jpg"><meta property="article:published_time" content="2020-08-11T06:00:00.000Z"><meta property="article:modified_time" content="2020-08-11T12:37:01.080Z"><meta property="article:author" content="Tina"><meta property="article:tag" content="OS"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="https://i.loli.net/2020/08/11/PSC79mFMgHtBJka.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://cutepikachu.github.io/2020/08/11/Operating%20Systems/"},"headline":"Tina blog","image":["https://i.loli.net/2020/08/11/PSC79mFMgHtBJka.png","https://i.loli.net/2020/08/11/PGARtc4jS3ZaTw2.png","https://i.loli.net/2020/08/11/2JnaABHRtuLzsFe.png","https://i.loli.net/2020/08/11/ktRXLZrOBs3SqfG.png","https://i.loli.net/2020/08/11/Le91OJ7ucdvDCSH.png","https://i.loli.net/2020/08/11/EKDX9qVAuTWLnOz.png","https://i.loli.net/2020/08/11/MlD64Kr7HdQcU8k.png","https://i.loli.net/2020/08/11/isXUFBeqLTcGmp3.png","https://i.loli.net/2020/08/11/knB6cJT9ZeqrCI3.png","https://i.loli.net/2020/08/11/JeLm8X3VGC2n7pq.png","https://i.loli.net/2020/08/11/DZzw3m6SFgTqpl8.png","https://i.loli.net/2020/08/11/Ex5KcXF1yrqpf8S.png","https://i.loli.net/2020/08/11/U1ex7Gy8n5E9wVX.png","https://i.loli.net/2020/08/11/bDZvzo62eSswWGC.png","https://i.loli.net/2020/08/11/LQtb9AFBuiUDM4v.png","https://i.loli.net/2020/08/11/8mCWRXsqgQeTMV9.png","https://i.loli.net/2020/08/11/4FdkPJrNBqoZp6E.png","https://i.loli.net/2020/08/11/21zuAcOstYon6U4.png","https://i.loli.net/2020/08/11/CcVnqFvNhegibot.jpg","https://i.loli.net/2020/08/11/3Zor8IVpRyS9CB4.jpg"],"datePublished":"2020-08-11T06:00:00.000Z","dateModified":"2020-08-11T12:37:01.080Z","author":{"@type":"Person","name":"Tina"},"description":"The more you know about operating system, the better you can cooperate with it."}</script><link rel="canonical" href="https://cutepikachu.github.io/2020/08/11/Operating%20Systems/"><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.svg" alt="Tina blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/projects">Projects</a></div><div class="navbar-end"><a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2020-08-11T06:00:00.000Z" title="2020-08-11T06:00:00.000Z">2020-08-11</time><span class="level-item"><a class="link-muted" href="/categories/notes/">notes</a></span><span class="level-item">43 minutes read (About 6466 words)</span></div></div><h1 class="title is-3 is-size-4-mobile">Operating Systems</h1><div class="content"><blockquote>
+<p>The more you know about operating system, the better you can cooperate with it.</p>
+</blockquote>
+<a id="more"></a>
+
+<h1 id="Operating-System-Overview"><a href="#Operating-System-Overview" class="headerlink" title="Operating System Overview"></a>Operating System Overview</h1><h2 id="Role"><a href="#Role" class="headerlink" title="Role"></a>Role</h2><h3 id="Role-1"><a href="#Role-1" class="headerlink" title="Role 1"></a>Role 1</h3><blockquote>
+<p>The Operating System is an Abstract Machine</p>
+</blockquote>
+<ul>
+<li>Extends the basic hardware with added functionality</li>
+<li>Provides high-level abstractions<ul>
+<li>More programmer friendly</li>
+<li>Common core for all applications</li>
+</ul>
+</li>
+<li>It hides the details of the hardware<ul>
+<li>Makes application code portable</li>
+</ul>
+</li>
+</ul>
+<h3 id="Role-2"><a href="#Role-2" class="headerlink" title="Role 2"></a>Role 2</h3><blockquote>
+<p>The Operating System is a Resource Manager</p>
+</blockquote>
+<ul>
+<li>Responsible for allocating resources to users and processes</li>
+<li>Must ensure<ul>
+<li>No Starvation</li>
+<li>Progress</li>
+<li>Allocation is according to some desired policy<ul>
+<li>First-come, first-served; Fair share; Weighted fair share; limits (quotas), etc…</li>
+</ul>
+</li>
+<li>Overall, that the system is efficiently used</li>
+</ul>
+</li>
+</ul>
+<h2 id="Structural-Implementation-View"><a href="#Structural-Implementation-View" class="headerlink" title="Structural (Implementation) View"></a>Structural (Implementation) View</h2><blockquote>
+<p>the Operating System is the software Privileged mode. </p>
+</blockquote>
+<p><img src="https://i.loli.net/2020/08/11/PSC79mFMgHtBJka.png" alt=""> </p>
+<h3 id="Operating-System-Kernel"><a href="#Operating-System-Kernel" class="headerlink" title="Operating System Kernel"></a>Operating System Kernel</h3><ul>
+<li>Portion of the operating system that is running in privileged mode</li>
+<li>Usually resident (stays) in main memory</li>
+<li>Contains fundamental functionality<ul>
+<li>Whatever is required to implement other services</li>
+<li>Whatever is required to provide security</li>
+</ul>
+</li>
+<li>Contains most-frequently used functions</li>
+<li>Also called the nucleus or supervisor</li>
+</ul>
+<h3 id="The-Operating-System-is-Privileged"><a href="#The-Operating-System-is-Privileged" class="headerlink" title="The Operating System is Privileged"></a>The Operating System is Privileged</h3><blockquote>
+<p>Applications should not be able to interfere or bypass the operating system</p>
+</blockquote>
+<p>OS can enforce the “extended machine”</p>
+<p>OS can enforce its resource allocation policies</p>
+<p>Prevent applications from interfering with each other</p>
+<h2 id="The-Structure-of-a-Computer-System"><a href="#The-Structure-of-a-Computer-System" class="headerlink" title="The Structure of a Computer System"></a>The Structure of a Computer System</h2><p><img src="https://i.loli.net/2020/08/11/PGARtc4jS3ZaTw2.png" alt=""></p>
+<ul>
+<li>Applications interact with themselves and via function calls to library procedures</li>
+<li>OS and application interacts via <strong>System calls</strong></li>
+</ul>
+<h3 id="A-Note-on-System-Libraries"><a href="#A-Note-on-System-Libraries" class="headerlink" title="A Note on System Libraries"></a>A Note on System Libraries</h3><blockquote>
+<p>System libraries are just that, libraries of support functions (procedures, subroutines)</p>
+</blockquote>
+<p>Only a subset of library functions are actually system calls, and system call functions are in the library for convenience</p>
+<h2 id="Privilege-less-OS"><a href="#Privilege-less-OS" class="headerlink" title="Privilege-less OS"></a>Privilege-less OS</h2><blockquote>
+<p>Can implement OS functionality, but cannot enforce it.</p>
+</blockquote>
+<p>Some Embedded OSs have no privileged component</p>
+<ul>
+<li>All software runs together</li>
+<li>No isolation</li>
+<li>One fault potentially brings down entire system</li>
+</ul>
+<h2 id="Operating-System-Software"><a href="#Operating-System-Software" class="headerlink" title="Operating System Software"></a>Operating System Software</h2><ul>
+<li><p>Fundamentally, OS functions the same way as ordinary computer software. </p>
+<ul>
+<li>It is machine code that is executed (same machine instructions as application). </li>
+<li>It has more privileges (extra instructions and access).</li>
+</ul>
+</li>
+<li><p>Operating system relinquishes control of the processor to execute other programs, it reestablishes control after </p>
+<ul>
+<li>System calls </li>
+<li>and Interrupts (especially timer interrupts).</li>
+</ul>
+</li>
+</ul>
+<h3 id="Operating-System-Internal-Structure"><a href="#Operating-System-Internal-Structure" class="headerlink" title="Operating System Internal Structure"></a>Operating System Internal Structure</h3><blockquote>
+<p>The Monolithic Operating System Structure, Also called the “spaghetti nest” approach(Everything is tangled up with everything else. )</p>
+</blockquote>
+<h1 id="Processes-and-Threads"><a href="#Processes-and-Threads" class="headerlink" title="Processes and Threads"></a>Processes and Threads</h1><h2 id="Major-Requirements-of-an-Operating-System"><a href="#Major-Requirements-of-an-Operating-System" class="headerlink" title="Major Requirements of an Operating System"></a>Major Requirements of an Operating System</h2><ul>
+<li>Interleave the execution of several processes to maximize processor utilization while providing reasonable response time</li>
+<li>Allocate resources to processess</li>
+<li>Support interprocess communication and user creation of processes</li>
+</ul>
+<h2 id="Processes-and-Threads-1"><a href="#Processes-and-Threads-1" class="headerlink" title="Processes and Threads"></a>Processes and Threads</h2><p><strong>Processes</strong></p>
+<ul>
+<li>Also called a task or job</li>
+<li>Execution of an individual program</li>
+<li>“Owner” of resources allocated for program execution<ul>
+<li>trace the usage of processes, clean up memory after finishing execution</li>
+</ul>
+</li>
+<li>Encompasses one or more threads</li>
+</ul>
+<p><strong>Threads</strong></p>
+<blockquote>
+<p>The sequence of execution through an application</p>
+</blockquote>
+<ul>
+<li>Unit of execution</li>
+<li>Can be traced<ul>
+<li>list the sequence of instructions that execute</li>
+</ul>
+</li>
+<li>Belongs to a process<ul>
+<li>Process provide environment, and all thread running in the process share the environment</li>
+<li>Executes within it</li>
+</ul>
+</li>
+</ul>
+<h2 id="Process"><a href="#Process" class="headerlink" title="Process"></a>Process</h2><h3 id="The-Process-Model"><a href="#The-Process-Model" class="headerlink" title="The Process Model"></a>The Process Model</h3><p>Single process machine<br><img src="https://i.loli.net/2020/08/11/2JnaABHRtuLzsFe.png" alt="the process model"></p>
+<ul>
+<li>Multiprogramming of four programs</li>
+<li>Conceptual model of 4 independent, sequential processes(with a single thread each)</li>
+<li>Only one program active at any instant</li>
+</ul>
+<p><img src="https://i.loli.net/2020/08/11/ktRXLZrOBs3SqfG.png" alt="threads and processes"></p>
+<blockquote>
+<p>the box represents a process, and the line represents the thread and the dotted lines represent what the OS can do</p>
+</blockquote>
+<h3 id="Process-and-thread-models-of-selected-OSes"><a href="#Process-and-thread-models-of-selected-OSes" class="headerlink" title="Process and thread models of selected OSes"></a>Process and thread models of selected OSes</h3><ul>
+<li>Single process, single thread<ul>
+<li>MSDOS</li>
+</ul>
+</li>
+<li>Signle process, multiple threads<ul>
+<li>OS/161 as distributed</li>
+</ul>
+</li>
+<li>Multiple processes, single thread<ul>
+<li>Traditional UNIX</li>
+</ul>
+</li>
+<li>Multiple processes, multiple threads<ul>
+<li>Modern Unix(Linux, Solaris), Windows</li>
+</ul>
+</li>
+</ul>
+<h3 id="Process-Creation"><a href="#Process-Creation" class="headerlink" title="Process Creation"></a>Process Creation</h3><p><strong>Principal events that cause process creation</strong></p>
+<ul>
+<li>System initialization<ul>
+<li>Foreground processes(interactive programs)</li>
+<li>Background processes<ul>
+<li>Email server, web server, print server, etc.</li>
+<li>Called a daemon(unix) or service(Windows)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Execution of a process creation system call by running a process<ul>
+<li>New login shell for an incoming ssh connection</li>
+</ul>
+</li>
+<li>User request to create a new process</li>
+<li>Initiation of a bach job</li>
+</ul>
+<blockquote>
+<p>Note: Technically, all these cases use the same system machanism to create new processes</p>
+</blockquote>
+<h3 id="Process-Termination"><a href="#Process-Termination" class="headerlink" title="Process Termination"></a>Process Termination</h3><p><strong>Conditions which terminate processes</strong></p>
+<ul>
+<li>Normal exit(voluntary)</li>
+<li>Error exit(voluntary)</li>
+<li>Fatal error(involuntary)<ul>
+<li>e.g. segmentation fault</li>
+</ul>
+</li>
+<li>Killed by another process(involuntary)</li>
+</ul>
+<h3 id="Implementation-of-Processes"><a href="#Implementation-of-Processes" class="headerlink" title="Implementation of Processes"></a>Implementation of Processes</h3><ul>
+<li>A processes’ information is stored in a process control block(PCB)</li>
+<li>The PCBs form a process table<ul>
+<li>Reality can be complex(hashing, chaining, allocation bitmaps,…)</li>
+<li>Size can be dynamic</li>
+</ul>
+</li>
+</ul>
+<p><strong>Example fields of a process table entry</strong></p>
+<table>
+<thead>
+<tr>
+<th>Process Management</th>
+<th>Memory management</th>
+<th>File management</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Registers</td>
+<td>Pointer to text segment</td>
+<td>Root directory</td>
+</tr>
+<tr>
+<td>Program counter</td>
+<td>Pointer to data segment</td>
+<td>working directory</td>
+</tr>
+<tr>
+<td>Program status word</td>
+<td>Pointer to stack segement</td>
+<td>File descriptors</td>
+</tr>
+<tr>
+<td>Stack pointer</td>
+<td></td>
+<td>User ID</td>
+</tr>
+<tr>
+<td>Process state</td>
+<td></td>
+<td>Group ID</td>
+</tr>
+<tr>
+<td>Priority</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Scheduling parameters</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Process ID</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Parent process</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>process group</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Signals</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>time when process started</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>CPU time used</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Children’s CPU time</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Time of next alarm</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id="Process-Thread-States"><a href="#Process-Thread-States" class="headerlink" title="Process/Thread States"></a>Process/Thread States</h3><p>Three states process model(the minial model the OSes implement)<img src="https://i.loli.net/2020/08/11/Le91OJ7ucdvDCSH.png" alt="states"></p>
+<blockquote>
+<p>In the image the numbers prepresent:</p>
+<ol>
+<li>Process blocks for input</li>
+<li>Scheduler picks another process</li>
+<li>Scheculer picks this process</li>
+<li>Input becomes available</li>
+</ol>
+</blockquote>
+<ul>
+<li>Possible process/thread states<ul>
+<li>running</li>
+<li>blocked</li>
+<li>ready</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>Generally, if no IO, processes almost all sitting in running and ready</p>
+</blockquote>
+<ul>
+<li>Transitions between states shown</li>
+</ul>
+<p><strong>some Transition Causing Events</strong></p>
+<ul>
+<li>Running -&gt; Ready<ul>
+<li>Voluntary Yield()</li>
+<li>End of timeslice</li>
+</ul>
+</li>
+<li>Running -&gt; Blocked<ul>
+<li>Waiting fot input<ul>
+<li>File, network,</li>
+</ul>
+</li>
+<li>Waiting for a timer(alarm signal)</li>
+<li>Waiting for a resource to become available</li>
+</ul>
+</li>
+</ul>
+<h3 id="Scheduler"><a href="#Scheduler" class="headerlink" title="Scheduler"></a>Scheduler</h3><blockquote>
+<p>responsible for want to run next</p>
+</blockquote>
+<ul>
+<li>Sometimes alse called the dispatcher<ul>
+<li>The literature is alse a little inconsistent on with terminology</li>
+</ul>
+</li>
+<li>Has to choose a Ready process to run<ul>
+<li>It is inefficent to search through all processes</li>
+</ul>
+</li>
+</ul>
+<p><strong>The Ready Queue</strong><br><img src="https://i.loli.net/2020/08/11/EKDX9qVAuTWLnOz.png" alt="ready queue"></p>
+<h4 id="What-about-blocked-processes"><a href="#What-about-blocked-processes" class="headerlink" title="What about blocked processes"></a>What about blocked processes</h4><blockquote>
+<p>When an unblocking event occurs, we also wish to avoid scanning all processes to select one to make <em>Ready</em></p>
+</blockquote>
+<p>using two queues(One option)<br><img src="https://i.loli.net/2020/08/11/MlD64Kr7HdQcU8k.png" alt="blocked queue"></p>
+<p>another option(using a queue for every event)<br><img src="https://i.loli.net/2020/08/11/isXUFBeqLTcGmp3.png" alt="blocked queues"></p>
+<h3 id="Implementation"><a href="#Implementation" class="headerlink" title="Implementation"></a>Implementation</h3><ul>
+<li>Minimally consist of three segments <ul>
+<li>Text <ul>
+<li>contains the code (instructions) </li>
+</ul>
+</li>
+<li>Data  <ul>
+<li>Global variables  </li>
+</ul>
+</li>
+<li>Stack <ul>
+<li>Activation records of procedure/function/method </li>
+<li>Local variables </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>User-mode<ul>
+<li>Processes (programs) scheduled by the kernel</li>
+<li>Isolated from each other</li>
+<li>No concurrency issues between each other</li>
+</ul>
+</li>
+<li>System-calls transition into and return from the kernel</li>
+<li>Kernel-mode<ul>
+<li>Nearly all activities still associated with a process</li>
+<li>Kernel memory shared between all processes</li>
+<li>Concurrency issues exist between processes concurrently executing in a system call</li>
+</ul>
+</li>
+</ul>
+<h2 id="Thread"><a href="#Thread" class="headerlink" title="Thread"></a>Thread</h2><h3 id="The-Thread-Model"><a href="#The-Thread-Model" class="headerlink" title="The Thread Model"></a>The Thread Model</h3><p><img src="https://i.loli.net/2020/08/11/knB6cJT9ZeqrCI3.png" alt="thread model"></p>
+<blockquote>
+<p>(a) Three processes each with one thread<br>(b) One process with three thread</p>
+</blockquote>
+<p><strong>Separating execution from the environment</strong></p>
+<table>
+<thead>
+<tr>
+<th>Per process items</th>
+<th>Per thread items</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Address space</td>
+<td>Program counter</td>
+</tr>
+<tr>
+<td>Global variables</td>
+<td>Registers</td>
+</tr>
+<tr>
+<td>Open files</td>
+<td>Stack</td>
+</tr>
+<tr>
+<td>Child processess</td>
+<td>State</td>
+</tr>
+<tr>
+<td>Pending alarms</td>
+<td></td>
+</tr>
+<tr>
+<td>Signals and signal handlers</td>
+<td></td>
+</tr>
+<tr>
+<td>Accounting information</td>
+<td></td>
+</tr>
+</tbody></table>
+<ul>
+<li><p>Items shared by all threads in a process</p>
+</li>
+<li><p>Item private to each thread</p>
+</li>
+<li><p>The Thread Model</p>
+<ul>
+<li>State implicitly stored on the stack</li>
+<li><img src="https://i.loli.net/2020/08/11/JeLm8X3VGC2n7pq.png" alt="the state model"></li>
+<li>Local variables are per thread<ul>
+<li>Allocated on the stack</li>
+<li>Don’t have concurrency issues</li>
+</ul>
+</li>
+<li>Global variables are shared between all threads<ul>
+<li>Allocated in the data section</li>
+<li>Concurrency control is an issue</li>
+</ul>
+</li>
+<li>Dynamically allocated memory(malloc) can be glocal or local<ul>
+<li>Program defined(the pointer can be global or local)</li>
+<li>If the pointer is global variable(has concurrency issue) while locals don’t</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="Thread-Usage"><a href="#Thread-Usage" class="headerlink" title="Thread Usage"></a>Thread Usage</h3><p><strong>Example</strong></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// dispatcher thread</span></span><br><span class="line">While(TRUE) &#123;</span><br><span class="line">	get_next_request(&amp;buf);</span><br><span class="line">	handoff_work(&amp;buf);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// worker thread - can overlap disk I/O with the execution of other threads</span></span><br><span class="line"><span class="keyword">while</span> (TRUE) &#123;</span><br><span class="line">	wait_for_work(&amp;buf);</span><br><span class="line">	look_for_page_in_cache(&amp;buf, &amp;page);</span><br><span class="line">	<span class="keyword">if</span> (page_not_in_cache(&amp;page)</span><br><span class="line">		read_page_from_disk(&amp;buf, &amp;page);</span><br><span class="line">	return_page(&amp;page);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Characteristics</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Threads</td>
+<td>Parallelism, blocking system calls</td>
+</tr>
+<tr>
+<td>Sigle-threaded process</td>
+<td>No parallelism, blocking system calls</td>
+</tr>
+<tr>
+<td>Finite-state machine</td>
+<td>Parallelism, nonblocking system calls, interrupts</td>
+</tr>
+</tbody></table>
+<h3 id="Why-Threads"><a href="#Why-Threads" class="headerlink" title="Why Threads?"></a>Why Threads?</h3><ul>
+<li>Simpler to program than a state machine</li>
+<li>Less resources are associated with them a complete process<ul>
+<li>Cheaper to create and destory</li>
+<li>Shares resources(especially memory) between them</li>
+</ul>
+</li>
+<li>Performace: Threads waiting for I/O can be overlapped with computing threads<ul>
+<li>Note if all threads are compute bound, then there is no performance improvement(on a uniprocessor)</li>
+</ul>
+</li>
+<li>Threads can take advantage of the parallelism available on machines with more than one CPU(multiprocessor)</li>
+</ul>
+<h3 id="User-level-Threads"><a href="#User-level-Threads" class="headerlink" title="User-level Threads"></a>User-level Threads</h3><ul>
+<li>Implementation at user-level<ul>
+<li>User-level Thread Control Block (TCB), ready queue, blocked queue, and dispatcher</li>
+<li>Kernel has no knowledge of the threads (it only sees a single process) </li>
+<li>If a thread blocks waiting for a resource held by another thread inside the same process, its state is saved and the dispatcher switches to another ready thread</li>
+<li>Thread management (create, exit, yield, wait) are implemented in a runtime support library</li>
+</ul>
+</li>
+<li>Pros<ul>
+<li>Thread management and switching at user level is much faster than doing it in kernel level<ul>
+<li>No need to trap (take syscall exception) into kernel and back to switch</li>
+</ul>
+</li>
+<li>Dispatcher algorithm can be tuned to the application</li>
+<li>Can be implemented on any OS (thread or non-thread aware)</li>
+<li>Can easily support massive numbers of threads on a per-application basis<ul>
+<li>Use normal application virtual memory</li>
+<li>Kernel memory more constrained. Difficult to efficiently support wildly differing numbers of threads for different applications.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Cons<ul>
+<li>Threads have to yield() manually (no timer interrupt delivery to userlevel)<ul>
+<li>Co-operative multithreading<ul>
+<li>A single poorly design/implemented thread can monopolise the available CPU time</li>
+</ul>
+</li>
+<li>There are work-arounds (e.g. a timer signal per second to enable preemptive multithreading), they are course grain and a kludge.</li>
+</ul>
+</li>
+<li>Does not take advantage of multiple CPUs (in reality, we still have a single threaded process as far as the kernel is concerned)</li>
+<li>If a thread makes a blocking system call (or takes a page fault), the process (and all the internal threads) blocks<ul>
+<li>Can’t overlap I/O with computation</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="Kernel-level-threads"><a href="#Kernel-level-threads" class="headerlink" title="Kernel-level threads"></a>Kernel-level threads</h3><ul>
+<li><p>Cons </p>
+<ul>
+<li>Thread creation and destruction, and blocking and unblocking threads requires kernel entry and exit. <ul>
+<li>More expensive than user-level equivalent</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Pros </p>
+<ul>
+<li>Preemptive multithreading </li>
+<li>Parallelism <ul>
+<li>Can overlap blocking I/O with computation </li>
+<li>Can take advantage of a multiprocessor </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="Context-Switch"><a href="#Context-Switch" class="headerlink" title="Context Switch"></a>Context Switch</h2><blockquote>
+<p>A context switch can refer to a switch between threads, involving saving and restoring of state associated with a thread; A switch between processes, involving the above, plus extra state associated with a process.</p>
+</blockquote>
+<h3 id="Context-Switch-Occurrence"><a href="#Context-Switch-Occurrence" class="headerlink" title="Context Switch Occurrence"></a>Context Switch Occurrence</h3><p>A switch between process/threads can happen any time the OS is invoked</p>
+<ul>
+<li>On a system call<ul>
+<li>Mandatory if system call blocks or on exit()</li>
+</ul>
+</li>
+<li>On an exception<ul>
+<li>Mandatory if offender is killed</li>
+</ul>
+</li>
+<li>On an interrupt<ul>
+<li>Triggering a dispatch is the main purpose of the timer interrupt</li>
+</ul>
+</li>
+</ul>
+<p>A thread switch can happen between any two instructions</p>
+<p>Note instructions do not equal program statements</p>
+<h3 id="Context-Switch-1"><a href="#Context-Switch-1" class="headerlink" title="Context Switch"></a>Context Switch</h3><ul>
+<li>Context switch must be transparent for processes/threads<ul>
+<li>When dispatched again, process/thread should not notice that something else was running in the meantime (except for elapsed time)</li>
+<li>OS must save all state that affects the thread</li>
+</ul>
+</li>
+<li>This state is called the process/thread context</li>
+<li>Switching between process/threads consequently results in a context switch.</li>
+</ul>
+<h1 id="Concurrency-and-Synchronisation"><a href="#Concurrency-and-Synchronisation" class="headerlink" title="Concurrency and Synchronisation"></a>Concurrency and Synchronisation</h1><p><strong>Concurrency Example</strong></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// count is a global variable shared between two threads</span></span><br><span class="line"><span class="keyword">int</span> count = <span class="number">0</span>;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">increment</span> <span class="params">()</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> t;</span><br><span class="line">	t = count;</span><br><span class="line">	t = t + <span class="number">1</span>;</span><br><span class="line">	count = t;</span><br><span class="line">&#123;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">decrement</span> <span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> t;</span><br><span class="line">	t = count;</span><br><span class="line">	t = t - <span class="number">1</span>;</span><br><span class="line">	count = t;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Have a race condition. Occurred when global variables shared by threads</p>
+</blockquote>
+<p><code>There is in-kernel concurrency even for single-threaded process</code><br>The OS has to deal with concurrency even if it is a single thread application.<br><img src="https://i.loli.net/2020/08/11/DZzw3m6SFgTqpl8.png" alt="image"></p>
+<h2 id="Critical-Region"><a href="#Critical-Region" class="headerlink" title="Critical Region"></a>Critical Region</h2><ul>
+<li>We can control access to the shared resource by controlling access to the code that accesses the resource</li>
+</ul>
+<blockquote>
+<p>A critical region is a region of code where shared resources are accessed(e.g. Variables, memory, files, etc…)</p>
+</blockquote>
+<ul>
+<li>Uncoordinated entry to the critical region results in a race condition<ul>
+<li>=&gt; Incorrect behavior, deadlock, lost work,…</li>
+</ul>
+</li>
+</ul>
+<p><strong>Indentifying critical regions</strong></p>
+<ul>
+<li>Critical regions are regions of code that:<ul>
+<li>Access a shared resource,</li>
+<li>and correctness relied on the shared resource not being concurrently modified by another thread/process/entity.</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// count is a global variable shared between two threads</span></span><br><span class="line"><span class="keyword">int</span> count = <span class="number">0</span>;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">increment</span> <span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">        <span class="keyword">int</span> t;</span><br><span class="line">        t = count; <span class="comment">// the start of critical region</span></span><br><span class="line">        t = t + <span class="number">1</span>;</span><br><span class="line">        count = t; <span class="comment">// end</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">decrement</span> <span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">        <span class="keyword">int</span> t;</span><br><span class="line">        t = count; <span class="comment">// start</span></span><br><span class="line">        t = t - <span class="number">1</span>;</span><br><span class="line">        count = t; <span class="comment">// end</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>if we can make the critical regions never overlap, we won’t have concurrency problem.<br><img src="https://i.loli.net/2020/08/11/Ex5KcXF1yrqpf8S.png" alt="mutual exclusion using critical regions"></p>
+<p><strong>Example critical regions</strong></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">node</span> &#123;</span></span><br><span class="line">	<span class="keyword">int</span> data;</span><br><span class="line">	<span class="class"><span class="keyword">struct</span> <span class="title">node</span> *<span class="title">next</span>;</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">node</span> *<span class="title">head</span>;</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">init</span><span class="params">(<span class="keyword">void</span>)</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	head = <span class="literal">NULL</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">insert</span><span class="params">(struct *item)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	item-&gt;next = head;</span><br><span class="line">	head = item;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function">struct node *<span class="title">remove</span><span class="params">(<span class="keyword">void</span>)</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="class"><span class="keyword">struct</span> <span class="title">node</span> *<span class="title">t</span>;</span></span><br><span class="line">	t = head;</span><br><span class="line">	<span class="keyword">if</span> (t != <span class="literal">NULL</span>) &#123;</span><br><span class="line">		head = head-&gt;next;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> t;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>Race example</li>
+</ul>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// thread 1</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">insert</span><span class="params">(struct *item)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">        item-&gt;next = head; <span class="comment">// 1</span></span><br><span class="line">        head = item;       <span class="comment">// 2</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// thread 2</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">insert</span><span class="params">(struct *item)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">        item-&gt;next = head; <span class="comment">// 3</span></span><br><span class="line">        head = item;       <span class="comment">// 4</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>one possible sequence: 1 -&gt; 3 -&gt; 2 -&gt; 4, then the item in thread 1 is lost(seg fault)<br>both1-2 and 3-4 are critical regions</p>
+<h4 id="Critical-regions-solutions"><a href="#Critical-regions-solutions" class="headerlink" title="Critical regions solutions"></a>Critical regions solutions</h4><ul>
+<li>We seek a solution to coordinate access to critical regions<ul>
+<li>Also called critical sections</li>
+</ul>
+</li>
+<li>Conditions required of any solution to the critical region problem<ul>
+<li>Mutual Exclusion: No two processes simultaneously in critical region</li>
+<li>No assumptions made about speeds or numbers of CPUs</li>
+<li>Progress<ul>
+<li>No process running outside its critical region may block another process</li>
+</ul>
+</li>
+<li>Bounded<ul>
+<li>No process waits forever to enter its critical region</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>A solution?</p>
+</blockquote>
+<ul>
+<li>A lock variable<ul>
+<li>if lock == 1, somebody is in the critical section and we mush wait</li>
+<li>if lock == 0, nobody is in the critical section and we are free to enter</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// A problematic execution sequence</span></span><br><span class="line"><span class="keyword">while</span> (TRUE) &#123;</span><br><span class="line">	<span class="keyword">while</span> (lock == <span class="number">1</span>); <span class="comment">// 1</span></span><br><span class="line">	lock = <span class="number">1</span>;          <span class="comment">// 2</span></span><br><span class="line">	critical();        <span class="comment">// 3</span></span><br><span class="line">	lock = <span class="number">0</span>;          <span class="comment">// 4</span></span><br><span class="line">	non_critical();    <span class="comment">// 5</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> (TRUE) &#123;</span><br><span class="line">	<span class="keyword">while</span> (lock == <span class="number">1</span>); <span class="comment">// 6</span></span><br><span class="line">        lock = <span class="number">1</span>;          <span class="comment">// 7</span></span><br><span class="line">        critical();        <span class="comment">// 8</span></span><br><span class="line">        lock = <span class="number">0</span>;          <span class="comment">// 9</span></span><br><span class="line">        non_critical();    <span class="comment">// 10</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/* does not work because if it execute like</span></span><br><span class="line"><span class="comment">* 6 -&gt; 1 -&gt; 2 -&gt; 3</span></span><br><span class="line"><span class="comment">* both of them see the lock is not one and may all work in their critical section</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>In the example above, there is race contition between the observation that the lock variable is not one and setting the lock to prevent somebody else from entering.</p>
+</blockquote>
+<p><strong>Mutual Exclusion by Taking Turns</strong></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span> (TRUE) &#123;</span><br><span class="line">	<span class="keyword">while</span> (<span class="built_in">turn</span> != <span class="number">0</span>);</span><br><span class="line">	critcal_rigion();</span><br><span class="line">	<span class="built_in">turn</span> = <span class="number">1</span>;</span><br><span class="line">	noncritical_region();</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">while</span> (TRUE) &#123;</span><br><span class="line">        <span class="keyword">while</span> (<span class="built_in">turn</span> != <span class="number">1</span>);</span><br><span class="line">        critcal_rigion();</span><br><span class="line">        <span class="built_in">turn</span> = <span class="number">0</span>;</span><br><span class="line">        noncritical_region();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>This example works because the update is only been updated by the thread having its turn.</p>
+</blockquote>
+<ul>
+<li>Works due to strict alternation<ul>
+<li>Each process takes turns</li>
+</ul>
+</li>
+<li>Cons<ul>
+<li>Busy waiting(loop)<ul>
+<li>sol: not my turn, do sth else, come back to my turn</li>
+</ul>
+</li>
+<li>Process must wait its turn even while the other process is doing something else.<ul>
+<li>With many processes, must wait for everyone to have a turn<ul>
+<li>Does not guarantee progress if a process no longer needs a turn</li>
+</ul>
+</li>
+<li>Poor solution when processes require the critical section at differing rates</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Mutual Exclusion by Disabling Interrupts</strong></p>
+<blockquote>
+<p>only used in very short critical sections, because it prespond other devices in the machine and make them less responsive</p>
+</blockquote>
+<ul>
+<li>Before entering a critical region, disable interrupts</li>
+<li>After leaving the critical region, enable interrupts</li>
+<li>Pros<ul>
+<li>simple</li>
+</ul>
+</li>
+<li>Cons<ul>
+<li>Only available in the kernel</li>
+<li>Blocks everybody else, even with no contention<ul>
+<li>slows interrupt response time</li>
+</ul>
+</li>
+<li>Does not work on a multiprocessor</li>
+</ul>
+</li>
+</ul>
+<p><strong>Hardware Support for mutual exclusion</strong></p>
+<ul>
+<li>Test and set instruction<ul>
+<li>can be used to implement lock variables correctly<ul>
+<li>It loads the value of the lock</li>
+<li>If lock == 0,<ul>
+<li>set the lock to 1</li>
+<li>return the result 0 – we acquire the lock</li>
+</ul>
+</li>
+<li>If lock == 1<ul>
+<li>return 1 – another thread/process has the lock</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Hardware guarantees that the instruction executes atomically(atomically: as an indivisible unit)</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">enter_region:</span><br><span class="line">	TSL REFISTER,LOCK | copy lock to register and set lock to 1</span><br><span class="line">	CMP REGISTER, #0  | was lock one?</span><br><span class="line">	JNE enter_region  | if it was non zero, lock was set, so loop</span><br><span class="line">	RET               | return to caller; critical region entered</span><br><span class="line"></span><br><span class="line">leave_region:</span><br><span class="line">	MOVE LOCK, #0     | store a 0 in lock</span><br><span class="line">	RET               | return to caller</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>Pros<ul>
+<li>Simple(easy to show it’s correct)</li>
+<li>Available at user-level<ul>
+<li>To any number of processors</li>
+<li>To implement any number of lock variables</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Cons<ul>
+<li>Busy waits(also termed a spin lock)<ul>
+<li>consumes CPU</li>
+<li>starvation is possible when a process leaves its critical section and more than one process is waiting</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Tackling the Busy-Wait Problem</strong></p>
+<ul>
+<li>Sleep / Wake up<ul>
+<li>The idea     <ul>
+<li>When process is waiting for an event, it calls sleep to block, instead of busy waiting</li>
+<li>The event happens, the event generator(another process) calls wakeup to unblock the sleeping process.</li>
+<li>Walking a ready/running process has no effect</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="The-producer-Consumer-Problem"><a href="#The-producer-Consumer-Problem" class="headerlink" title="The producer-Consumer Problem"></a>The producer-Consumer Problem</h3><blockquote>
+<p>Also called the bounded buffer problem<br>A producer produces data items and stores the items in a buffer<br>A consumer takes the items out of the buffer and consumes them.</p>
+</blockquote>
+<ul>
+<li>two problems: Concurrency(because shared resource) and the producer should be blocked when the buffer is full and the consumer should be blocked when the buffer is empty.<ul>
+<li>We must keep accurate count of items in the buffer</li>
+<li>The consumer can call wakeup when it consumes the first entry of the full buffer</li>
+<li>The Producer can call wakeup when it adds the first item to the buffer</li>
+</ul>
+</li>
+</ul>
+<h3 id="Semaphores"><a href="#Semaphores" class="headerlink" title="Semaphores"></a>Semaphores</h3><ul>
+<li>Dijkstra introduced two primitives that are more powerful than simple sleep and wakeup alone.<ul>
+<li>P(): proberen, from Dutch to test</li>
+<li>V(): verhogen, from Dutch to increment</li>
+<li>Also called wait &amp; signal, down &amp; up</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>How do they work</p>
+</blockquote>
+<ul>
+<li>If a resource is not available, the corresponding semaphore blocks any process waiting for the resource</li>
+<li>Blocked processes are put into a process queue maintained by the semaphore(avoids busy waiting)</li>
+<li>When a process releases a resource, it signals this by means of the semaphore</li>
+<li>Signalling resumes a blocked process if there is any</li>
+<li>Wait(P) and signal(V) operations cannot be interrupted</li>
+<li>Complex coordination can be implemented by multiple semaphores</li>
+</ul>
+<p><strong>Semaphore implementation</strong></p>
+<ul>
+<li>Define a semaphore as a record</li>
+</ul>
+<blockquote>
+<p>Each primitive is atomit(wait and signal), the OS would use the disabling of interrupts in the implementation of Semaphore inside the OS.</p>
+</blockquote>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> sturct &#123;</span><br><span class="line">	<span class="keyword">int</span> count;</span><br><span class="line">	<span class="class"><span class="keyword">struct</span> <span class="title">process</span> *<span class="title">L</span>;</span></span><br><span class="line">&#125; semaphore;</span><br><span class="line"><span class="comment">// Semaphore operations now defined as</span></span><br><span class="line">wait(S):</span><br><span class="line">	S.count --;</span><br><span class="line">	<span class="keyword">if</span> (S.count &lt; <span class="number">0</span>) &#123;</span><br><span class="line">		add <span class="keyword">this</span> <span class="built_in">process</span> to S.L;</span><br><span class="line">		sleep;</span><br><span class="line">	&#125;</span><br><span class="line">signal(S):</span><br><span class="line">	S.count++;</span><br><span class="line">	<span class="keyword">if</span> (S.count &lt;= <span class="number">0</span>) &#123;</span><br><span class="line">		<span class="built_in">remove</span> a <span class="built_in">process</span> P from S.L;</span><br><span class="line">		wakeup(P);</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>Semaphore as a General Synchronization Tool</strong></p>
+<ul>
+<li>Execute B in Pj only after A executed in Pi</li>
+<li>Use semaphore count initlialized to 0</li>
+<li>Code:<br><img src="https://i.loli.net/2020/08/11/U1ex7Gy8n5E9wVX.png" alt="code"><ul>
+<li>A first: signal(count is 1) -&gt; then B runs(count is 0) -&gt; A(this is what we want)</li>
+<li>B first: wait(count &lt; 0, sleep) -&gt; A runs, wake up B(still what we want)</li>
+</ul>
+</li>
+</ul>
+<p><strong>Semaphore implementation of a Mutex</strong></p>
+<ul>
+<li>Mutex is short for Mutual Exclusion<ul>
+<li>Can also be called a lock</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">semaphore mutex;</span><br><span class="line">mutex.count = <span class="number">1</span>; <span class="comment">/* init the mutex */</span></span><br><span class="line">wait(mutex); <span class="comment">/* enter the critical region */</span></span><br><span class="line">Blahblah();</span><br><span class="line">signal(mutex); <span class="comment">/* exit the critical region */</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Notice that the inital count determines how mant waits can progress before blocking and requiring a signal =&gt; mutex.count initialised as 1</p>
+</blockquote>
+<p><strong>Solve the producer-consumer problem</strong></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">define</span> N = 4;</span></span><br><span class="line">semaphore mutex = <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* count empty slots */</span></span><br><span class="line">semaphore empty = N</span><br><span class="line"></span><br><span class="line"><span class="comment">/* count full slots */</span></span><br><span class="line">semaphore full = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">prod() &#123;</span><br><span class="line">	<span class="keyword">while</span>(TRUE) &#123;</span><br><span class="line">		item = produce()</span><br><span class="line">		wait(empty);</span><br><span class="line">		wait(mutex)</span><br><span class="line">		insert_item();</span><br><span class="line">		signal(mutex);</span><br><span class="line">		signal(full);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">con() &#123;</span><br><span class="line">	<span class="keyword">while</span>(TRUE) &#123;</span><br><span class="line">		wait(full);</span><br><span class="line">		wait(mutex);</span><br><span class="line">		remove_item();</span><br><span class="line">		signal(mutex);</span><br><span class="line">		signal(empty);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>Summary</strong></p>
+<ul>
+<li>Semaphores can be used to solve a varity of concurrency problems</li>
+<li>However, programming with then can be error-prone<ul>
+<li>E.g. must signal for every wait for mutexes<ul>
+<li>Too many or few signals or waits, or signals and waits in the wrong order, can have catastrophic results</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="Monitors"><a href="#Monitors" class="headerlink" title="Monitors"></a>Monitors</h3><ul>
+<li>To ease concurrent programming, Hoare(1974) proposed monitors<ul>
+<li>A higher level synchronisation primitive</li>
+<li>Programming language construct</li>
+</ul>
+</li>
+<li>Idea<ul>
+<li>A set of procedures, variables, data types are grouped in a special kind of module, a monitor.<ul>
+<li>Variables and data types only accessed from within the monitor</li>
+</ul>
+</li>
+<li>Only one process/thread can be in the monitor at any one time<ul>
+<li>Mutual exclusion is implemented by the compiler(which should be less error prone)<br><img src="https://i.loli.net/2020/08/11/bDZvzo62eSswWGC.png" alt="monitor"></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>When a thread calls a monitor procedure that has a thread already inside, it is queued and it sleeps until the current thread exits the monitor<br><strong>example</strong></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">monitor exmaple</span><br><span class="line">	integer i;</span><br><span class="line">	condition c;</span><br><span class="line"></span><br><span class="line">	procedure producer();</span><br><span class="line">	.</span><br><span class="line">	.</span><br><span class="line">	.</span><br><span class="line">	end;</span><br><span class="line"></span><br><span class="line">	procedure consumer();</span><br><span class="line">	.</span><br><span class="line">	.</span><br><span class="line">	.</span><br><span class="line">	end;</span><br><span class="line">end monitor;</span><br></pre></td></tr></table></figure>
+
+<p><strong>How do we block waiting for an event?</strong></p>
+<ul>
+<li>We need a mechanism to block waiting for an event( in addition to ensuring mutual exclusion)<ul>
+<li>for producer consumer problem, when buffer is empty or full</li>
+</ul>
+</li>
+<li>Condition variables<ul>
+<li>To allow a process to wait within the monitor, a condition variable must be declared, as <code>condition x, y</code></li>
+<li>Condition variable can only be used with the operations wait and sigal<ul>
+<li>The operation <code>x.wait()</code>;<ul>
+<li>means that the process invoking this operation is suspended until another process invokes </li>
+<li>Another thread can enter the monitor while original is suspended</li>
+</ul>
+</li>
+<li><code>x.signal();</code><ul>
+<li>The operation resumes exactly on suspended process. If no process is suspended, then the signal opeartion has no effect.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="The-Readers-and-Writers-Problem"><a href="#The-Readers-and-Writers-Problem" class="headerlink" title="The Readers and Writers Problem"></a>The Readers and Writers Problem</h3><ul>
+<li>Models access to a data base<ul>
+<li>E.g. airline reservation system</li>
+<li>Can have more thant one concurrent reader<ul>
+<li>To check schedules and reservations</li>
+</ul>
+</li>
+<li>Writers must have exclusive access<ul>
+<li>To book a ticket or update a schedule</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>A solution</strong></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> in semaphore; 						<span class="comment">/* use your imagination */</span></span><br><span class="line">semaphore mutex = <span class="number">1</span>;							<span class="comment">/* controls access to 'rc'*/</span></span><br><span class="line">semaphore db = <span class="number">1</span>;									<span class="comment">/* controls access to the database */</span></span><br><span class="line"><span class="keyword">int</span> rc = <span class="number">0</span>;                       <span class="comment">/* # of processes reading ot wanting to */</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">reader</span><span class="params">(<span class="keyword">void</span>)</span> </span>&#123;               </span><br><span class="line">  <span class="keyword">while</span>(TRUE) &#123;                   <span class="comment">/* repeat forever */</span></span><br><span class="line">    down(&amp;mutex);                 <span class="comment">/* get exclusive access to 'rc' */</span></span><br><span class="line">    rc = rc + <span class="number">1</span>;                  <span class="comment">/* one reader more now */</span></span><br><span class="line">    <span class="keyword">if</span>(rc == <span class="number">1</span>) down(&amp;db);        <span class="comment">/* if this is the first reader */</span></span><br><span class="line">    up(&amp;mutex);                   <span class="comment">/* release exclusive access to 'rc' */</span></span><br><span class="line">    read_data_base();             <span class="comment">/* access the data */</span></span><br><span class="line">    down(&amp;mutex);                 <span class="comment">/* get exclusive access to 'rc' */</span></span><br><span class="line">    rc = rc - <span class="number">1</span>;                  <span class="comment">/* one reader fewer now */</span></span><br><span class="line">    <span class="keyword">if</span>(rc == <span class="number">0</span>) up(&amp;db);          <span class="comment">/* if this is the last reader */</span></span><br><span class="line">    up(&amp;mutex);                   <span class="comment">/* release exclusive access to 'rc */</span></span><br><span class="line">    use_data_read();              <span class="comment">/* noncritical region */</span></span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="function"><span class="keyword">void</span> <span class="title">writer</span><span class="params">(<span class="keyword">void</span>)</span> </span>&#123; </span><br><span class="line">    <span class="keyword">while</span> (TRUE) &#123;                <span class="comment">/* repeat forever */</span></span><br><span class="line">      think_up_date();            <span class="comment">/* noncritical regionn */</span></span><br><span class="line">      down(&amp;db);                  <span class="comment">/* get exclusive access */</span></span><br><span class="line">      wirte_data_base();          <span class="comment">/* update the data */</span></span><br><span class="line">      up(&amp;db);                    <span class="comment">/* release exclusive access */</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="Deadlock"><a href="#Deadlock" class="headerlink" title="Deadlock"></a>Deadlock</h1><h2 id="Resources"><a href="#Resources" class="headerlink" title="Resources"></a>Resources</h2><ul>
+<li>Examples of computer resources<ul>
+<li>printers</li>
+<li>tape drives</li>
+<li>Tables in a database</li>
+</ul>
+</li>
+<li>Processes need access to resources in reasonable order</li>
+<li>Preemptable resources<ul>
+<li>e.g. virtual memory</li>
+<li>can be taken away from a process with no ill effects</li>
+</ul>
+</li>
+<li>Nonpreemtable resources<ul>
+<li>will cause the process to fail if take away </li>
+</ul>
+</li>
+</ul>
+<h4 id="Resources-amp-Deadlocks"><a href="#Resources-amp-Deadlocks" class="headerlink" title="Resources &amp; Deadlocks"></a>Resources &amp; Deadlocks</h4><ul>
+<li>Suppose a process holds resource A and requests resource B<ul>
+<li>at same time another process holds B and requests A</li>
+<li>both are blocked and remain so – <strong>Deadlock</strong></li>
+</ul>
+</li>
+<li>Deadlocks occur when …<ul>
+<li>processes are granted exclusive access to devices, locks, tables, etc..</li>
+<li>we refer to these entities generally as resources</li>
+</ul>
+</li>
+</ul>
+<h4 id="Resource-Access"><a href="#Resource-Access" class="headerlink" title="Resource Access"></a>Resource Access</h4><ul>
+<li>Sequence of events required to use a resource</li>
+</ul>
+<ol>
+<li>request the resource</li>
+<li>use the resource</li>
+<li>release the resource</li>
+</ol>
+<ul>
+<li>Must wait if request is denied<ul>
+<li>requesting process may  be blocked</li>
+<li>may fail with error code</li>
+</ul>
+</li>
+</ul>
+<h2 id="Deadlock-1"><a href="#Deadlock-1" class="headerlink" title="Deadlock"></a>Deadlock</h2><blockquote>
+<p>A set of processes is deadlocked if each process in the set is waiting for an event that only another process in the set can cause.</p>
+</blockquote>
+<ul>
+<li>Usually the event is release of a currently held resource</li>
+<li>None of the processes can …<ul>
+<li>run </li>
+<li>release resources</li>
+<li>be awakened</li>
+</ul>
+</li>
+</ul>
+<h4 id="Four-Conditions-for-Deadlock"><a href="#Four-Conditions-for-Deadlock" class="headerlink" title="Four Conditions for Deadlock"></a>Four Conditions for Deadlock</h4><ol>
+<li>Mutual exclusion condition<ul>
+<li>each resource assigned to 1 process or is available</li>
+</ul>
+</li>
+<li>Hold and wait condition<ul>
+<li>process holding resources can request additional</li>
+</ul>
+</li>
+<li>No preemption condition<ul>
+<li>previously granted resources cannot be forcibly taken away</li>
+</ul>
+</li>
+<li>Circular wait condition<ul>
+<li>must be a circular chain of 2 or more processes</li>
+<li>each is waiting for resource held by next member of the chain</li>
+</ul>
+</li>
+</ol>
+<h4 id="Strategies-for-dealing-with-Deadlocks"><a href="#Strategies-for-dealing-with-Deadlocks" class="headerlink" title="Strategies for dealing with Deadlocks"></a>Strategies for dealing with Deadlocks</h4><ol>
+<li><p>Just ignore the problem altogether</p>
+</li>
+<li><p>prevention</p>
+<p>​      Negating one of the four necessary conditions</p>
+</li>
+<li><p>Detection and recovery</p>
+</li>
+<li><p>Dynamic avoidance</p>
+<p>​      Careful resource allocation</p>
+</li>
+</ol>
+<p><strong>Appoarch 1: The Ostrich Algorithm</strong></p>
+<ul>
+<li>Pretend there is no problem</li>
+<li>Reasonable if <ul>
+<li>deadlocks occur very rarely</li>
+<li>Cost of prevention is high<ul>
+<li>Example of “cost”, only one process runs at a time</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>UNIX and Windows takes this approach for some of the more complex resource relationships they manage</li>
+<li>It’s a trade off between<ul>
+<li>Convenience (engineering approach)</li>
+<li>Correctness(mathematical approach) </li>
+</ul>
+</li>
+</ul>
+<p><strong>Approach 2: Deadlock Prevention</strong></p>
+<blockquote>
+<p>The most common used strategy</p>
+</blockquote>
+<p>Resource allocation rules prevent deadlock by prevent one of the four condition required for deadlock from occuring</p>
+<ul>
+<li><p>Mutual exclusion</p>
+<ul>
+<li>Not feasible in general<ul>
+<li>Some devices/resource are intrinsically not shareable</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Hold and wait</p>
+<ul>
+<li><p>Require processes to request resources before starting</p>
+<ul>
+<li>a process never has to wait for what it needs</li>
+</ul>
+</li>
+<li><p>Issues </p>
+<ul>
+<li><p>may not know required resources at start of run</p>
+<ul>
+<li><blockquote>
+<p>must be determined at run time or by user input(e.g. using Word to open a file)</p>
+</blockquote>
+</li>
+<li><p>$\Rightarrow$ not always possible</p>
+</li>
+</ul>
+</li>
+<li><p>Also ties up resources other processes could be using</p>
+</li>
+</ul>
+</li>
+<li><p>Varitions:</p>
+<ul>
+<li><p>Process must give up all resources if it would block holding a resource</p>
+</li>
+<li><p>then request all immediately needed</p>
+</li>
+<li><p>prone to livelock</p>
+<ul>
+<li><blockquote>
+<p>Livelocked processes are not blocked, change state regularly, but never make progress.</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>No preemption</p>
+<ul>
+<li>This is not a viable option</li>
+</ul>
+</li>
+<li><p>Circular Wait</p>
+<ul>
+<li>aquire resource in the same order, order resources</li>
+</ul>
+</li>
+</ul>
+<p><strong>Approach 3: Detection and Recovery</strong></p>
+<ul>
+<li>Need a method to determine if a system is deadlocked</li>
+<li>Assuming deadlocked is detected, we need a method of recorvery to restore progress to the system.</li>
+</ul>
+<p><em>Modeling resources and processes as a directed graph</em><img src="https://i.loli.net/2020/08/11/LQtb9AFBuiUDM4v.png" alt=""></p>
+<p>(a) represents everthing in the system</p>
+<p>(b) is a deadlock</p>
+<p><code>What about resources with multiple units?</code></p>
+<ul>
+<li>Some examples of multi-unit resources<ul>
+<li>RAM</li>
+<li>Blocks on a hard disk drive</li>
+<li>Slots in a buffer</li>
+</ul>
+</li>
+<li>We need an approach for dealing with resources that consists of more than a single unit</li>
+</ul>
+<p><em>Modeling using matrix</em></p>
+<p><img src="https://i.loli.net/2020/08/11/8mCWRXsqgQeTMV9.png" alt=""></p>
+<p>Data structured needed by deadlock detection algorithm</p>
+<p>sum of current resource allocation + resources available = resources that exist<br>$$<br>\sum_{i=1}^{n}{C_{ij}}+A_j = E_j<br>$$<br><code>Example</code></p>
+<p><img src="https://i.loli.net/2020/08/11/4FdkPJrNBqoZp6E.png" alt=""></p>
+<ul>
+<li>Process 1: has 1 scanners</li>
+<li>Process 2: has 2 tape drivers and 1 CD roms</li>
+<li>Process 3: has 1 plotters and 2 scanners</li>
+</ul>
+<p><em>Detection Algoritm</em></p>
+<ul>
+<li>Look for an unmarked process $Pi$, for which the $i$-th row of R is less than equal to A</li>
+<li>If found, add the $i$-th row of C to A, and mark $Pi$. Got to step 1</li>
+<li>If no such process exists, terminate</li>
+</ul>
+<p>Remaining processes are deadlocked.</p>
+<p>Recovery from Deadlock</p>
+<ul>
+<li>Recovery through preemption<ul>
+<li>Take a resource from some other process</li>
+<li>Depends on nature of the resource</li>
+</ul>
+</li>
+<li>Recovery through rollback<ul>
+<li>Checkpoint a process periodically<ul>
+<li>not come for free, not practical</li>
+</ul>
+</li>
+<li>Use this saved state</li>
+<li>Restart the process if it is found deadlocked<ul>
+<li>No guarantee is won’t deadlock again</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Recovery through killing processes<ul>
+<li>Crudest but simplest way to break a deadlock</li>
+<li>Kill one of the processes in the deadlock cycle</li>
+<li>The other processes get its resources</li>
+<li>Choose process that can be rerun from the beginning</li>
+</ul>
+</li>
+</ul>
+<p><strong>Approach 4 Deadlock Avoidance</strong></p>
+<blockquote>
+<p>Not practical for all systems, need to know enough information in advance</p>
+</blockquote>
+<p><img src="https://i.loli.net/2020/08/11/21zuAcOstYon6U4.png" alt="Two process resource trajectories"></p>
+<p><em>Safe and Unsafe States</em></p>
+<ul>
+<li>A state is safe if<ul>
+<li>The system is not deadlocked </li>
+<li>There exists a scheduling order that results in every process running to completion, even if they all request their maximum resources immediately</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Unsafe states are not necessarily deadlocked<ul>
+<li>with a lucky sequence, all processes may complete</li>
+<li>However, we cannot guarantee that they will complete(not deadlock)</li>
+</ul>
+</li>
+<li>Safe states guarantee we will eventually complete all processes</li>
+<li>Deadlock avoidance algorithm<ul>
+<li>Only grant requests that result in safe states</li>
+</ul>
+</li>
+</ul>
+<p><em>Bankers Algorithm</em></p>
+<ul>
+<li>Modelled on a Banker with Customers<ul>
+<li>The banker has a limited amount of money to loan customers<ul>
+<li>Limited number of resources</li>
+</ul>
+</li>
+<li>Each customer can borrow money up to the customer’s credit limit<ul>
+<li>Maximum number of resources required</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Basic idea<ul>
+<li>keep the bank in a safe state<ul>
+<li>So all customers are happy even if they all request to borrow up to their credit limit at the same time</li>
+</ul>
+</li>
+<li>Customers wishing to borrow such that the back would enter an unsafe state must wait until somebody else repays their loan such that the transaction becomes safe.</li>
+</ul>
+</li>
+<li>Bankers Algorithm is not commonly used in practice<ul>
+<li>It is difficult (sometimes impossible ) to know in advance<ul>
+<li>the resources a process will require</li>
+<li>the number of processes in a dynamic system</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="Starvation"><a href="#Starvation" class="headerlink" title="Starvation"></a>Starvation</h4><blockquote>
+<p>A process never receives the resource it is waiting for, despite the resource(repeatedly) becoming free, the resource is always allocated to another waiting process.</p>
+</blockquote>
+<p>One solution: First-come, first-serve policy</p>
+<h1 id="System-Call"><a href="#System-Call" class="headerlink" title="System Call"></a>System Call</h1><h2 id="System-Calls"><a href="#System-Calls" class="headerlink" title="System Calls"></a>System Calls</h2><ul>
+<li>Can be viewed as special function calls<ul>
+<li>Provides for a controlled entry into the kernel</li>
+<li>While in kernel, they perform a privileged operation</li>
+<li>Returns to original caller with the result</li>
+</ul>
+</li>
+<li>The system call interface represents the abstract machine provided by the operating system.</li>
+</ul>
+<h3 id="A-brief-overview"><a href="#A-brief-overview" class="headerlink" title="A brief overview"></a>A brief overview</h3><p>From the user’s perspective </p>
+<ul>
+<li>Process Management</li>
+<li>File I/O </li>
+<li>Dirctories management</li>
+<li>Some other selected Calls</li>
+<li>There are many more <ul>
+<li>On Linux, see man syscalls for a list</li>
+</ul>
+</li>
+</ul>
+<h4 id="Process-Management"><a href="#Process-Management" class="headerlink" title="Process Management"></a>Process Management</h4><table>
+<thead>
+<tr>
+<th>Call</th>
+<th>Descritption</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>pid=fork()</td>
+<td>Create a child process identical to the parent</td>
+</tr>
+<tr>
+<td>Pid = waitpid(pid, &amp;statloc, options)</td>
+<td>Wait for a child to terminate</td>
+</tr>
+<tr>
+<td>s = execve(name, argv, environp)</td>
+<td>Replace a process’ core image</td>
+</tr>
+<tr>
+<td>exit(status)</td>
+<td>Terminate process execution and return status</td>
+</tr>
+</tbody></table>
+<h4 id="File-Management"><a href="#File-Management" class="headerlink" title="File Management"></a>File Management</h4><table>
+<thead>
+<tr>
+<th>Call</th>
+<th>Descrition</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>fd=open(file, how, …,)</td>
+<td>Open a file for reading, writing or both</td>
+</tr>
+<tr>
+<td>s = close(fd)</td>
+<td>Close an open file</td>
+</tr>
+<tr>
+<td>n = read(fd, buffer, bytes)</td>
+<td>Read data from a file into a buffer</td>
+</tr>
+<tr>
+<td>n = write(fd, buffer, bytes)</td>
+<td>Write data from a buffer into a file</td>
+</tr>
+<tr>
+<td>Position = lseek(fd, offset, whence)</td>
+<td>Move the file pointer</td>
+</tr>
+<tr>
+<td>s = stat(name, &amp;buf)</td>
+<td>Get a file’s status information</td>
+</tr>
+</tbody></table>
+<h4 id="A-stripped-down-shell"><a href="#A-stripped-down-shell" class="headerlink" title="A stripped down shell:"></a>A stripped down shell:</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span>(TRUE) &#123;                       <span class="comment">/* repeat forever */</span></span><br><span class="line">  type_prompt();                    <span class="comment">/* display prompt */</span></span><br><span class="line">  read_command(command, parameters);</span><br><span class="line">  <span class="keyword">if</span> (fork() != <span class="number">0</span>) &#123;                <span class="comment">/* fork off child process*/</span></span><br><span class="line">    <span class="comment">/* Parent code */</span></span><br><span class="line">    waitpid(<span class="number">-1</span>, &amp;status, <span class="number">0</span>);        <span class="comment">/* wait for child to exit */</span></span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="comment">/* Child code */</span></span><br><span class="line">    execve(command, parameters, <span class="number">0</span>); <span class="comment">/* execute command */</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="System-Call-Implementation"><a href="#System-Call-Implementation" class="headerlink" title="System Call Implementation"></a>System Call Implementation</h2><h4 id="A-Simple-Model-of-CPU-Computation"><a href="#A-Simple-Model-of-CPU-Computation" class="headerlink" title="A Simple Model of CPU Computation"></a>A Simple Model of CPU Computation</h4><p><img src="https://i.loli.net/2020/08/11/CcVnqFvNhegibot.jpg" alt="">The fetch-execute cycle </p>
+<ul>
+<li>Load memory contents from address in program counter (PC)<ul>
+<li>The instruction</li>
+</ul>
+</li>
+<li>Execute the instruction</li>
+<li>increment PC</li>
+<li>Repeat</li>
+</ul>
+<h3 id="A-Simple-Model-of-CPU-Computation-1"><a href="#A-Simple-Model-of-CPU-Computation-1" class="headerlink" title="A Simple Model of CPU Computation"></a>A Simple Model of CPU Computation</h3><ul>
+<li><p>Stack Pointer(SP)</p>
+</li>
+<li><p>Status Register</p>
+</li>
+</ul>
+<ul>
+<li><p>Condition codes</p>
+<ul>
+<li>Positive result</li>
+<li>Zero result</li>
+<li>Negative result</li>
+</ul>
+</li>
+<li><p>General Purpose Register</p>
+<ul>
+<li>Holds operands of most instructions</li>
+<li>Enables programmers (compiler) to minmise memory reference</li>
+</ul>
+</li>
+</ul>
+<h4 id="Privileged-mode-Operation"><a href="#Privileged-mode-Operation" class="headerlink" title="Privileged-mode Operation"></a>Privileged-mode Operation</h4><p>To protect operating system execution, two or more CPU modes of operation exist </p>
+<ul>
+<li>Privileged mode(system, kernel-mode)<ul>
+<li>All instructions and register are available</li>
+</ul>
+</li>
+<li>User-mode<ul>
+<li>Users ‘safe’ subset of instruction set<ul>
+<li>Only affects the state of the application itself</li>
+<li>They cannot be used to uncontrollably interference with OS</li>
+</ul>
+</li>
+<li>Only ‘safe’ registers are accessible</li>
+</ul>
+</li>
+</ul>
+<h3 id="System-Call-1"><a href="#System-Call-1" class="headerlink" title="System Call"></a>System Call</h3><h4 id="System-Call-Mechanism-Overview"><a href="#System-Call-Mechanism-Overview" class="headerlink" title="System Call Mechanism Overview"></a>System Call Mechanism Overview</h4><ul>
+<li>System call transitions triggered by special processor instructions<ul>
+<li>User to Kernel<ul>
+<li>System call instruction</li>
+</ul>
+</li>
+<li>Kernel to User<ul>
+<li>Return from privileged mode instruction</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Processor mode<ul>
+<li>Switched from user-mode to kernel-mode<ul>
+<li>Switched back when returning to user mode</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Stack Pointer (SP)<ul>
+<li>User-level SP is saved and a kernel SP is initialised<ul>
+<li>User-level SP restored when returning to user-mode</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Program Counter (PC)<ul>
+<li>User-level PC is saved and PC set to kernel entry point<ul>
+<li>User-level PC restored when returning to user-level</li>
+</ul>
+</li>
+<li>Kernel entry via the designated entry point must be strictly enforced</li>
+</ul>
+</li>
+<li>Registers<ul>
+<li>Set at user-level to indicate system call type and its arguments<ul>
+<li>A convention between applications and the kernel</li>
+</ul>
+</li>
+<li>Some registers are preserved at user-level or kernel-level in order to restart user-level execution<ul>
+<li>Depends on language calling convention etc</li>
+</ul>
+</li>
+<li>Result of system call placed in registers when returning to user-level<ul>
+<li>Another convention</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Why do we need system calls?</strong></p>
+<p>Why not simply jump into the kernel via a function call????</p>
+<p>Function calls do not</p>
+<ul>
+<li>Change from user to kernel mode<ul>
+<li>and eventually back again</li>
+</ul>
+</li>
+<li>Restrict possible entry points to secure locations<ul>
+<li>To prevent entering after any security checks </li>
+</ul>
+</li>
+</ul>
+<h4 id="Steps-in-Making-a-System-Call"><a href="#Steps-in-Making-a-System-Call" class="headerlink" title="Steps in Making a System Call"></a>Steps in Making a System Call</h4><p><img src="https://i.loli.net/2020/08/11/3Zor8IVpRyS9CB4.jpg" alt=""></p>
+<h1 id="File-System"><a href="#File-System" class="headerlink" title="File System"></a>File System</h1><ul>
+<li><p>The FS must map symbolic file names into a collection of block addresses</p>
+</li>
+<li><p>The FS must keep track of</p>
+<ul>
+<li>which blocks belong to which files</li>
+<li>in what order the blocks form the file</li>
+<li>which blocks are free for allocation</li>
+</ul>
+</li>
+<li><p>Given a logical region of a file, the FS must track the corresponding block(s) on disk</p>
+<ul>
+<li>Stored in file system metadata</li>
+</ul>
+</li>
+</ul>
+<h2 id="File-Allocation-Methods"><a href="#File-Allocation-Methods" class="headerlink" title="File Allocation Methods"></a>File Allocation Methods</h2><blockquote>
+<p>A file is divided into “blocks” – the unit of transfer to storage</p>
+</blockquote>
+<h3 id="External-and-internal-fragmentation"><a href="#External-and-internal-fragmentation" class="headerlink" title="External and internal fragmentation"></a>External and internal fragmentation</h3><h4 id="External-fragmentation"><a href="#External-fragmentation" class="headerlink" title="External fragmentation"></a>External fragmentation</h4><ul>
+<li>The space wasted external to the allocated memory regions</li>
+<li>Memory space exists to satisfy a request but it is unusable as it is not contiguous</li>
+</ul>
+<h4 id="Internal-fragmentation"><a href="#Internal-fragmentation" class="headerlink" title="Internal fragmentation"></a>Internal fragmentation</h4><ul>
+<li>The space wasted internal to the allocated memory regions</li>
+<li>Allocated memory may be slightly larger than requested memory; this size difference is wasted memory internal to a partition</li>
+</ul>
+<h3 id="Contiguous-Allocation"><a href="#Contiguous-Allocation" class="headerlink" title="Contiguous Allocation"></a>Contiguous Allocation</h3><p><span class="emoji" alias="white_check_mark" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png?v8">&#x2705;</span> Easy bookkeeping (need to keep track of the starting block and length of the file)</p>
+<p><span class="emoji" alias="white_check_mark" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png?v8">&#x2705;</span> Increases performance for sequential operations</p>
+<p><span class="emoji" alias="negative_squared_cross_mark" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/274e.png?v8">&#x274e;</span> Need the maximum size for the file at the time of creation</p>
+<p><span class="emoji" alias="negative_squared_cross_mark" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/274e.png?v8">&#x274e;</span> As files are deleted, free space becomes divided into many small chunks (external fragmentation)</p>
+<h3 id="Dynamic-Allocation-Strategies"><a href="#Dynamic-Allocation-Strategies" class="headerlink" title="Dynamic Allocation Strategies"></a>Dynamic Allocation Strategies</h3><blockquote>
+<p>Disk space allocated in portions as needed</p>
+<p> Allocation occurs in fixed-size blocks</p>
+</blockquote>
+<p><span class="emoji" alias="white_check_mark" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png?v8">&#x2705;</span> No external fragmentation</p>
+<p><span class="emoji" alias="white_check_mark" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png?v8">&#x2705;</span> Does not require pre-allocating disk space</p>
+<p><span class="emoji" alias="negative_squared_cross_mark" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/274e.png?v8">&#x274e;</span> Partially filled blocks (internal fragmentation)</p>
+<p><span class="emoji" alias="negative_squared_cross_mark" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/274e.png?v8">&#x274e;</span> File blocks are scattered across the disk</p>
+<p><span class="emoji" alias="negative_squared_cross_mark" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/274e.png?v8">&#x274e;</span> Complex metadata management (maintain the collection of blocks for each file)</p>
+<h4 id="Dynamic-allocation-Linked-list-allocation"><a href="#Dynamic-allocation-Linked-list-allocation" class="headerlink" title="Dynamic allocation: Linked list allocation"></a>Dynamic allocation: Linked list allocation</h4><blockquote>
+<p>Each block contains a pointer to the next block in the chain. Free blocks are also linked in a chain.</p>
+</blockquote>
+<p><span class="emoji" alias="white_check_mark" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png?v8">&#x2705;</span> Only single metadata entry per file </p>
+<p><span class="emoji" alias="white_check_mark" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png?v8">&#x2705;</span> Best for sequential files </p>
+<p><span class="emoji" alias="negative_squared_cross_mark" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/274e.png?v8">&#x274e;</span> Poor for random access</p>
+<p><span class="emoji" alias="negative_squared_cross_mark" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/274e.png?v8">&#x274e;</span> Blocks end up scattered across the disk due to free list eventually being randomised</p>
+<h4 id="Dynamic-Allocation-File-Allocation-Table-FAT"><a href="#Dynamic-Allocation-File-Allocation-Table-FAT" class="headerlink" title="Dynamic Allocation: File Allocation Table (FAT)"></a>Dynamic Allocation: File Allocation Table (FAT)</h4><p>Keep a map of the entire FS in a separate table</p>
+<ul>
+<li>A table entry contains the number of the next block of the file</li>
+<li>The last block in a file and empty blocks are marked using reserved values</li>
+</ul>
+<p>The table is stored on the disk and is replicated in memory</p>
+<p><span class="emoji" alias="white_check_mark" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png?v8">&#x2705;</span> ​Random access is fast (following the in-memory list)</p>
+<p><span class="emoji" alias="negative_squared_cross_mark" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/274e.png?v8">&#x274e;</span> Requires a lot of memory for large disks</p>
+<p><span class="emoji" alias="negative_squared_cross_mark" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/274e.png?v8">&#x274e;</span> Free block lookup is slow </p>
+<h4 id="Dynamical-Allocation-inode-based-FS-structure"><a href="#Dynamical-Allocation-inode-based-FS-structure" class="headerlink" title="Dynamical Allocation: inode-based FS structure"></a>Dynamical Allocation: inode-based FS structure</h4><p>Idea: separate table (index-node or i-node) for each file.</p>
+<ul>
+<li>Only keep table for open files in memory</li>
+<li>Fast random access </li>
+</ul>
+<p>The most popular FS structure today</p>
+<p><span class="emoji" alias="negative_squared_cross_mark" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/274e.png?v8">&#x274e;</span> i-nodes occupy one or several disk areas </p>
+<p><span class="emoji" alias="negative_squared_cross_mark" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/274e.png?v8">&#x274e;</span> i-nodes are allocated dynamically, hence free-space management is required for i-nodes</p>
+<ul>
+<li>Use fixed-size i-nodes to simplify dynamic allocation</li>
+<li>Reserve the last i-node entry for a pointer (a block number) to an extension i-node.</li>
+</ul>
+<p><strong>i-node implementation issues</strong></p>
+<p>Free-space management</p>
+<ul>
+<li>Approach 1: linked list of free blocks in free blocks on disk<ul>
+<li>List of all unallocated blocks</li>
+<li>Background jobs can re-order list for better contiguity</li>
+<li>Store in free blocks themselves<ul>
+<li>Does not reduce disk capacity</li>
+</ul>
+</li>
+<li>Only one block of pointers need be kept in the main memory</li>
+</ul>
+</li>
+<li>Approach 2: keep bitmaps of free blocks and free i-nodes on disk<ul>
+<li>Individual bits in a bit vector flags used/free blocks</li>
+<li>May be too large to hold in main memory</li>
+<li>Expensive to search</li>
+<li>Concentrating (de)allocations in a portion of the bitmap has desirable effect of concentrating access</li>
+<li>Simple to find contiguous free space</li>
+</ul>
+</li>
+</ul>
+<p><strong>Implementing directories</strong></p>
+<p>Directories are stored like normal files</p>
+<ul>
+<li>directory entries are contained inside data blocks</li>
+</ul>
+<p>The FS assigns special meaning to the content of these files</p>
+<ul>
+<li>a directory file is a list of directory entries</li>
+<li>a directory entry contains file name, attributes, and the file i-node number<ul>
+<li>maps human-oriented file name to a system-oriented name</li>
+</ul>
+</li>
+</ul>
+<p><strong>Fixed-size vs variable-size directory entries</strong></p>
+<ul>
+<li>Fixed-size directory entries <ul>
+<li>Either too small </li>
+<li>Or waste too much space</li>
+</ul>
+</li>
+<li>Variable-size directory entries <ul>
+<li>Freeing variable length entries can create external fragmentation in directory blocks <ul>
+<li>Can compact when block is in RAM</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Searching Directory Listings</strong></p>
+<p>Locating a file in a directory </p>
+<ul>
+<li>Linear scan <ul>
+<li>Implement a directory cache in software to speed-up search </li>
+</ul>
+</li>
+<li>Hash lookup </li>
+<li>B-tree (100’s of thousands entries)</li>
+</ul>
+<p><strong>Storing file attributes</strong></p>
+<p>(a) disk addresses and attributes in directory entry –FAT</p>
+<p>(b)  directory in which each entry just refers to an i-node –UNIX</p>
+<p><strong>Inode Contents</strong></p>
+<p><em>Size</em></p>
+<ul>
+<li>Offset of the highest byte written </li>
+</ul>
+<p><em>Block count</em> </p>
+<ul>
+<li>Number of disk blocks used by the file. </li>
+<li>Note that number of blocks can be much less than expected given the file size </li>
+</ul>
+<p><em>Files can be sparsely populated</em>  </p>
+<ul>
+<li>E.g. write(f,“hello”); lseek(f, 1000000); write(f, “world”);  </li>
+<li>Only needs to store the start and end of file, not all the empty blocks in between. </li>
+<li>Size = 1000005 </li>
+<li>Blocks = 2 + any indirect blocks</li>
+</ul>
+<p><em>Direct Blocks</em></p>
+<ul>
+<li>Block numbers of first 12 blocks in the file</li>
+<li>Most files are small – We can find blocks of file directly from the inode</li>
+</ul>
+<p><em>Single Indirect Block</em> – Block number of a block containing block numbers</p>
+<ul>
+<li>Requires two disk access to read – One for the indirect block; one for the target block</li>
+<li>Max File Size – Assume 1Kbyte block size, 4 byte block numbers<ul>
+<li>12 * 1K + 1K/4 * 1K = 268 KiB</li>
+</ul>
+</li>
+<li>For large majority of files (&lt; 268 KiB), given the inode, only one or two further accesses required to read any block in file</li>
+</ul>
+<p><em>Double Indirect Block</em> – Block number of a block containing block numbers of blocks containing block numbers</p>
+<p><em>Triple Indirect</em> </p>
+<h3 id="Trade-off-in-FS-block-size"><a href="#Trade-off-in-FS-block-size" class="headerlink" title="Trade-off in FS block size"></a>Trade-off in FS block size</h3><ul>
+<li>File systems deal with 2 types of blocks<ul>
+<li>Disk blocks or sectors (usually 512 bytes)</li>
+<li>File system blocks 512 * 2^N bytes</li>
+</ul>
+</li>
+<li>Larger blocks require less FS metadata</li>
+<li>Smaller blocks waste less disk space (less internal fragmentation)</li>
+<li>Sequential Access<ul>
+<li>The larger the block size, the fewer I/O operations required</li>
+</ul>
+</li>
+<li>Random Access<ul>
+<li>The larger the block size, the more unrelated data loaded</li>
+<li>Spatial locality of access improves the situation</li>
+</ul>
+</li>
+<li>Choosing an appropriate block size is a compromise</li>
+</ul>
+<h1 id="Virtual-File-System-VFS"><a href="#Virtual-File-System-VFS" class="headerlink" title="Virtual File System(VFS)"></a>Virtual File System(VFS)</h1><ul>
+<li>Provides single system call interface for many file systems</li>
+<li>Transparent handling of network file systems</li>
+<li>File-based interface to arbitrary device drivers</li>
+<li>File-based interface to kernel data structures</li>
+<li>Provides an indirection layer for system calls<ul>
+<li>File operation table set up at file open time</li>
+<li>Points to actual handling code for particular type</li>
+<li>Further file operations redirected to those functions</li>
+</ul>
+</li>
+</ul>
+<h2 id="VFS-Interface"><a href="#VFS-Interface" class="headerlink" title="VFS Interface"></a>VFS Interface</h2><h3 id="Two-major-data-types"><a href="#Two-major-data-types" class="headerlink" title="Two major data types"></a>Two major data types</h3><h4 id="VFS"><a href="#VFS" class="headerlink" title="VFS"></a>VFS</h4><ul>
+<li>Represents all file system types</li>
+<li>Contains pointers to functions to manipulate each file system as a whole (e.g. mount, unmount)</li>
+</ul>
+<h4 id="Vnode"><a href="#Vnode" class="headerlink" title="Vnode"></a>Vnode</h4><ul>
+<li>Represents a file (inode) in the underlying filesystem</li>
+<li>Points to the real inode</li>
+<li>Contains pointers to functions to manipulate files/inodes (e.g. open, close, read, write,…)</li>
+</ul>
+<h2 id="File-Descriptors"><a href="#File-Descriptors" class="headerlink" title="File Descriptors"></a>File Descriptors</h2><ul>
+<li>Each open file has a file descriptor</li>
+<li>Read/Write/lseek/…. use them to specify which file to operate on.</li>
+</ul>
+<p>State associated with a file descriptor</p>
+<ul>
+<li>File pointer<ul>
+<li>Determines where in the file the next read or write is performed</li>
+</ul>
+</li>
+<li>Mode<ul>
+<li>Was the file opened read-only, etc…. </li>
+</ul>
+</li>
+</ul>
+</div><div class="article-tags size-small mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/OS/">OS</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2020/08/09/Foundation%20of%20Concurreny/"><span class="level-item">Foundation of Concurrency</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><!--!--></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><div class="card widget"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="/img/avatar.png" alt="Tina"></figure><p class="title is-size-4 is-block line-height-inherit">Tina</p><p class="is-size-6 is-block">A student</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>A secret</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives"><p class="title">5</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories"><p class="title">2</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags"><p class="title">8</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/CutePikachu" target="_blank" rel="noopener">Follow</a></div><div class="level is-mobile"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/CutePikachu"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://facebook.com"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Twitter" href="https://twitter.com"><i class="fab fa-twitter"></i></a></div></div></div><div class="card widget" id="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">Catalogue</h3><ul class="menu-list"><li><a class="is-flex" href="#Operating-System-Overview"><span class="mr-2">1</span><span>Operating System Overview</span></a><ul class="menu-list"><li><a class="is-flex" href="#Role"><span class="mr-2">1.1</span><span>Role</span></a><ul class="menu-list"><li><a class="is-flex" href="#Role-1"><span class="mr-2">1.1.1</span><span>Role 1</span></a></li><li><a class="is-flex" href="#Role-2"><span class="mr-2">1.1.2</span><span>Role 2</span></a></li></ul></li><li><a class="is-flex" href="#Structural-Implementation-View"><span class="mr-2">1.2</span><span>Structural (Implementation) View</span></a><ul class="menu-list"><li><a class="is-flex" href="#Operating-System-Kernel"><span class="mr-2">1.2.1</span><span>Operating System Kernel</span></a></li><li><a class="is-flex" href="#The-Operating-System-is-Privileged"><span class="mr-2">1.2.2</span><span>The Operating System is Privileged</span></a></li></ul></li><li><a class="is-flex" href="#The-Structure-of-a-Computer-System"><span class="mr-2">1.3</span><span>The Structure of a Computer System</span></a><ul class="menu-list"><li><a class="is-flex" href="#A-Note-on-System-Libraries"><span class="mr-2">1.3.1</span><span>A Note on System Libraries</span></a></li></ul></li><li><a class="is-flex" href="#Privilege-less-OS"><span class="mr-2">1.4</span><span>Privilege-less OS</span></a></li><li><a class="is-flex" href="#Operating-System-Software"><span class="mr-2">1.5</span><span>Operating System Software</span></a><ul class="menu-list"><li><a class="is-flex" href="#Operating-System-Internal-Structure"><span class="mr-2">1.5.1</span><span>Operating System Internal Structure</span></a></li></ul></li></ul></li><li><a class="is-flex" href="#Processes-and-Threads"><span class="mr-2">2</span><span>Processes and Threads</span></a><ul class="menu-list"><li><a class="is-flex" href="#Major-Requirements-of-an-Operating-System"><span class="mr-2">2.1</span><span>Major Requirements of an Operating System</span></a></li><li><a class="is-flex" href="#Processes-and-Threads-1"><span class="mr-2">2.2</span><span>Processes and Threads</span></a></li><li><a class="is-flex" href="#Process"><span class="mr-2">2.3</span><span>Process</span></a><ul class="menu-list"><li><a class="is-flex" href="#The-Process-Model"><span class="mr-2">2.3.1</span><span>The Process Model</span></a></li><li><a class="is-flex" href="#Process-and-thread-models-of-selected-OSes"><span class="mr-2">2.3.2</span><span>Process and thread models of selected OSes</span></a></li><li><a class="is-flex" href="#Process-Creation"><span class="mr-2">2.3.3</span><span>Process Creation</span></a></li><li><a class="is-flex" href="#Process-Termination"><span class="mr-2">2.3.4</span><span>Process Termination</span></a></li><li><a class="is-flex" href="#Implementation-of-Processes"><span class="mr-2">2.3.5</span><span>Implementation of Processes</span></a></li><li><a class="is-flex" href="#Process-Thread-States"><span class="mr-2">2.3.6</span><span>Process/Thread States</span></a></li><li><a class="is-flex" href="#What-about-blocked-processes"><span class="mr-2">2.3.7</span><span>What about blocked processes</span></a></li><li><a class="is-flex" href="#Implementation"><span class="mr-2">2.3.8</span><span>Implementation</span></a></li></ul></li><li><a class="is-flex" href="#Thread"><span class="mr-2">2.4</span><span>Thread</span></a><ul class="menu-list"><li><a class="is-flex" href="#The-Thread-Model"><span class="mr-2">2.4.1</span><span>The Thread Model</span></a></li><li><a class="is-flex" href="#Thread-Usage"><span class="mr-2">2.4.2</span><span>Thread Usage</span></a></li><li><a class="is-flex" href="#Why-Threads"><span class="mr-2">2.4.3</span><span>Why Threads?</span></a></li><li><a class="is-flex" href="#User-level-Threads"><span class="mr-2">2.4.4</span><span>User-level Threads</span></a></li><li><a class="is-flex" href="#Kernel-level-threads"><span class="mr-2">2.4.5</span><span>Kernel-level threads</span></a></li></ul></li><li><a class="is-flex" href="#Context-Switch"><span class="mr-2">2.5</span><span>Context Switch</span></a><ul class="menu-list"><li><a class="is-flex" href="#Context-Switch-Occurrence"><span class="mr-2">2.5.1</span><span>Context Switch Occurrence</span></a></li><li><a class="is-flex" href="#Context-Switch-1"><span class="mr-2">2.5.2</span><span>Context Switch</span></a></li></ul></li></ul></li><li><a class="is-flex" href="#Concurrency-and-Synchronisation"><span class="mr-2">3</span><span>Concurrency and Synchronisation</span></a><ul class="menu-list"><li><a class="is-flex" href="#Critical-Region"><span class="mr-2">3.1</span><span>Critical Region</span></a><ul class="menu-list"><li><a class="is-flex" href="#Critical-regions-solutions"><span class="mr-2">3.1.1</span><span>Critical regions solutions</span></a></li><li><a class="is-flex" href="#The-producer-Consumer-Problem"><span class="mr-2">3.1.2</span><span>The producer-Consumer Problem</span></a></li><li><a class="is-flex" href="#Semaphores"><span class="mr-2">3.1.3</span><span>Semaphores</span></a></li><li><a class="is-flex" href="#Monitors"><span class="mr-2">3.1.4</span><span>Monitors</span></a></li><li><a class="is-flex" href="#The-Readers-and-Writers-Problem"><span class="mr-2">3.1.5</span><span>The Readers and Writers Problem</span></a></li></ul></li></ul></li><li><a class="is-flex" href="#Deadlock"><span class="mr-2">4</span><span>Deadlock</span></a><ul class="menu-list"><li><a class="is-flex" href="#Resources"><span class="mr-2">4.1</span><span>Resources</span></a><ul class="menu-list"><li><a class="is-flex" href="#Resource-Access"><span class="mr-2">4.1.1</span><span>Resource Access</span></a></li></ul></li><li><a class="is-flex" href="#Deadlock-1"><span class="mr-2">4.2</span><span>Deadlock</span></a><ul class="menu-list"><li><a class="is-flex" href="#Starvation"><span class="mr-2">4.2.1</span><span>Starvation</span></a></li></ul></li></ul></li><li><a class="is-flex" href="#System-Call"><span class="mr-2">5</span><span>System Call</span></a><ul class="menu-list"><li><a class="is-flex" href="#System-Calls"><span class="mr-2">5.1</span><span>System Calls</span></a><ul class="menu-list"><li><a class="is-flex" href="#A-stripped-down-shell"><span class="mr-2">5.1.1</span><span>A stripped down shell:</span></a></li></ul></li><li><a class="is-flex" href="#System-Call-Implementation"><span class="mr-2">5.2</span><span>System Call Implementation</span></a><ul class="menu-list"><li><a class="is-flex" href="#A-Simple-Model-of-CPU-Computation"><span class="mr-2">5.2.1</span><span>A Simple Model of CPU Computation</span></a></li><li><a class="is-flex" href="#Privileged-mode-Operation"><span class="mr-2">5.2.2</span><span>Privileged-mode Operation</span></a></li><li><a class="is-flex" href="#Steps-in-Making-a-System-Call"><span class="mr-2">5.2.3</span><span>Steps in Making a System Call</span></a></li></ul></li></ul></li><li><a class="is-flex" href="#File-System"><span class="mr-2">6</span><span>File System</span></a><ul class="menu-list"><li><a class="is-flex" href="#File-Allocation-Methods"><span class="mr-2">6.1</span><span>File Allocation Methods</span></a><ul class="menu-list"><li><a class="is-flex" href="#Internal-fragmentation"><span class="mr-2">6.1.1</span><span>Internal fragmentation</span></a></li><li><a class="is-flex" href="#Contiguous-Allocation"><span class="mr-2">6.1.2</span><span>Contiguous Allocation</span></a></li><li><a class="is-flex" href="#Dynamical-Allocation-inode-based-FS-structure"><span class="mr-2">6.1.3</span><span>Dynamical Allocation: inode-based FS structure</span></a></li><li><a class="is-flex" href="#Trade-off-in-FS-block-size"><span class="mr-2">6.1.4</span><span>Trade-off in FS block size</span></a></li></ul></li></ul></li><li><a class="is-flex" href="#Virtual-File-System-VFS"><span class="mr-2">7</span><span>Virtual File System(VFS)</span></a><ul class="menu-list"><li><a class="is-flex" href="#VFS-Interface"><span class="mr-2">7.1</span><span>VFS Interface</span></a><ul class="menu-list"><li><a class="is-flex" href="#Vnode"><span class="mr-2">7.1.1</span><span>Vnode</span></a></li></ul></li><li><a class="is-flex" href="#File-Descriptors"><span class="mr-2">7.2</span><span>File Descriptors</span></a></li></ul></li></ul></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Categories</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/categories/notes/"><span class="level-start"><span class="level-item">notes</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%E6%95%99%E7%A8%8B/"><span class="level-start"><span class="level-item">教程</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><h3 class="menu-label">Recent</h3><article class="media"><div class="media-content size-small"><p><time dateTime="2020-08-11T06:00:00.000Z">2020-08-11</time></p><p class="title is-6"><a class="link-muted" href="/2020/08/11/Operating%20Systems/">Operating Systems</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/notes/">notes</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-08-09T06:00:00.000Z">2020-08-09</time></p><p class="title is-6"><a class="link-muted" href="/2020/08/09/Foundation%20of%20Concurreny/">Foundation of Concurrency</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/notes/">notes</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-08-01T06:00:00.000Z">2020-08-01</time></p><p class="title is-6"><a class="link-muted" href="/2020/08/01/Haskell/">Haskell and functional programming</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/notes/">notes</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-06-01T06:00:00.000Z">2020-06-01</time></p><p class="title is-6"><a class="link-muted" href="/2020/06/01/Mac%E8%A3%85spin%E5%92%8Cispin/">Mac装spin和ispin</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/%E6%95%99%E7%A8%8B/">教程</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-03-21T06:00:00.000Z">2020-03-21</time></p><p class="title is-6"><a class="link-muted" href="/2020/03/21/%E3%80%90%E5%8F%8C%E5%89%91%E5%90%88%E7%92%A7%E3%80%91Git%E5%92%8CGithub%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/">【双剑合璧】Git和Github使用教程</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/%E6%95%99%E7%A8%8B/">教程</a></p></div></article></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Archives</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/archives/2020/08/"><span class="level-start"><span class="level-item">August 2020</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/06/"><span class="level-start"><span class="level-item">June 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/03/"><span class="level-start"><span class="level-item">March 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/Concurrency/"><span class="tag">Concurrency</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Functional-Programming/"><span class="tag">Functional Programming</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Git/"><span class="tag">Git</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Github/"><span class="tag">Github</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Haskell/"><span class="tag">Haskell</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/OS/"><span class="tag">OS</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/concurrency/"><span class="tag">concurrency</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/spin/"><span class="tag">spin</span><span class="tag is-grey-lightest">1</span></a></div></div></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.svg" alt="Tina blog" height="28"></a><p class="size-small"><span>&copy; 2020 Tina</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Email" href="mailto:tinayutong0310@gmail.com"><i class="fa fa-envelope"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            site: {
+                url: 'https://CutePikachu.github.io',
+                external_link: {"enable":true,"exclude":[]}
+            },
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script src="/js/animation.js"></script><a id="back-to-top" title="Back to Top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><script type="text/x-mathjax-config">MathJax.Hub.Config({
+            'HTML-CSS': {
+                matchFontHeight: false
+            },
+            SVG: {
+                matchFontHeight: false
+            },
+            CommonHTML: {
+                matchFontHeight: false
+            },
+            tex2jax: {
+                inlineMath: [
+                    ['$','$'],
+                    ['\\(','\\)']
+                ]
+            }
+        });</script><script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script></body></html>
