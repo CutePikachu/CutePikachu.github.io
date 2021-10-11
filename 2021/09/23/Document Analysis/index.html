@@ -1,5 +1,10 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="generator" content="Hexo 4.2.1"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Document analysis - Tina blog</title><meta description="Information Retrieval “Information Retrieval (IR) is finding material (usually documents) of an unstructured nature (usually text) that satisfies an information need from within large collections (usu"><meta property="og:type" content="blog"><meta property="og:title" content="Document analysis"><meta property="og:url" content="https://cutepikachu.github.io/2021/09/23/Document%20Analysis/"><meta property="og:site_name" content="Tina blog"><meta property="og:description" content="Information Retrieval “Information Retrieval (IR) is finding material (usually documents) of an unstructured nature (usually text) that satisfies an information need from within large collections (usu"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://i.loli.net/2021/09/23/dm3W1Ao4HrGBvNe.png"><meta property="og:image" content="https://i.loli.net/2021/09/23/WcTzqGiKrEfxISh.png"><meta property="og:image" content="https://i.loli.net/2021/09/23/Xj1Tpx6ZIEivqCn.png"><meta property="og:image" content="https://i.loli.net/2021/09/23/Vs1INmQZib5LCax.png"><meta property="og:image" content="https://i.loli.net/2021/09/23/ye8rpPOGWbLtjBD.png"><meta property="article:published_time" content="2021-09-23T06:00:00.000Z"><meta property="article:modified_time" content="2021-09-23T14:16:28.867Z"><meta property="article:author" content="Tina"><meta property="article:tag" content="NLP"><meta property="article:tag" content="IR"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="https://i.loli.net/2021/09/23/dm3W1Ao4HrGBvNe.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://cutepikachu.github.io/2021/09/23/Document%20Analysis/"},"headline":"Tina blog","image":["https://i.loli.net/2021/09/23/dm3W1Ao4HrGBvNe.png","https://i.loli.net/2021/09/23/WcTzqGiKrEfxISh.png","https://i.loli.net/2021/09/23/Xj1Tpx6ZIEivqCn.png","https://i.loli.net/2021/09/23/Vs1INmQZib5LCax.png","https://i.loli.net/2021/09/23/ye8rpPOGWbLtjBD.png"],"datePublished":"2021-09-23T06:00:00.000Z","dateModified":"2021-09-23T14:16:28.867Z","author":{"@type":"Person","name":"Tina"},"description":"Information Retrieval “Information Retrieval (IR) is finding material (usually documents) of an unstructured nature (usually text) that satisfies an information need from within large collections (usu"}</script><link rel="canonical" href="https://cutepikachu.github.io/2021/09/23/Document%20Analysis/"><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.svg" alt="Tina blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/projects">Projects</a></div><div class="navbar-end"><a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2021-09-23T06:00:00.000Z" title="2021-09-23T06:00:00.000Z">2021-09-23</time><span class="level-item"><a class="link-muted" href="/categories/notes/">notes</a></span><span class="level-item">14 minutes read (About 2029 words)</span></div></div><h1 class="title is-3 is-size-4-mobile">Document analysis</h1><div class="content"><h1 id="Information-Retrieval"><a href="#Information-Retrieval" class="headerlink" title="Information Retrieval"></a>Information Retrieval</h1><blockquote>
+<html lang="en"><head><meta charset="utf-8"><meta name="generator" content="Hexo 4.2.1"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Document analysis - Tina blog</title><meta description="COMP4650 notes"><meta property="og:type" content="blog"><meta property="og:title" content="Document analysis"><meta property="og:url" content="https://cutepikachu.github.io/2021/09/23/Document%20Analysis/"><meta property="og:site_name" content="Tina blog"><meta property="og:description" content="COMP4650 notes"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://i.loli.net/2021/09/23/dm3W1Ao4HrGBvNe.png"><meta property="og:image" content="https://i.loli.net/2021/09/23/WcTzqGiKrEfxISh.png"><meta property="og:image" content="https://i.loli.net/2021/09/23/Xj1Tpx6ZIEivqCn.png"><meta property="og:image" content="https://i.loli.net/2021/09/23/Vs1INmQZib5LCax.png"><meta property="og:image" content="https://i.loli.net/2021/09/23/ye8rpPOGWbLtjBD.png"><meta property="og:image" content="https://i.loli.net/2021/09/24/gRMZE7bAcdyru5w.png"><meta property="og:image" content="https://i.loli.net/2021/09/24/mkTH6KzClQSBfnP.png"><meta property="og:image" content="https://i.loli.net/2021/10/01/NP5mJSOjsVADQf1.png"><meta property="og:image" content="https://i.loli.net/2021/10/01/l5yNptM4C97ibeP.png"><meta property="og:image" content="https://i.loli.net/2021/10/01/qkFohtWbsnjD4JM.png"><meta property="og:image" content="https://i.loli.net/2021/10/01/5BAkfSHPOsMzXqx.png"><meta property="og:image" content="https://i.loli.net/2021/10/01/7OX6tvxzUk3j1oN.png"><meta property="article:published_time" content="2021-09-23T06:00:00.000Z"><meta property="article:modified_time" content="2021-10-11T13:10:59.470Z"><meta property="article:author" content="Tina"><meta property="article:tag" content="NLP"><meta property="article:tag" content="IR"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="https://i.loli.net/2021/09/23/dm3W1Ao4HrGBvNe.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://cutepikachu.github.io/2021/09/23/Document%20Analysis/"},"headline":"Tina blog","image":["https://i.loli.net/2021/09/23/dm3W1Ao4HrGBvNe.png","https://i.loli.net/2021/09/23/WcTzqGiKrEfxISh.png","https://i.loli.net/2021/09/23/Xj1Tpx6ZIEivqCn.png","https://i.loli.net/2021/09/23/Vs1INmQZib5LCax.png","https://i.loli.net/2021/09/23/ye8rpPOGWbLtjBD.png","https://i.loli.net/2021/09/24/gRMZE7bAcdyru5w.png","https://i.loli.net/2021/09/24/mkTH6KzClQSBfnP.png","https://i.loli.net/2021/10/01/NP5mJSOjsVADQf1.png","https://i.loli.net/2021/10/01/l5yNptM4C97ibeP.png","https://i.loli.net/2021/10/01/qkFohtWbsnjD4JM.png","https://i.loli.net/2021/10/01/5BAkfSHPOsMzXqx.png","https://i.loli.net/2021/10/01/7OX6tvxzUk3j1oN.png"],"datePublished":"2021-09-23T06:00:00.000Z","dateModified":"2021-10-11T13:10:59.470Z","author":{"@type":"Person","name":"Tina"},"description":"COMP4650 notes"}</script><link rel="canonical" href="https://cutepikachu.github.io/2021/09/23/Document%20Analysis/"><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.svg" alt="Tina blog" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/projects">Projects</a></div><div class="navbar-end"><a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta size-small is-uppercase level is-mobile"><div class="level-left"><time class="level-item" dateTime="2021-09-23T06:00:00.000Z" title="2021-09-23T06:00:00.000Z">2021-09-23</time><span class="level-item"><a class="link-muted" href="/categories/notes/">notes</a></span><span class="level-item">40 minutes read (About 6029 words)</span></div></div><h1 class="title is-3 is-size-4-mobile">Document analysis</h1><div class="content"><blockquote>
+<p>COMP4650 notes</p>
+</blockquote>
+<a id="more"></a>
+
+<h1 id="Information-Retrieval"><a href="#Information-Retrieval" class="headerlink" title="Information Retrieval"></a>Information Retrieval</h1><blockquote>
 <p>“Information Retrieval (IR) is finding material (usually documents) of an unstructured nature (usually text) that satisfies an information need from within large collections (usually stored on computers).” – Manning et al.</p>
 </blockquote>
 <h2 id="Introduction-to-Boolean-Retrieval"><a href="#Introduction-to-Boolean-Retrieval" class="headerlink" title="Introduction to Boolean Retrieval"></a>Introduction to Boolean Retrieval</h2><h3 id="Information-Retrieval-1"><a href="#Information-Retrieval-1" class="headerlink" title="Information Retrieval"></a>Information Retrieval</h3><h4 id="Why-Information-Retrieval"><a href="#Why-Information-Retrieval" class="headerlink" title="Why Information Retrieval"></a>Why Information Retrieval</h4><p>An essential tool to deal with information overload<br><strong>Information overload</strong></p>
@@ -7,8 +12,8 @@
 <p>“It refers to the difficulty a person can have understanding an issue and making decisions that can be caused by the presence of too much information.” - wiki</p>
 </blockquote>
 <h4 id="How-to-perform-information-retrieval"><a href="#How-to-perform-information-retrieval" class="headerlink" title="How to perform information retrieval"></a>How to perform information retrieval</h4><p><strong>Collection</strong>: A set of documents<br><strong>Goal</strong>: Retrieve documents with information that is relevant to the user’s information need and helps the user complete a task</p>
-<svg id="mermaid-1632406730226" width="100%" xmlns="http://www.w3.org/2000/svg" style="max-width: 264.96875px;" viewBox="0 0 264.96875 500"><style>#mermaid-1632406730226 .label{font-family:'trebuchet ms', verdana, arial;color:#333}#mermaid-1632406730226 .node rect,#mermaid-1632406730226 .node circle,#mermaid-1632406730226 .node ellipse,#mermaid-1632406730226 .node polygon{fill:#ECECFF;stroke:#9370db;stroke-width:1px}#mermaid-1632406730226 .node.clickable{cursor:pointer}#mermaid-1632406730226 .arrowheadPath{fill:#333}#mermaid-1632406730226 .edgePath .path{stroke:#333;stroke-width:1.5px}#mermaid-1632406730226 .edgeLabel{background-color:#e8e8e8}#mermaid-1632406730226 .cluster rect{fill:#ffffde !important;stroke:#aa3 !important;stroke-width:1px !important}#mermaid-1632406730226 .cluster text{fill:#333}#mermaid-1632406730226 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:'trebuchet ms', verdana, arial;font-size:12px;background:#ffffde;border:1px solid #aa3;border-radius:2px;pointer-events:none;z-index:100}#mermaid-1632406730226 .actor{stroke:#ccf;fill:#ECECFF}#mermaid-1632406730226 text.actor{fill:#000;stroke:none}#mermaid-1632406730226 .actor-line{stroke:grey}#mermaid-1632406730226 .messageLine0{stroke-width:1.5;stroke-dasharray:'2 2';stroke:#333}#mermaid-1632406730226 .messageLine1{stroke-width:1.5;stroke-dasharray:'2 2';stroke:#333}#mermaid-1632406730226 #arrowhead{fill:#333}#mermaid-1632406730226 #crosshead path{fill:#333 !important;stroke:#333 !important}#mermaid-1632406730226 .messageText{fill:#333;stroke:none}#mermaid-1632406730226 .labelBox{stroke:#ccf;fill:#ECECFF}#mermaid-1632406730226 .labelText{fill:#000;stroke:none}#mermaid-1632406730226 .loopText{fill:#000;stroke:none}#mermaid-1632406730226 .loopLine{stroke-width:2;stroke-dasharray:'2 2';stroke:#ccf}#mermaid-1632406730226 .note{stroke:#aa3;fill:#fff5ad}#mermaid-1632406730226 .noteText{fill:black;stroke:none;font-family:'trebuchet ms', verdana, arial;font-size:14px}#mermaid-1632406730226 .activation0{fill:#f4f4f4;stroke:#666}#mermaid-1632406730226 .activation1{fill:#f4f4f4;stroke:#666}#mermaid-1632406730226 .activation2{fill:#f4f4f4;stroke:#666}#mermaid-1632406730226 .section{stroke:none;opacity:0.2}#mermaid-1632406730226 .section0{fill:rgba(102,102,255,0.49)}#mermaid-1632406730226 .section2{fill:#fff400}#mermaid-1632406730226 .section1,#mermaid-1632406730226 .section3{fill:#fff;opacity:0.2}#mermaid-1632406730226 .sectionTitle0{fill:#333}#mermaid-1632406730226 .sectionTitle1{fill:#333}#mermaid-1632406730226 .sectionTitle2{fill:#333}#mermaid-1632406730226 .sectionTitle3{fill:#333}#mermaid-1632406730226 .sectionTitle{text-anchor:start;font-size:11px;text-height:14px}#mermaid-1632406730226 .grid .tick{stroke:#d3d3d3;opacity:0.3;shape-rendering:crispEdges}#mermaid-1632406730226 .grid path{stroke-width:0}#mermaid-1632406730226 .today{fill:none;stroke:red;stroke-width:2px}#mermaid-1632406730226 .task{stroke-width:2}#mermaid-1632406730226 .taskText{text-anchor:middle;font-size:11px}#mermaid-1632406730226 .taskTextOutsideRight{fill:#000;text-anchor:start;font-size:11px}#mermaid-1632406730226 .taskTextOutsideLeft{fill:#000;text-anchor:end;font-size:11px}#mermaid-1632406730226 .taskText0,#mermaid-1632406730226 .taskText1,#mermaid-1632406730226 .taskText2,#mermaid-1632406730226 .taskText3{fill:#fff}#mermaid-1632406730226 .task0,#mermaid-1632406730226 .task1,#mermaid-1632406730226 .task2,#mermaid-1632406730226 .task3{fill:#8a90dd;stroke:#534fbc}#mermaid-1632406730226 .taskTextOutside0,#mermaid-1632406730226 .taskTextOutside2{fill:#000}#mermaid-1632406730226 .taskTextOutside1,#mermaid-1632406730226 .taskTextOutside3{fill:#000}#mermaid-1632406730226 .active0,#mermaid-1632406730226 .active1,#mermaid-1632406730226 .active2,#mermaid-1632406730226 .active3{fill:#bfc7ff;stroke:#534fbc}#mermaid-1632406730226 .activeText0,#mermaid-1632406730226 .activeText1,#mermaid-1632406730226 .activeText2,#mermaid-1632406730226 .activeText3{fill:#000 !important}#mermaid-1632406730226 .done0,#mermaid-1632406730226 .done1,#mermaid-1632406730226 .done2,#mermaid-1632406730226 .done3{stroke:grey;fill:#d3d3d3;stroke-width:2}#mermaid-1632406730226 .doneText0,#mermaid-1632406730226 .doneText1,#mermaid-1632406730226 .doneText2,#mermaid-1632406730226 .doneText3{fill:#000 !important}#mermaid-1632406730226 .crit0,#mermaid-1632406730226 .crit1,#mermaid-1632406730226 .crit2,#mermaid-1632406730226 .crit3{stroke:#f88;fill:red;stroke-width:2}#mermaid-1632406730226 .activeCrit0,#mermaid-1632406730226 .activeCrit1,#mermaid-1632406730226 .activeCrit2,#mermaid-1632406730226 .activeCrit3{stroke:#f88;fill:#bfc7ff;stroke-width:2}#mermaid-1632406730226 .doneCrit0,#mermaid-1632406730226 .doneCrit1,#mermaid-1632406730226 .doneCrit2,#mermaid-1632406730226 .doneCrit3{stroke:#f88;fill:#d3d3d3;stroke-width:2;cursor:pointer;shape-rendering:crispEdges}#mermaid-1632406730226 .doneCritText0,#mermaid-1632406730226 .doneCritText1,#mermaid-1632406730226 .doneCritText2,#mermaid-1632406730226 .doneCritText3{fill:#000 !important}#mermaid-1632406730226 .activeCritText0,#mermaid-1632406730226 .activeCritText1,#mermaid-1632406730226 .activeCritText2,#mermaid-1632406730226 .activeCritText3{fill:#000 !important}#mermaid-1632406730226 .titleText{text-anchor:middle;font-size:18px;fill:#000}#mermaid-1632406730226 g.classGroup text{fill:#9370db;stroke:none;font-family:'trebuchet ms', verdana, arial;font-size:10px}#mermaid-1632406730226 g.classGroup rect{fill:#ECECFF;stroke:#9370db}#mermaid-1632406730226 g.classGroup line{stroke:#9370db;stroke-width:1}#mermaid-1632406730226 .classLabel .box{stroke:none;stroke-width:0;fill:#ECECFF;opacity:0.5}#mermaid-1632406730226 .classLabel .label{fill:#9370db;font-size:10px}#mermaid-1632406730226 .relation{stroke:#9370db;stroke-width:1;fill:none}#mermaid-1632406730226 #compositionStart{fill:#9370db;stroke:#9370db;stroke-width:1}#mermaid-1632406730226 #compositionEnd{fill:#9370db;stroke:#9370db;stroke-width:1}#mermaid-1632406730226 #aggregationStart{fill:#ECECFF;stroke:#9370db;stroke-width:1}#mermaid-1632406730226 #aggregationEnd{fill:#ECECFF;stroke:#9370db;stroke-width:1}#mermaid-1632406730226 #dependencyStart{fill:#9370db;stroke:#9370db;stroke-width:1}#mermaid-1632406730226 #dependencyEnd{fill:#9370db;stroke:#9370db;stroke-width:1}#mermaid-1632406730226 #extensionStart{fill:#9370db;stroke:#9370db;stroke-width:1}#mermaid-1632406730226 #extensionEnd{fill:#9370db;stroke:#9370db;stroke-width:1}#mermaid-1632406730226 .commit-id,#mermaid-1632406730226 .commit-msg,#mermaid-1632406730226 .branch-label{fill:lightgrey;color:lightgrey}
-</style><style>#mermaid-1632406730226 {
+<svg id="mermaid-1633958236794" width="100%" xmlns="http://www.w3.org/2000/svg" style="max-width: 264.96875px;" viewBox="0 0 264.96875 500"><style>#mermaid-1633958236794 .label{font-family:'trebuchet ms', verdana, arial;color:#333}#mermaid-1633958236794 .node rect,#mermaid-1633958236794 .node circle,#mermaid-1633958236794 .node ellipse,#mermaid-1633958236794 .node polygon{fill:#ECECFF;stroke:#9370db;stroke-width:1px}#mermaid-1633958236794 .node.clickable{cursor:pointer}#mermaid-1633958236794 .arrowheadPath{fill:#333}#mermaid-1633958236794 .edgePath .path{stroke:#333;stroke-width:1.5px}#mermaid-1633958236794 .edgeLabel{background-color:#e8e8e8}#mermaid-1633958236794 .cluster rect{fill:#ffffde !important;stroke:#aa3 !important;stroke-width:1px !important}#mermaid-1633958236794 .cluster text{fill:#333}#mermaid-1633958236794 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:'trebuchet ms', verdana, arial;font-size:12px;background:#ffffde;border:1px solid #aa3;border-radius:2px;pointer-events:none;z-index:100}#mermaid-1633958236794 .actor{stroke:#ccf;fill:#ECECFF}#mermaid-1633958236794 text.actor{fill:#000;stroke:none}#mermaid-1633958236794 .actor-line{stroke:grey}#mermaid-1633958236794 .messageLine0{stroke-width:1.5;stroke-dasharray:'2 2';stroke:#333}#mermaid-1633958236794 .messageLine1{stroke-width:1.5;stroke-dasharray:'2 2';stroke:#333}#mermaid-1633958236794 #arrowhead{fill:#333}#mermaid-1633958236794 #crosshead path{fill:#333 !important;stroke:#333 !important}#mermaid-1633958236794 .messageText{fill:#333;stroke:none}#mermaid-1633958236794 .labelBox{stroke:#ccf;fill:#ECECFF}#mermaid-1633958236794 .labelText{fill:#000;stroke:none}#mermaid-1633958236794 .loopText{fill:#000;stroke:none}#mermaid-1633958236794 .loopLine{stroke-width:2;stroke-dasharray:'2 2';stroke:#ccf}#mermaid-1633958236794 .note{stroke:#aa3;fill:#fff5ad}#mermaid-1633958236794 .noteText{fill:black;stroke:none;font-family:'trebuchet ms', verdana, arial;font-size:14px}#mermaid-1633958236794 .activation0{fill:#f4f4f4;stroke:#666}#mermaid-1633958236794 .activation1{fill:#f4f4f4;stroke:#666}#mermaid-1633958236794 .activation2{fill:#f4f4f4;stroke:#666}#mermaid-1633958236794 .section{stroke:none;opacity:0.2}#mermaid-1633958236794 .section0{fill:rgba(102,102,255,0.49)}#mermaid-1633958236794 .section2{fill:#fff400}#mermaid-1633958236794 .section1,#mermaid-1633958236794 .section3{fill:#fff;opacity:0.2}#mermaid-1633958236794 .sectionTitle0{fill:#333}#mermaid-1633958236794 .sectionTitle1{fill:#333}#mermaid-1633958236794 .sectionTitle2{fill:#333}#mermaid-1633958236794 .sectionTitle3{fill:#333}#mermaid-1633958236794 .sectionTitle{text-anchor:start;font-size:11px;text-height:14px}#mermaid-1633958236794 .grid .tick{stroke:#d3d3d3;opacity:0.3;shape-rendering:crispEdges}#mermaid-1633958236794 .grid path{stroke-width:0}#mermaid-1633958236794 .today{fill:none;stroke:red;stroke-width:2px}#mermaid-1633958236794 .task{stroke-width:2}#mermaid-1633958236794 .taskText{text-anchor:middle;font-size:11px}#mermaid-1633958236794 .taskTextOutsideRight{fill:#000;text-anchor:start;font-size:11px}#mermaid-1633958236794 .taskTextOutsideLeft{fill:#000;text-anchor:end;font-size:11px}#mermaid-1633958236794 .taskText0,#mermaid-1633958236794 .taskText1,#mermaid-1633958236794 .taskText2,#mermaid-1633958236794 .taskText3{fill:#fff}#mermaid-1633958236794 .task0,#mermaid-1633958236794 .task1,#mermaid-1633958236794 .task2,#mermaid-1633958236794 .task3{fill:#8a90dd;stroke:#534fbc}#mermaid-1633958236794 .taskTextOutside0,#mermaid-1633958236794 .taskTextOutside2{fill:#000}#mermaid-1633958236794 .taskTextOutside1,#mermaid-1633958236794 .taskTextOutside3{fill:#000}#mermaid-1633958236794 .active0,#mermaid-1633958236794 .active1,#mermaid-1633958236794 .active2,#mermaid-1633958236794 .active3{fill:#bfc7ff;stroke:#534fbc}#mermaid-1633958236794 .activeText0,#mermaid-1633958236794 .activeText1,#mermaid-1633958236794 .activeText2,#mermaid-1633958236794 .activeText3{fill:#000 !important}#mermaid-1633958236794 .done0,#mermaid-1633958236794 .done1,#mermaid-1633958236794 .done2,#mermaid-1633958236794 .done3{stroke:grey;fill:#d3d3d3;stroke-width:2}#mermaid-1633958236794 .doneText0,#mermaid-1633958236794 .doneText1,#mermaid-1633958236794 .doneText2,#mermaid-1633958236794 .doneText3{fill:#000 !important}#mermaid-1633958236794 .crit0,#mermaid-1633958236794 .crit1,#mermaid-1633958236794 .crit2,#mermaid-1633958236794 .crit3{stroke:#f88;fill:red;stroke-width:2}#mermaid-1633958236794 .activeCrit0,#mermaid-1633958236794 .activeCrit1,#mermaid-1633958236794 .activeCrit2,#mermaid-1633958236794 .activeCrit3{stroke:#f88;fill:#bfc7ff;stroke-width:2}#mermaid-1633958236794 .doneCrit0,#mermaid-1633958236794 .doneCrit1,#mermaid-1633958236794 .doneCrit2,#mermaid-1633958236794 .doneCrit3{stroke:#f88;fill:#d3d3d3;stroke-width:2;cursor:pointer;shape-rendering:crispEdges}#mermaid-1633958236794 .doneCritText0,#mermaid-1633958236794 .doneCritText1,#mermaid-1633958236794 .doneCritText2,#mermaid-1633958236794 .doneCritText3{fill:#000 !important}#mermaid-1633958236794 .activeCritText0,#mermaid-1633958236794 .activeCritText1,#mermaid-1633958236794 .activeCritText2,#mermaid-1633958236794 .activeCritText3{fill:#000 !important}#mermaid-1633958236794 .titleText{text-anchor:middle;font-size:18px;fill:#000}#mermaid-1633958236794 g.classGroup text{fill:#9370db;stroke:none;font-family:'trebuchet ms', verdana, arial;font-size:10px}#mermaid-1633958236794 g.classGroup rect{fill:#ECECFF;stroke:#9370db}#mermaid-1633958236794 g.classGroup line{stroke:#9370db;stroke-width:1}#mermaid-1633958236794 .classLabel .box{stroke:none;stroke-width:0;fill:#ECECFF;opacity:0.5}#mermaid-1633958236794 .classLabel .label{fill:#9370db;font-size:10px}#mermaid-1633958236794 .relation{stroke:#9370db;stroke-width:1;fill:none}#mermaid-1633958236794 #compositionStart{fill:#9370db;stroke:#9370db;stroke-width:1}#mermaid-1633958236794 #compositionEnd{fill:#9370db;stroke:#9370db;stroke-width:1}#mermaid-1633958236794 #aggregationStart{fill:#ECECFF;stroke:#9370db;stroke-width:1}#mermaid-1633958236794 #aggregationEnd{fill:#ECECFF;stroke:#9370db;stroke-width:1}#mermaid-1633958236794 #dependencyStart{fill:#9370db;stroke:#9370db;stroke-width:1}#mermaid-1633958236794 #dependencyEnd{fill:#9370db;stroke:#9370db;stroke-width:1}#mermaid-1633958236794 #extensionStart{fill:#9370db;stroke:#9370db;stroke-width:1}#mermaid-1633958236794 #extensionEnd{fill:#9370db;stroke:#9370db;stroke-width:1}#mermaid-1633958236794 .commit-id,#mermaid-1633958236794 .commit-msg,#mermaid-1633958236794 .branch-label{fill:lightgrey;color:lightgrey}
+</style><style>#mermaid-1633958236794 {
     color: rgb(0, 0, 0);
     font: normal normal 400 normal 16px / normal "Times New Roman";
   }</style><g transform="translate(-12, -12)"><g class="output"><g class="clusters"></g><g class="edgePaths"><g class="edgePath" style="opacity: 1;"><path class="path" d="M73.359375,59L73.359375,84L73.359375,109" marker-end="url(#arrowhead1)" style="fill:none"></path><defs><marker id="arrowhead1" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M73.359375,148L73.359375,173L73.359375,198" marker-end="url(#arrowhead2)" style="fill:none"></path><defs><marker id="arrowhead2" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M98.78195224719101,237L131.375,262L169.58602528089887,287" marker-end="url(#arrowhead3)" style="fill:none"></path><defs><marker id="arrowhead3" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M199.390625,326L199.390625,351L199.390625,376" marker-end="url(#arrowhead4)" style="fill:none"></path><defs><marker id="arrowhead4" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M199.390625,415L199.390625,440L166.79757724719101,465" marker-end="url(#arrowhead5)" style="fill:none"></path><defs><marker id="arrowhead5" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M107.18837780898876,465L63.359375,440L63.359375,395.5L63.359375,351L63.359375,306.5L63.359375,262L68.97735252808988,237" marker-end="url(#arrowhead6)" style="fill:none"></path><defs><marker id="arrowhead6" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M209.390625,237L209.390625,262L203.77264747191012,287" marker-end="url(#arrowhead7)" style="fill:none"></path><defs><marker id="arrowhead7" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g></g><g class="edgeLabels"><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g></g><g class="nodes"><g class="node" id="A" transform="translate(73.359375,39.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-52.5" y="-19.5" width="105" height="39"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-42.5,-9.5)"><foreignObject width="85" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">1. User task</div></foreignObject></g></g></g><g class="node" id="B" transform="translate(73.359375,128.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-53.359375" y="-19.5" width="106.71875" height="39"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-43.359375,-9.5)"><foreignObject width="86.71875" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">2. Info need</div></foreignObject></g></g></g><g class="node" id="C" transform="translate(73.359375,217.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-39.7890625" y="-19.5" width="79.578125" height="39"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-29.7890625,-9.5)"><foreignObject width="59.578125" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">3. query</div></foreignObject></g></g></g><g class="node" id="D" transform="translate(199.390625,306.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-69.578125" y="-19.5" width="139.15625" height="39"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-59.578125,-9.5)"><foreignObject width="119.15625" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">4. Search engine</div></foreignObject></g></g></g><g class="node" id="E" transform="translate(199.390625,395.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-41.703125" y="-19.5" width="83.40625" height="39"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-31.703125,-9.5)"><foreignObject width="63.40625" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">5. Result</div></foreignObject></g></g></g><g class="node" id="F" transform="translate(141.375,484.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-83.140625" y="-19.5" width="166.28125" height="39"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-73.140625,-9.5)"><foreignObject width="146.28125" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">6. Query refinement</div></foreignObject></g></g></g><g class="node" id="G" transform="translate(209.390625,217.5)" style="opacity: 1;"><rect rx="0" ry="0" x="-46.2421875" y="-19.5" width="92.484375" height="39"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-36.2421875,-9.5)"><foreignObject width="72.484375" height="19"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Collection</div></foreignObject></g></g></g></g></g></g></svg>
@@ -188,7 +193,7 @@
 <blockquote>
 <p>Document frequency $df_t$ is the number of documents in the collection that contains term $t$</p>
 </blockquote>
-<p>df is a good way to measure an <strong><em>importance</em></strong> of a term</p>
+<p>df is a good way to measure an <em><strong>importance</strong></em> of a term</p>
 <ul>
 <li>High frequency $\rightarrow$ not important (like stopwords)</li>
 <li>Low frequency $\rightarrow$ important<br>Why not collection frequency? cf is sensitive to documents that contain a word many times</li>
@@ -326,8 +331,556 @@
 <li>$α &lt; 0.5$: emphasises recall, e.g., $(α = 0)$ Recall</li>
 </ul>
 <p>F1-measure: the harmonic mean of precision and recall $(α = 0.5)$<br>$$F=\frac{2PR}{P+R}$$</p>
-<h3 id="Evaluation-of-ranked-retrieval-sets"><a href="#Evaluation-of-ranked-retrieval-sets" class="headerlink" title="Evaluation of ranked retrieval sets"></a>Evaluation of ranked retrieval sets</h3><p><strong>Precision-Recall Curve</strong><br>Compute recall and precision at each rank k (i.e. using the top k docs)<br>Plot (recall, precision) points until recall is 1<br><img src="https://i.loli.net/2021/09/23/ye8rpPOGWbLtjBD.png" alt="Example"></p>
-</div><div class="article-tags size-small mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/NLP/">NLP</a><a class="link-muted mr-2" rel="tag" href="/tags/IR/">IR</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2020/09/16/xyzsas/"><span class="level-item">学生事务系统(xyzsas)</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><!--!--></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1 is-sticky"><div class="card widget"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="/img/avatar.png" alt="Tina"></figure><p class="title is-size-4 is-block line-height-inherit">Tina</p><p class="is-size-6 is-block">A student</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>A secret</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives"><p class="title">8</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories"><p class="title">4</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags"><p class="title">12</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/CutePikachu" target="_blank" rel="noopener">Follow</a></div><div class="level is-mobile"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/CutePikachu"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://facebook.com"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Twitter" href="https://twitter.com"><i class="fab fa-twitter"></i></a></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Categories</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/categories/Paper-Review/"><span class="level-start"><span class="level-item">Paper Review</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/notes/"><span class="level-start"><span class="level-item">notes</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/projects/"><span class="level-start"><span class="level-item">projects</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%E6%95%99%E7%A8%8B/"><span class="level-start"><span class="level-item">教程</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Archives</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/archives/2021/09/"><span class="level-start"><span class="level-item">September 2021</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/09/"><span class="level-start"><span class="level-item">September 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/08/"><span class="level-start"><span class="level-item">August 2020</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/06/"><span class="level-start"><span class="level-item">June 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/03/"><span class="level-start"><span class="level-item">March 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/Concurrency/"><span class="tag">Concurrency</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Functional-Programming/"><span class="tag">Functional Programming</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Git/"><span class="tag">Git</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Github/"><span class="tag">Github</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Haskell/"><span class="tag">Haskell</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/IR/"><span class="tag">IR</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/NLP/"><span class="tag">NLP</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/OS/"><span class="tag">OS</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/concurrency/"><span class="tag">concurrency</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/notes/"><span class="tag">notes</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/record/"><span class="tag">record</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/spin/"><span class="tag">spin</span><span class="tag is-grey-lightest">1</span></a></div></div></div></div></div><div class="column-right-shadow is-hidden-widescreen"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3"><div class="card widget" id="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">Catalogue</h3><ul class="menu-list"><li><a class="is-flex" href="#Information-Retrieval"><span class="mr-2">1</span><span>Information Retrieval</span></a><ul class="menu-list"><li><a class="is-flex" href="#Introduction-to-Boolean-Retrieval"><span class="mr-2">1.1</span><span>Introduction to Boolean Retrieval</span></a><ul class="menu-list"><li><a class="is-flex" href="#How-to-perform-information-retrieval"><span class="mr-2">1.1.1</span><span>How to perform information retrieval</span></a></li></ul></li><li><a class="is-flex" href="#Queries-and-Indexing"><span class="mr-2">1.2</span><span>Queries and Indexing</span></a><ul class="menu-list"><li><a class="is-flex" href="#Boolean-query"><span class="mr-2">1.2.1</span><span>Boolean query</span></a></li><li><a class="is-flex" href="#Term-document-incidence-matrix"><span class="mr-2">1.2.2</span><span>Term-document incidence matrix</span></a></li><li><a class="is-flex" href="#Inverted-Index"><span class="mr-2">1.2.3</span><span>Inverted Index</span></a></li><li><a class="is-flex" href="#Document-Tokenization"><span class="mr-2">1.2.4</span><span>Document Tokenization</span></a></li><li><a class="is-flex" href="#Boolean-Retrieval-with-Inverted-Index"><span class="mr-2">1.2.5</span><span>Boolean Retrieval with Inverted Index</span></a></li></ul></li><li><a class="is-flex" href="#Boolean-Retrieval"><span class="mr-2">1.3</span><span>Boolean Retrieval</span></a><ul class="menu-list"><li><a class="is-flex" href="#Bag-of-Words-and-Document-Fields"><span class="mr-2">1.3.1</span><span>Bag-of-Words and Document Fields</span></a></li><li><a class="is-flex" href="#Limitations-of-Boolean-Retrieval"><span class="mr-2">1.3.2</span><span>Limitations of Boolean Retrieval</span></a></li></ul></li><li><a class="is-flex" href="#Ranked-Retrieval"><span class="mr-2">1.4</span><span>Ranked Retrieval</span></a><ul class="menu-list"><li><a class="is-flex" href="#Weighted-field-scoring"><span class="mr-2">1.4.1</span><span>Weighted field scoring</span></a></li><li><a class="is-flex" href="#Term-frequency-and-inverse-document-frequency"><span class="mr-2">1.4.2</span><span>Term frequency and inverse document frequency</span></a></li><li><a class="is-flex" href="#Vector-space-IR-model"><span class="mr-2">1.4.3</span><span>Vector space IR model</span></a></li></ul></li><li><a class="is-flex" href="#Evaluation-of-IR-systems"><span class="mr-2">1.5</span><span>Evaluation of IR systems</span></a><ul class="menu-list"><li><a class="is-flex" href="#Purpose-of-evaluation"><span class="mr-2">1.5.1</span><span>Purpose of evaluation</span></a></li><li><a class="is-flex" href="#Test-collection"><span class="mr-2">1.5.2</span><span>Test collection</span></a></li><li><a class="is-flex" href="#Evaluation-of-unranked-retrieval-sets"><span class="mr-2">1.5.3</span><span>Evaluation of unranked retrieval sets</span></a></li><li><a class="is-flex" href="#Evaluation-of-ranked-retrieval-sets"><span class="mr-2">1.5.4</span><span>Evaluation of ranked retrieval sets</span></a></li></ul></li></ul></li></ul></div></div></div><div class="card widget"><div class="card-content"><h3 class="menu-label">Recent</h3><article class="media"><div class="media-content size-small"><p><time dateTime="2021-09-23T06:00:00.000Z">2021-09-23</time></p><p class="title is-6"><a class="link-muted" href="/2021/09/23/Document%20Analysis/">Document analysis</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/notes/">notes</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-09-16T06:00:00.000Z">2020-09-16</time></p><p class="title is-6"><a class="link-muted" href="/2020/09/16/xyzsas/">学生事务系统(xyzsas)</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/projects/">projects</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-08-11T06:00:00.000Z">2020-08-11</time></p><p class="title is-6"><a class="link-muted" href="/2020/08/11/paperReview/">Paper Revirew</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/Paper-Review/">Paper Review</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-08-11T06:00:00.000Z">2020-08-11</time></p><p class="title is-6"><a class="link-muted" href="/2020/08/11/OperatingSystems/">Operating Systems</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/notes/">notes</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-08-09T06:00:00.000Z">2020-08-09</time></p><p class="title is-6"><a class="link-muted" href="/2020/08/09/FoundationofConcurreny/">Foundation of Concurrency</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/notes/">notes</a></p></div></article></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.svg" alt="Tina blog" height="28"></a><p class="size-small"><span>&copy; 2021 Tina</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Email" href="mailto:tinayutong0310@gmail.com"><i class="fa fa-envelope"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+<h3 id="Evaluation-of-ranked-retrieval-sets"><a href="#Evaluation-of-ranked-retrieval-sets" class="headerlink" title="Evaluation of ranked retrieval sets"></a>Evaluation of ranked retrieval sets</h3><p><strong>Precision-Recall Curve</strong><br>Compute recall and precision at each rank k (i.e. using the top k docs)<br>Plot (recall, precision) points until recall is 1<br><img src="https://i.loli.net/2021/09/23/ye8rpPOGWbLtjBD.png" alt="Example"><br><strong>Interpolated Precision-Recall</strong><br>At a given recall level use the maximum precision at all higher recall levels.<br>Makes it easier to interpret<br>Intuition: There is no disadvantage to retrieving more documents if both precision and recall improve.<br><img src="https://i.loli.net/2021/09/24/gRMZE7bAcdyru5w.png" alt="Example"></p>
+<p>For system evaluation we need to average across many queries. It is not easy to average a PR curve in its current form.<br><em>Solution:</em><br>11-point interpolated PR curve. Interpolated precision at 11 different recall points.<br>For system evaluation:</p>
+<ul>
+<li>Each point in the 11-point interpolated precision is averaged across all queries in the test collection</li>
+<li>A perfect system will have a straight line from (0,1) to (1,1)<br><img src="https://i.loli.net/2021/09/24/mkTH6KzClQSBfnP.png" alt="11-point inerpolated"></li>
+</ul>
+<p><strong>Single Number Metrics</strong><br><strong>Average Precision</strong> </p>
+<blockquote>
+<p>Average Precision is the area under the uninterpolated PR curve for a single query.</p>
+</blockquote>
+<p><strong>MAP</strong></p>
+<blockquote>
+<p>Mean Average Precision (MAP) is the mean of the average precision for many queries.</p>
+</blockquote>
+<ul>
+<li>MAP is a single figure metric across all recall levels.</li>
+<li>Good if we care about all recall levels</li>
+</ul>
+<p><strong>Mean Reciprocal Rank (MRR)</strong></p>
+<blockquote>
+<p>Averaged inverse rank of the first relevent document.<br>For if we only care about how high in the ranking the first relevant document is.</p>
+</blockquote>
+<p><strong>Other ranking measures</strong></p>
+<ul>
+<li>Precision at K<ul>
+<li>Average precision at top k documents</li>
+</ul>
+</li>
+<li>Recall at K<ul>
+<li>Average recall at top k documents</li>
+</ul>
+</li>
+<li>Receiver Operating Characteristics (ROC) curve</li>
+<li>Normalized Discounted Cumulative Gain (NDCG)<ul>
+<li>Requires graded relevance judgement</li>
+</ul>
+</li>
+</ul>
+<h2 id="Web-basics"><a href="#Web-basics" class="headerlink" title="Web basics"></a>Web basics</h2><h3 id="The-Web-and-Other-Networks"><a href="#The-Web-and-Other-Networks" class="headerlink" title="The Web and Other Networks"></a>The Web and Other Networks</h3><p>Documents on the web are linked by hyperlinks.<br>Academic papers are linked by citations and co-authorship relations.<br>Legal documents are linked by citations.<br>Online users are linked by interactions or formal social network ties.</p>
+<h3 id="Nodes-and-Edges"><a href="#Nodes-and-Edges" class="headerlink" title="Nodes and Edges"></a>Nodes and Edges</h3><p>Nodes represent entities (e.g. documents, people)<br>Edges are relationships between nodes. (e.g. hyperlinks, co-authorship relations)<br>Edges can be directed (go in a specific direction)</p>
+<p><strong>Degree of a Node</strong></p>
+<ul>
+<li>Degree: the number of edges connected to a node</li>
+<li>In-degree: the number of edges going to a node</li>
+<li>Out-degree: the number of edges coming from a node.</li>
+</ul>
+<h2 id="Link-Analysis"><a href="#Link-Analysis" class="headerlink" title="Link Analysis"></a>Link Analysis</h2><ul>
+<li>Link analysis uses information about the structure of the web graph to aid search</li>
+<li>It is one of the major innovations in web search.</li>
+<li>It was one of the primary reasons for Google’s initial success.<h3 id="Citation-Analysis"><a href="#Citation-Analysis" class="headerlink" title="Citation Analysis"></a>Citation Analysis</h3></li>
+<li>Many documents include bibliographies with citations to other previously published documents</li>
+<li>Using citations as edges, a collection of documents can be viewed as a graph.</li>
+<li>The structure of this graph can provide interesting information about the similarity of documents and the structure of information. Even when document content is ignored</li>
+</ul>
+<p><strong>Impact Factor of a Scientific Journal</strong></p>
+<blockquote>
+<p>measure the importance (quality, influence) of scientific journals<br>A measure of how often papers in a journal are cited<br>Computed and published annually by the </p>
+</blockquote>
+<p>Institute for Scientific Information<br>The impact factor of a journal $J$ in year $Y$ is the average number of citations (from indexed documents published in year $Y$) to a paper published in $J$ in year Y−1 or Y−2.<br>Does not account for the quality of the citing article.</p>
+<p><strong>Bibliographic Coupling</strong></p>
+<blockquote>
+<p>Measure of similarity of documents introduced by Kessler in 1963.<br>The bibliographic coupling of two documents A and B is the number of documents cited by both A and B.<br>Size of the intersection of their bibliographies.</p>
+</blockquote>
+<p><strong>Co-Citation</strong></p>
+<blockquote>
+<p>An alternate citation-based measure of similarity introduced by Small in 1973<br>Number of documents that cite both A and B.</p>
+</blockquote>
+<p><strong>Citations vs. Link</strong></p>
+<ul>
+<li>Many links are navigational</li>
+<li>Many pages with high in-degree are portals not content providers</li>
+<li>Not all links are endorsements</li>
+<li>Company websites don’t point to their competitors</li>
+<li>Citations to relevant literature is enforced by peer-review.<h3 id="Authorities-and-Hubs-HITS-algorithm"><a href="#Authorities-and-Hubs-HITS-algorithm" class="headerlink" title="Authorities and Hubs: HITS algorithm"></a>Authorities and Hubs: HITS algorithm</h3></li>
+</ul>
+<p><strong>Authorities</strong></p>
+<blockquote>
+<p>Authorities are pages that are recognized as providing significant, trustworthy, and useful information on a topic.</p>
+</blockquote>
+<p><em>In-degree</em> (number of pointers to a page) is one simple measure of authority</p>
+<ul>
+<li>However, in-degree treats all links as equal.</li>
+</ul>
+<p><strong>Hubs</strong></p>
+<blockquote>
+<p>Hubs are index pages that provide lots of useful links to relevant content pages (authorities).</p>
+</blockquote>
+<p><strong>HITS</strong></p>
+<blockquote>
+<p>Determines hubs and authorities for a particular topic through analysis of a relevant subgraph</p>
+</blockquote>
+<p>Based on mutually recursive, assumptions:</p>
+<ul>
+<li>Hubs point to lots of authorities.</li>
+<li>Authorities are pointed to by lots of hubs</li>
+</ul>
+<h3 id="HITS-Algorithm"><a href="#HITS-Algorithm" class="headerlink" title="HITS Algorithm"></a>HITS Algorithm</h3><blockquote>
+<p>Computes hub and authority scores for documents on a particular topic</p>
+<ul>
+<li>The topic is specified by a query</li>
+<li>Relevant pages from the query are used to construct a base subgraph S.</li>
+<li>Analyze the link structure of pages in S to find authority and hub pages.</li>
+</ul>
+</blockquote>
+<p>Constructing a Base Subgraph S:</p>
+<ol>
+<li>For a specific query, let the set of documents returned by a standard search engine be called the root set R.</li>
+<li>Initialize S to R.</li>
+<li>Add to S all pages pointed to by any page in R</li>
+<li>Add to S all pages that point to any page in R.</li>
+</ol>
+<p>Base Limitations:</p>
+<ul>
+<li>To limit computational expense:<ul>
+<li>Limit the number of root pages to the top 200 pages retrieved for the query</li>
+<li>– Limit the number of “back-pointer” pages to a random set of at most 50 pages returned by a “reverse link”</li>
+</ul>
+</li>
+<li>To eliminate purely navigational links<ul>
+<li>Eliminate links between two pages on the same host.</li>
+</ul>
+</li>
+<li>To eliminate “non-authority-conveying” links:<ul>
+<li>Allow only m ($m \in[4,8]$) pages from a given host as pointers to any individual page query</li>
+</ul>
+</li>
+</ul>
+<p><strong>Authorities and In-Degree</strong><br>Even within the base set S for a given query, the nodes with highest in-degree are not necessarily authorities (may just be generally popular pages like Yahoo or Amazon)<br>Authority pages are pointed to by several hubs (i.e. pages that point to lots of authorities).</p>
+<p><strong>Iterative Algorithm</strong><br>Use an iterative algorithm to slowly converge on a mutually reinforcing set of hubs and authorities:</p>
+<ul>
+<li>Maintain for each page $p\in S$:<ul>
+<li>Authority score: $a_p$ (vector a)</li>
+<li>Hub score: $h_p$ (vector h)</li>
+</ul>
+</li>
+<li>Initialize all $a_p=h_p=1$</li>
+<li>Maintain normalized scores:<br>$\sum_{p\in S}(a_p)^2=1$<br>$\sum_{p\in S}(h_p)^2=1$</li>
+</ul>
+<p><strong>HITS Update Rules</strong></p>
+<ul>
+<li>Authorities are pointed to by lots of good hubs<ul>
+<li>$a_p=\sum_{q:q\rightarrow p}h_q$</li>
+</ul>
+</li>
+<li>Hubs point to lots of good authorities:<ul>
+<li>$h_p=\sum_{q:p\rightarrow q}a_q$</li>
+</ul>
+</li>
+</ul>
+<p><strong>HITS Iterative Algorithm</strong><br>Initialize for all $p \in S: a_p = h_p = 1$<br>For $i = 1$ to $k$:</p>
+<ul>
+<li>For all $p \in S$: $a_p=\sum_{q:q\rightarrow p}h_q$ (update auth. scores)</li>
+<li>For all $p\in S$: $h_p=\sum_{q:p\rightarrow q}a_q$(update hub scores)</li>
+<li>For all $p\in S$: $a_p= a_p/c, c: \sum_{p\in S}(a_p/c)^2=1$ (normalize a)<br>For all $p\in S$: $h_p= h_p/c, c: \sum_{p\in S}(h_p/c)^2=1$ (normalize h)</li>
+</ul>
+<p><strong>Convergence</strong></p>
+<ul>
+<li>Algorithm converges to a fix-point if iterated indefinitely.</li>
+<li>Define A to be the adjacency matrix for the subgraph defined by S.<ul>
+<li>$A_{ij} = 1$ for $i \in S, j \in S$ iff $i\rightarrow j$</li>
+</ul>
+</li>
+<li>Authority vector, $a$, converges to the principal eigenvector of $A^TA$</li>
+<li>Hub vector, $h$, converges to the principal eigenvector of $AA^T$</li>
+<li>In practice, 20 iterations produces fairly stable results</li>
+</ul>
+<p><strong>Finding Similar Pages Using Link Structure</strong></p>
+<ul>
+<li>Given a page, P, let R (the root set) be t (e.g. 200) pages that point to P.</li>
+<li>Grow a base set S from R.</li>
+<li>Run HITS on S.</li>
+<li>Return the best authorities in S as the best similar-pages for P</li>
+<li>Finds authorities in the “link neighborhood” of P</li>
+</ul>
+<h3 id="PageRank"><a href="#PageRank" class="headerlink" title="PageRank"></a>PageRank</h3><blockquote>
+<p>Does not attempt to capture the distinction between hubs and authorities<br>Gives each page a score which measures authority<br>Applied to the entire document corpus rather than a local neighborhood of pages surrounding the results of a query</p>
+</blockquote>
+<p><strong>PageRank Algorithm</strong><br>Let $S$ be the total set of pages.<br>Let $\forall p\in S:E(p)=\alpha/|S|$ (for some $0&lt;\alpha&lt;1$)<br>Initialize $\forall p\in S: R(p) = 1/|S|$<br>Until ranks do not change (much) (convergence)<br>    For each $p\in S$:<br>    $R’(P)=[(1-\alpha)\sum_{q:q\rightarrow p}\frac{R(q)}{N_q}+E(p)$<br>    $c=1/\sum_{p\in S}R’(p)$<br>    for each $p\in S: R(p) = cR´(p)$ (normalize)</p>
+<ul>
+<li>$N_q$ is the total number of out-links from page q.</li>
+<li>A page, q, “gives” an equal fraction of its authority to all the pages it points to (e.g. p).</li>
+<li>c is a normalizing constant set so that the rank of all pages always sums to 1</li>
+<li>a “rank source” E that continually replenishes the rank of each page, p, by a fixed amount E(p)</li>
+</ul>
+<p><strong>Speed of Convergence</strong><br>Number of iterations required for convergence is empirically O(log n) (where n is the number of links). Therefore, calculation is efficient</p>
+<h1 id="Machine-Learning"><a href="#Machine-Learning" class="headerlink" title="Machine Learning"></a>Machine Learning</h1><h2 id="ML-Intro-and-notation"><a href="#ML-Intro-and-notation" class="headerlink" title="ML Intro and notation"></a>ML Intro and notation</h2><h3 id="Supervised-Learning"><a href="#Supervised-Learning" class="headerlink" title="Supervised Learning"></a>Supervised Learning</h3><blockquote>
+<p>Goal: given both the inputs and the outputs for a training dataset, find a function h of the inputs that that returns the correct output (or as close as possible)</p>
+<p>Categorical output $\Rightarrow$ classification problem</p>
+<p>Scalar output $\Rightarrow$ regression problem</p>
+</blockquote>
+<h3 id="Terminology"><a href="#Terminology" class="headerlink" title="Terminology"></a>Terminology</h3><p>dataset, corpus, training set, collection, set of examples</p>
+<p><strong>Objects</strong> (samples, observations, individuals, examples, data points)</p>
+<p><strong>Variables</strong> (attributes, features) = describes a objects</p>
+<p><strong>Dimension</strong> = number of variables</p>
+<p><strong>Size</strong> = number of objects</p>
+<h3 id="Notation"><a href="#Notation" class="headerlink" title="Notation"></a>Notation</h3><table>
+<thead>
+<tr>
+<th>examples / data points / input</th>
+<th>$𝒙^{(1)} ,…, 𝒙^{(𝑛)}$ ~$X$</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>labels / annotations / target</td>
+<td>$y^{(1)} ,…, y^{(𝑛)}$~$Y$</td>
+</tr>
+<tr>
+<td>predicator / model</td>
+<td>𝑓$_w$ 𝒙 : 𝑋 $\rightarrow$ Y</td>
+</tr>
+<tr>
+<td>features of datapoint k</td>
+<td>𝒙$^{(𝑘)}$ = (𝑥$_1^{(𝑘)}$ ,𝑥$_2^{(𝑘)}$ …. ,𝑥$_m^{(𝑘)}$ )</td>
+</tr>
+<tr>
+<td>Predictions from the model</td>
+<td>$\hat y$ = 𝑓$_w($𝒙$)$</td>
+</tr>
+</tbody></table>
+<p><em>Bold denotes vectors</em></p>
+<h2 id="Linear-Regression"><a href="#Linear-Regression" class="headerlink" title="Linear Regression"></a>Linear Regression</h2><blockquote>
+<p>We find the best linear function to model our data points</p>
+<p>To make a prediction for a new point we just evaluate our function at that point</p>
+</blockquote>
+<h3 id="What-do-we-need"><a href="#What-do-we-need" class="headerlink" title="What do we need?"></a>What do we need?</h3><ol>
+<li><p>A way of expressing linear functions</p>
+</li>
+<li><p>A way to measure how well the line fits the data (called a loss function)</p>
+</li>
+<li><p>A way to find the line with the smallest loss given the data</p>
+<p>Gradient descent </p>
+</li>
+</ol>
+<h3 id="Linear-Functions"><a href="#Linear-Functions" class="headerlink" title="Linear Functions:"></a>Linear Functions:</h3><p><strong>One Feature</strong></p>
+<p>A straight line can be written $\hat y=wx+b$</p>
+<ul>
+<li>𝑤 - is the slope of the line (parameter)</li>
+<li>𝑥 - is the feature (input)</li>
+<li>𝑏 - is the bias (parameter)</li>
+<li>$\hat y$ - is the prediction of the target variable (output)</li>
+</ul>
+<p><strong>Many Features</strong></p>
+<p>We can have a linear function with many features:</p>
+<p>$\hat y=𝑤_1𝑥_1 + 𝑤_2𝑥_2 + 𝑤_3𝑥_3+… +b$</p>
+<p>Written more compactly for 𝑚 features:</p>
+<p>$\hat y = b+\sum_{i=0}^m w_ix_i$</p>
+<p>Written in vector form with vectors $\vec w$ and $\vec x$:</p>
+<p>$\hat y = b+\vec w\vec x$</p>
+<h3 id="Multiple-Linear-Regression"><a href="#Multiple-Linear-Regression" class="headerlink" title="Multiple Linear Regression"></a>Multiple Linear Regression</h3><p>If we have more than one target per example, then we can use a different set of parameters for each target:</p>
+<p>$$\hat y_1=𝑤_{1,1}𝑥<em>1 + 𝑤</em>{1,2}𝑥<em>2 + 𝑤</em>{1,3}𝑥_3+… +b$$</p>
+<p>$$\hat y_2=𝑤_{2,1}𝑥<em>1 + 𝑤</em>{2,2}𝑥<em>2 + 𝑤</em>{2,3}𝑥_3+… +b$$</p>
+<p>$$\hat y_3 = w_{3,1}𝑥<em>1 + w</em>{3,2}𝑥<em>2 + w</em>{3,3}𝑥_3+… +b$$</p>
+<p>In matrix/vector form this is (for matrix $W$, and vectors: $\vec {\hat y}$ , $\vec x$, $\vec b$):</p>
+<p>$\hat y = b+W\vec x$</p>
+<h3 id="Loss-Function"><a href="#Loss-Function" class="headerlink" title="Loss Function"></a>Loss Function</h3><blockquote>
+<p>Measures how well the line models the data:</p>
+</blockquote>
+<p>$𝐿 = \sum_{i=1}^𝑛 (\hat y^{(𝑖)} − 𝑦^{(𝑖)})^2$</p>
+<p>$𝐿 = \sum_{i=1}^𝑛 (wx^{(𝑖)}+b − 𝑦^{(𝑖)})^2$</p>
+<p>$𝒙^{(𝑖)}$ - the features of the i’th datapoint </p>
+<p>$𝑦^{(𝑖)}$ - the ground truth target of the i’th datapoint</p>
+<p>$\hat y^{(𝑖)}$ - the predicted target of the i’th datapoint</p>
+<h3 id="Optimization"><a href="#Optimization" class="headerlink" title="Optimization"></a>Optimization</h3><p>We have a loss function 𝐿 which measures how good a particular line (𝑤, 𝑏) is for our training dataset D</p>
+<p>We want to solve: argmin$_{𝑤,𝑏}$ 𝐿(𝑤, 𝑏,𝐷)</p>
+<p>There are many different algorithms for solving optimization problems, gradient descent is a very popular one when everything is differentiable</p>
+<h3 id="Gradient-Descent"><a href="#Gradient-Descent" class="headerlink" title="Gradient Descent"></a>Gradient Descent</h3><blockquote>
+<p>A greedy strategy for optimization</p>
+</blockquote>
+<p>Start by picking values for 𝑤 and 𝑏, e.g. by sampling from𝑁(0,1).</p>
+<p>Then compute the gradients $\frac{𝑑𝐿}{𝑑𝑤}$ and $\frac{𝑑𝐿}{𝑑𝑏}$ </p>
+<p>Then update:</p>
+<p>$w:=w-\alpha \frac{𝑑𝐿}{𝑑𝑤}$</p>
+<p>$b:=b-\alpha \frac{𝑑𝐿}{𝑑b}$</p>
+<p>𝛼 is the learning rate, it controls how much the values change each step.</p>
+<h3 id="The-role-of-learning-rate"><a href="#The-role-of-learning-rate" class="headerlink" title="The role of learning rate"></a>The role of learning rate</h3><p>The learning rate 𝛼 is a hyper-parameter that you set, it controls how much the weights are changed in each step.</p>
+<p>Too small 𝛼 ⇒ need to take many steps.</p>
+<p>Too large 𝛼 ⇒ may not converge.</p>
+<h2 id="Multinomial-Logistic-Regression"><a href="#Multinomial-Logistic-Regression" class="headerlink" title="Multinomial Logistic Regression"></a>Multinomial Logistic Regression</h2><h3 id="Classification"><a href="#Classification" class="headerlink" title="Classification"></a>Classification</h3><p>To use a linear model 𝑊𝒙 + 𝒃 (multiple linear regression)</p>
+<p>We can modify the task to predicting the probability that an example belongs to each class.</p>
+<p>Suppose that each point can be labelled with one of 𝑂 different classes. Then our model $\bar P$(𝒚|𝒙) = 𝑊𝒙 + 𝒃 outputs a vector of size $O$.</p>
+<p>$\bar P$ denotes unnormalized probabilities. (often called logits). These may be negative.</p>
+<p><strong>From Logits to Probabilities</strong></p>
+<p>The output values of the linear model are not probabilities:</p>
+<ul>
+<li>Need all the output values to be non-negative.</li>
+<li>Need output values to sum up to 1.</li>
+</ul>
+<p>$$softmax(v)<em>i=\frac{exp(v_i)}{\sum^o</em>{j=0}exp(v_j)}$$</p>
+<p>Step 1: Apply exp to all values. This makes them positive</p>
+<p>Step 2: Divide each value by the sum of all values. This makes them sum to 1.</p>
+<p>The result is a categorical probability distribution</p>
+<p><strong>Multinomial Logistic Regression</strong></p>
+<p>$P(y \mid x)$ = softmax (𝑊𝒙 + 𝒃)</p>
+<p><strong>Classification: Loss</strong></p>
+<p>Compute loss between our predicted probabilities and onehot encoding of class label $y$, i.e. the probability of the correct class should be 1, all others should be 0. </p>
+<p>$L$(softmax 𝑊𝒙 + 𝒃 , 𝒚)</p>
+<p><strong>Classification: Cross-Entropy</strong></p>
+<p>We could use the sum of squared differences as our loss function, just like for regression.</p>
+<p>In practice, using cross-entropy as the loss function for classification gives better results.</p>
+<p>Cross entropy for one datapoint:</p>
+<p>CrossEntropy(𝒙, 𝒚)=$-\sum_{i=1}^oy_ilogP(y_i\mid 𝒙)$</p>
+<p><strong>Classification: Prediction</strong></p>
+<blockquote>
+<p>To make a prediction for a new data point</p>
+</blockquote>
+<p>using the model compute probabilities for each class. </p>
+<p>predict the class with the largest probability.</p>
+<h2 id="Representation-in-NLP"><a href="#Representation-in-NLP" class="headerlink" title="Representation in NLP"></a>Representation in NLP</h2><p><strong>Representation</strong></p>
+<p>Text represented as a string of bits/characters/words is hard to work with</p>
+<ul>
+<li>Variable length</li>
+<li>High dimensional</li>
+<li>Similar representations may have very different meanings</li>
+</ul>
+<p><strong>Meaning</strong></p>
+<p>Meaning in language is:</p>
+<ul>
+<li>Relational (based on relationships)</li>
+<li>Compositional (built from smaller components)</li>
+<li>Distributional (related to usage context)</li>
+</ul>
+<h3 id="Simple-document-representation"><a href="#Simple-document-representation" class="headerlink" title="Simple document representation"></a>Simple document representation</h3><p><strong>Document Representation</strong></p>
+<ul>
+<li>We can represent documents as vectors of the words/terms they contain (BoW model)<ul>
+<li>Vector may be <ul>
+<li>Binary occurrence </li>
+<li>Word count </li>
+<li>TFIDF scores</li>
+</ul>
+</li>
+<li>The vector representation may be the size of the vocabulary ~ 50000 words is common</li>
+<li>Very inefficient for many documents</li>
+<li>Fortunately, most documents do not contain most words so we can use a sparse representation with tuples of the form: (term_id, term_count) for tuples where term_count &gt; 0</li>
+</ul>
+</li>
+</ul>
+<h3 id="Word-representation"><a href="#Word-representation" class="headerlink" title="Word representation"></a>Word representation</h3><p>Word Representation (One-hot)</p>
+<ul>
+<li><p>In traditional NLP, we regard words as discrete symbols</p>
+</li>
+<li><p>Vector dimension = number of words in vocabulary </p>
+<p>hotel = 10 = [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0]</p>
+<p>motel = 7 = [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0]</p>
+</li>
+<li><p><strong>issue</strong>: Similar words do not have similar vectors</p>
+</li>
+</ul>
+<p><strong>Context-based Word Representation</strong></p>
+<ul>
+<li>Sentence</li>
+<li>Window<ul>
+<li>Use k words on either side of the focal word as the context</li>
+</ul>
+</li>
+<li>Word Co-occurrence Matrix<ul>
+<li>A co-occurance matrix of words gives a vector representation for each word.</li>
+<li>This gives equal importance to all context words</li>
+<li>Weighting<ul>
+<li>tf-idf</li>
+<li>PPMI: Positive Pointwise Mutual Information (more common)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Pointwise Mutual Information</strong></p>
+<blockquote>
+<p>The ratio of the probability that the words occur together compared to the probability that they would occur together by chance</p>
+</blockquote>
+<p>The amount of information the occurrence of a word $𝑤_𝑖$ gives us about the occurrence of another word $𝑤_𝑗$ . (and vise versa)</p>
+<p><img src="https://i.loli.net/2021/10/01/NP5mJSOjsVADQf1.png" alt="Pointwise Mutual Information"></p>
+<p>PMI can be negative when words occur together less frequently than by chance.</p>
+<p>Typically, negative values are not reliable. We set them to 0:</p>
+<p>𝑃𝑃𝑀𝐼 = max(0,𝑃𝑀𝐼)</p>
+<p><strong>Similarity with Pointwise Mutual Information</strong></p>
+<p>𝑠𝑖𝑚(x, y) = cos($𝑣_x,𝑣_y$)</p>
+<p><strong>Drawbacks of a Sparse Representation</strong></p>
+<ul>
+<li><p>The raw count / tf-idf / PPMI matrix is: </p>
+<p>High dimensional, thus more difficult to use in practice.</p>
+</li>
+<li><p>Suffers from sparsity. Hard to find similarity between words</p>
+</li>
+</ul>
+<p><strong>Singular Value Decomposition</strong></p>
+<p>reduce the dimensionality of a word-word co-occurrence matrix</p>
+<p><img src="https://i.loli.net/2021/10/01/l5yNptM4C97ibeP.png" alt="Singular Value Decomposition"></p>
+<h4 id="Word2Vec"><a href="#Word2Vec" class="headerlink" title="Word2Vec"></a>Word2Vec</h4><p>Word Representation (Word Vector)</p>
+<blockquote>
+<p>dense word vectors are sometimes called word embeddings or word representations. They are distributed representations. Typical number of dimensions: 64, 128, 256, 300, 512, 1024</p>
+</blockquote>
+<p>Several Word2Vec Algorithms: Most common is skip-gram with negative sampling</p>
+<p>Approach:</p>
+<ul>
+<li>A self-supervised classification problem</li>
+<li>We learn word embeddings to do classification </li>
+<li>In the end we care only about the embeddings</li>
+</ul>
+<p><strong>Skip-gram</strong><br><img src="https://i.loli.net/2021/10/01/qkFohtWbsnjD4JM.png" alt="Skip-gram"><br><img src="https://i.loli.net/2021/10/01/5BAkfSHPOsMzXqx.png" alt="Skip-gram"></p>
+<p><strong>Word2Vec as Logistic Regression</strong></p>
+<p>Word2Vec uses a multinomial logistic regression classifier (without a bias term):</p>
+<p>P(y | x) = softmax($𝑊x$)</p>
+<p>Here $y$ is the context word and $x$ is an embedding of the center word.</p>
+<p>In this model we can interpret the matrix $W$ as being composed of embedding of the context words</p>
+<p><strong>Model</strong></p>
+<p><img src="https://i.loli.net/2021/10/01/7OX6tvxzUk3j1oN.png" alt="Model"></p>
+<p>Once trained with cross-entropy loss we use $𝑣_𝑐$ as the word embedding and throw everything else away.</p>
+<h4 id="Word2Vec-1"><a href="#Word2Vec-1" class="headerlink" title="Word2Vec"></a>Word2Vec</h4><p>When we train word2vec we also train the center word embeddings</p>
+<p>How: </p>
+<ul>
+<li>Start with random embeddings </li>
+<li>Backpropagation to compute gradient (next lecture) </li>
+<li>Gradient descent</li>
+</ul>
+<p>Loss function (average cross entropy):</p>
+<h1 id="Natural-Language-Processing"><a href="#Natural-Language-Processing" class="headerlink" title="Natural Language Processing"></a>Natural Language Processing</h1><h2 id="Language-Modelling"><a href="#Language-Modelling" class="headerlink" title="Language Modelling"></a>Language Modelling</h2><ul>
+<li>Goal: assign a probability to a word sequence<ul>
+<li>Speech recognition</li>
+<li>Spelling correction</li>
+<li>Collocation error correction</li>
+<li>Machine Translation</li>
+<li>Question-answering, summarisation, image capturing etc</li>
+</ul>
+</li>
+</ul>
+<h3 id="Probabilitistic-Language-Modelling"><a href="#Probabilitistic-Language-Modelling" class="headerlink" title="Probabilitistic Language Modelling"></a>Probabilitistic Language Modelling</h3><blockquote>
+<p>A language model computes the probability of a sequence of words</p>
+<ul>
+<li>A vocabulary $V$</li>
+<li>$p(x_1, x_2, \dots, x_l)\ge 0$</li>
+<li>$\sum p(x_1, x_2, \dots, x_l)=1$</li>
+</ul>
+</blockquote>
+<p>Related task: probability of an upcoming word ($p(x_1\mid x_1, x_2, x_3)$)</p>
+<p>LM: Either $p(x_1\mid x_1, x_2, x_3)$ or $p(x_1, x_2,\dots, x_l)$</p>
+<h3 id="Probability-Calculation"><a href="#Probability-Calculation" class="headerlink" title="Probability Calculation"></a>Probability Calculation</h3><p><strong>Chain rule</strong></p>
+<p>To compute $p(x_1, x_2, …, x_l)$ use <strong>Chain rule</strong>:<br>$$<br>p(x_1, x_2, …, x_l)=p(x_1)p(x_2|x_1)p(x_3|x_1,x_2)\dots(x_l|x_1,…,x_{l-1})<br>$$<br><em>Drawbacks</em>: it is likely that the whole context $(x_1, x_2, …, x_l)$ doesn’t appear in the data, resulting the probability of $0$.</p>
+<p><strong>Markov Assumption</strong></p>
+<blockquote>
+<p>simplifying assumption</p>
+<p>instead of using the whole context, use one or two most recent words</p>
+</blockquote>
+<p>Zero-order Markov assumption(Unigram Model)<br>$$<br>P(x_1, x_2, \dots, x_l)=P(x_1)\underset{i=1}{\overset{l}\Pi}P(x_i)<br>$$</p>
+<ul>
+<li><em>Not very good</em></li>
+</ul>
+<p>First-order Markov assumption (Bigram Model):</p>
+<blockquote>
+<p>Assumes only most recent words are relevant </p>
+</blockquote>
+<p>$$<br>\begin{align}<br>P(x_1, x_2, \dots, x_l)&amp;=P(x_1)\underset{i=2}{\overset{l}\Pi}P(x_i\mid x_1,…,x_{x-1})\<br>&amp;=P(x_1)\underset{i=2}{\overset{l}\Pi}P(x_i\mid x_{x-1})<br>\end{align}<br>$$</p>
+<ul>
+<li><p>Maximum likelihood estimation:<br>$$<br>P(x_i\mid x_{i-1})=\frac{count(x_{i-1}, x_i)}{count(x_i)}<br>$$</p>
+</li>
+<li><p>Log probabilities: </p>
+<ul>
+<li>logP(I want to eat) = logP(I)+logP(want|I)+logP(to|want)+logP(eat|to)</li>
+<li>using log can make probabilities in a certain range (it won’t be very small)</li>
+<li>Log helps with numerical stability (probabilities get small)</li>
+</ul>
+</li>
+</ul>
+<p>Second-order Markov assumption (Trigram Model):<br>$$<br>P(x_1, x_2, \dots, x_l)=P(x_1)\underset{i=1}{\overset{l}\Pi}P(x_i|x_{i-1},x_{i-2})<br>$$</p>
+<ul>
+<li>can handle long-distance of language</li>
+<li>can extend to 4-gram, 5-gram…</li>
+</ul>
+<h3 id="Sequence-Generation"><a href="#Sequence-Generation" class="headerlink" title="Sequence Generation"></a>Sequence Generation</h3><p>Compute conditional probabilities:</p>
+<p>e.g. P(want|I) = 0.32</p>
+<p>Sampling:</p>
+<ul>
+<li>Ensures you don’t just get the same sentence all the time</li>
+<li>Generate a random number in [0,1] (based on a uniform distribution)</li>
+<li>Words are better fit are more likely to be selected</li>
+</ul>
+<h3 id="Interpolation"><a href="#Interpolation" class="headerlink" title="Interpolation"></a>Interpolation</h3><blockquote>
+<p>mix lower order n-gram probabilities</p>
+<p>$\lambda$s are hyperparameters</p>
+</blockquote>
+<p>To handle the unseen words and the issue of $0$ probability (phrase with $0$ probability but single word may not)</p>
+<p>Bigram models:<br>$$<br>\hat P(x_i\mid x_{x-1})=\lambda_1P(x_i\mid x_{i-1})+\lambda_2P(x_i\mid x_{i})\<br>\lambda_1\ge 0, \lambda_2\ge 0\<br>\lambda_1+\lambda_2=1<br>$$<br>Trigram models:<br>$$<br>\hat P(x_i\mid x_{x-1}, x_{i-2})=\lambda_1P(x_i\mid x_{i-1}, x_{i-2})+\lambda_2P(x_i\mid x_{i-1})+\lambda_3P(x_i\mid x_{i})\<br>\lambda_1\ge 0, \lambda_2\ge 0, \lambda_2\ge 0\<br>\lambda_1+\lambda_2+ \lambda_30=1<br>$$<br><strong>How to fit $\lambda$s</strong></p>
+<ul>
+<li><p>Estimate $\lambda_i$ on held-out data</p>
+<p>Training data, held-out data, test data</p>
+</li>
+<li><p>Typically use Expectation Maximization (EM)</p>
+</li>
+<li><p>One crude approach<br>$$<br>\begin{align}<br>\lambda_1&amp;=\frac{count(x_{i-1}, x_{i-2})}{count(x_{i-1}, x_{i-2})+\gamma}\<br>\lambda_2&amp;=(1-\lambda_1)\times\frac{count(x_{i-1})}{count(x_{i-1})+\gamma}\<br>\lambda_3&amp;=1-\lambda_1-\lambda_2\<br>\end{align}<br>$$</p>
+<ul>
+<li>Ensures $\lambda_i$ is larger when count is larger</li>
+<li>Different lambda for each n-gram</li>
+<li>Only one parameter to estimate ($\gamma$)</li>
+</ul>
+</li>
+</ul>
+<p><strong>Absolute-Discounting Interpolation</strong></p>
+<p>We tend to systematically overestimate n-gram counts</p>
+<p>$\longrightarrow$ we can use this to get better estimates and set lambdas. Using discounting</p>
+<ul>
+<li><p>Involves the interpolation of lower and higher-order models</p>
+</li>
+<li><p>Aims to deal with sequences that occur infrequently</p>
+</li>
+<li><p>Subtract $d$ (the discount, typically $0.75$) from each of the counts<br>$$<br>P_{AbsDiscount}(x_i\mid x_{x-1})=\frac{count(x_{i-1}, x_i)-d}{count(x_i)}+\lambda(x_{i-1})P(x_{i-1})<br>$$</p>
+</li>
+<li><p>The discount reserves some probabilities mass for the lower order n-grams</p>
+<ul>
+<li>Thus, the discount determines the $\lambda$</li>
+</ul>
+</li>
+</ul>
+<p><strong>Kneser-Ney Smoothing</strong></p>
+<blockquote>
+<ul>
+<li><p>A techique built on top of Absolute-Discounting Interpolation.</p>
+</li>
+<li><p>“Smoothing” $\rightarrow$ Adjust low probs upwards and high probs downwards</p>
+</li>
+<li><p>If there are only a few words that come after a context, then a novel word in that context should be less likely</p>
+</li>
+<li><p>But we also expect that if a word appears after a small number of contexts, then it should be less likely to appear in a novel context</p>
+</li>
+</ul>
+</blockquote>
+<p>Works well and also used to improve NN approaches.</p>
+<ul>
+<li>Provides better estimates for probabilities of lower-order unigrams:</li>
+</ul>
+<p>$P_{continuation}(X)$</p>
+<blockquote>
+<p>How likely is a word to continue a new context?</p>
+</blockquote>
+<ul>
+<li><p>For each word $x_i$, count the number of bigram types it completes<br>$$<br>P_{continuation}(x_i)\propto\mid{x_{i-1}\mid count(x_{i-1}, x_i)}\mid<br>$$<br>i.e. the unigram probability is proportional to the number of different words it follows</p>
+</li>
+<li><p>Normalized by the total number of bigram types:<br>$$<br>\mid{(x_{j-1}, x_j)\mid count(x_{i-1}, x_i)&gt;0}\mid\<br>P_{continuation}(x_i)=\frac{\mid{x_{i-1}\mid count(x_{i-1}, x_i)}\mid}{\mid{(x_{j-1}, x_j)\mid count(x_{i-1}, x_i)&gt;0}\mid}<br>$$<br>Estimate of how likely a unigram is to continue a new context</p>
+</li>
+</ul>
+<p>Kneser-Ney Smoothing</p>
+<p>definition for bigrams:<br>$$<br>P_{KN}(x_i\mid x_{i-1})=\frac{max(count(x_{i-i},x_i)-d, 0)}{count(x_{i-1})}+\lambda(x_{i-1})P_{continuation}(x_i)<br>$$<br>where<br>$$<br>\lambda(x_{i-1})=\frac{d}{count(x_{i-1})}\mid{x\mid count(x_{i-1},x)&gt;0}\mid<br>$$<br><strong>Stupid Backoff</strong></p>
+<blockquote>
+<p>Smoothing for web-scale N-grams</p>
+</blockquote>
+<ul>
+<li><p>No discounting, just use relative frequencies!</p>
+</li>
+<li><p>Does not give a probability distribution (Gives a score)<br>$$<br>S(w_i\mid w^i_{i-k+1})=<br>\begin{cases}<br>\frac{count(w^i_{i-k+1})}{count(w^{i-1}<em>{i-k+1})} \text{ if }count(w^i</em>{i-k+1})&gt;0\<br>0.4S(w_i\mid w^i_{i-k+2})\text{ otherwise}<br>\end{cases}\<br>S(w_i)=\frac{count(w^i)}{N}<br>$$<br>$N$ is the size of the training corpus in words</p>
+</li>
+</ul>
+</div><div class="article-tags size-small mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/NLP/">NLP</a><a class="link-muted mr-2" rel="tag" href="/tags/IR/">IR</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2020/09/16/xyzsas/"><span class="level-item">学生事务系统(xyzsas)</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><!--!--></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1 is-sticky"><div class="card widget"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="/img/avatar.png" alt="Tina"></figure><p class="title is-size-4 is-block line-height-inherit">Tina</p><p class="is-size-6 is-block">A student</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>A secret</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives"><p class="title">8</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories"><p class="title">4</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags"><p class="title">12</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/CutePikachu" target="_blank" rel="noopener">Follow</a></div><div class="level is-mobile"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/CutePikachu"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://facebook.com"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Twitter" href="https://twitter.com"><i class="fab fa-twitter"></i></a></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Categories</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/categories/Paper-Review/"><span class="level-start"><span class="level-item">Paper Review</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/notes/"><span class="level-start"><span class="level-item">notes</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/projects/"><span class="level-start"><span class="level-item">projects</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/categories/%E6%95%99%E7%A8%8B/"><span class="level-start"><span class="level-item">教程</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Archives</h3><ul class="menu-list"><li><a class="level is-mobile is-marginless" href="/archives/2021/09/"><span class="level-start"><span class="level-item">September 2021</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/09/"><span class="level-start"><span class="level-item">September 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/08/"><span class="level-start"><span class="level-item">August 2020</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/06/"><span class="level-start"><span class="level-item">June 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile is-marginless" href="/archives/2020/03/"><span class="level-start"><span class="level-item">March 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/Concurrency/"><span class="tag">Concurrency</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Functional-Programming/"><span class="tag">Functional Programming</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Git/"><span class="tag">Git</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Github/"><span class="tag">Github</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Haskell/"><span class="tag">Haskell</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/IR/"><span class="tag">IR</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/NLP/"><span class="tag">NLP</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/OS/"><span class="tag">OS</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/concurrency/"><span class="tag">concurrency</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/notes/"><span class="tag">notes</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/record/"><span class="tag">record</span><span class="tag is-grey-lightest">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/spin/"><span class="tag">spin</span><span class="tag is-grey-lightest">1</span></a></div></div></div></div></div><div class="column-right-shadow is-hidden-widescreen"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3"><div class="card widget" id="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">Catalogue</h3><ul class="menu-list"><li><a class="is-flex" href="#Information-Retrieval"><span class="mr-2">1</span><span>Information Retrieval</span></a><ul class="menu-list"><li><a class="is-flex" href="#Introduction-to-Boolean-Retrieval"><span class="mr-2">1.1</span><span>Introduction to Boolean Retrieval</span></a><ul class="menu-list"><li><a class="is-flex" href="#How-to-perform-information-retrieval"><span class="mr-2">1.1.1</span><span>How to perform information retrieval</span></a></li></ul></li><li><a class="is-flex" href="#Queries-and-Indexing"><span class="mr-2">1.2</span><span>Queries and Indexing</span></a><ul class="menu-list"><li><a class="is-flex" href="#Boolean-query"><span class="mr-2">1.2.1</span><span>Boolean query</span></a></li><li><a class="is-flex" href="#Term-document-incidence-matrix"><span class="mr-2">1.2.2</span><span>Term-document incidence matrix</span></a></li><li><a class="is-flex" href="#Inverted-Index"><span class="mr-2">1.2.3</span><span>Inverted Index</span></a></li><li><a class="is-flex" href="#Document-Tokenization"><span class="mr-2">1.2.4</span><span>Document Tokenization</span></a></li><li><a class="is-flex" href="#Boolean-Retrieval-with-Inverted-Index"><span class="mr-2">1.2.5</span><span>Boolean Retrieval with Inverted Index</span></a></li></ul></li><li><a class="is-flex" href="#Boolean-Retrieval"><span class="mr-2">1.3</span><span>Boolean Retrieval</span></a><ul class="menu-list"><li><a class="is-flex" href="#Bag-of-Words-and-Document-Fields"><span class="mr-2">1.3.1</span><span>Bag-of-Words and Document Fields</span></a></li><li><a class="is-flex" href="#Limitations-of-Boolean-Retrieval"><span class="mr-2">1.3.2</span><span>Limitations of Boolean Retrieval</span></a></li></ul></li><li><a class="is-flex" href="#Ranked-Retrieval"><span class="mr-2">1.4</span><span>Ranked Retrieval</span></a><ul class="menu-list"><li><a class="is-flex" href="#Weighted-field-scoring"><span class="mr-2">1.4.1</span><span>Weighted field scoring</span></a></li><li><a class="is-flex" href="#Term-frequency-and-inverse-document-frequency"><span class="mr-2">1.4.2</span><span>Term frequency and inverse document frequency</span></a></li><li><a class="is-flex" href="#Vector-space-IR-model"><span class="mr-2">1.4.3</span><span>Vector space IR model</span></a></li></ul></li><li><a class="is-flex" href="#Evaluation-of-IR-systems"><span class="mr-2">1.5</span><span>Evaluation of IR systems</span></a><ul class="menu-list"><li><a class="is-flex" href="#Purpose-of-evaluation"><span class="mr-2">1.5.1</span><span>Purpose of evaluation</span></a></li><li><a class="is-flex" href="#Test-collection"><span class="mr-2">1.5.2</span><span>Test collection</span></a></li><li><a class="is-flex" href="#Evaluation-of-unranked-retrieval-sets"><span class="mr-2">1.5.3</span><span>Evaluation of unranked retrieval sets</span></a></li><li><a class="is-flex" href="#Evaluation-of-ranked-retrieval-sets"><span class="mr-2">1.5.4</span><span>Evaluation of ranked retrieval sets</span></a></li></ul></li><li><a class="is-flex" href="#Web-basics"><span class="mr-2">1.6</span><span>Web basics</span></a><ul class="menu-list"><li><a class="is-flex" href="#The-Web-and-Other-Networks"><span class="mr-2">1.6.1</span><span>The Web and Other Networks</span></a></li><li><a class="is-flex" href="#Nodes-and-Edges"><span class="mr-2">1.6.2</span><span>Nodes and Edges</span></a></li></ul></li><li><a class="is-flex" href="#Link-Analysis"><span class="mr-2">1.7</span><span>Link Analysis</span></a><ul class="menu-list"><li><a class="is-flex" href="#Citation-Analysis"><span class="mr-2">1.7.1</span><span>Citation Analysis</span></a></li><li><a class="is-flex" href="#Authorities-and-Hubs-HITS-algorithm"><span class="mr-2">1.7.2</span><span>Authorities and Hubs: HITS algorithm</span></a></li><li><a class="is-flex" href="#HITS-Algorithm"><span class="mr-2">1.7.3</span><span>HITS Algorithm</span></a></li><li><a class="is-flex" href="#PageRank"><span class="mr-2">1.7.4</span><span>PageRank</span></a></li></ul></li></ul></li><li><a class="is-flex" href="#Machine-Learning"><span class="mr-2">2</span><span>Machine Learning</span></a><ul class="menu-list"><li><a class="is-flex" href="#ML-Intro-and-notation"><span class="mr-2">2.1</span><span>ML Intro and notation</span></a><ul class="menu-list"><li><a class="is-flex" href="#Supervised-Learning"><span class="mr-2">2.1.1</span><span>Supervised Learning</span></a></li><li><a class="is-flex" href="#Terminology"><span class="mr-2">2.1.2</span><span>Terminology</span></a></li><li><a class="is-flex" href="#Notation"><span class="mr-2">2.1.3</span><span>Notation</span></a></li></ul></li><li><a class="is-flex" href="#Linear-Regression"><span class="mr-2">2.2</span><span>Linear Regression</span></a><ul class="menu-list"><li><a class="is-flex" href="#What-do-we-need"><span class="mr-2">2.2.1</span><span>What do we need?</span></a></li><li><a class="is-flex" href="#Linear-Functions"><span class="mr-2">2.2.2</span><span>Linear Functions:</span></a></li><li><a class="is-flex" href="#Multiple-Linear-Regression"><span class="mr-2">2.2.3</span><span>Multiple Linear Regression</span></a></li><li><a class="is-flex" href="#Loss-Function"><span class="mr-2">2.2.4</span><span>Loss Function</span></a></li><li><a class="is-flex" href="#Optimization"><span class="mr-2">2.2.5</span><span>Optimization</span></a></li><li><a class="is-flex" href="#Gradient-Descent"><span class="mr-2">2.2.6</span><span>Gradient Descent</span></a></li><li><a class="is-flex" href="#The-role-of-learning-rate"><span class="mr-2">2.2.7</span><span>The role of learning rate</span></a></li></ul></li><li><a class="is-flex" href="#Multinomial-Logistic-Regression"><span class="mr-2">2.3</span><span>Multinomial Logistic Regression</span></a><ul class="menu-list"><li><a class="is-flex" href="#Classification"><span class="mr-2">2.3.1</span><span>Classification</span></a></li></ul></li><li><a class="is-flex" href="#Representation-in-NLP"><span class="mr-2">2.4</span><span>Representation in NLP</span></a><ul class="menu-list"><li><a class="is-flex" href="#Simple-document-representation"><span class="mr-2">2.4.1</span><span>Simple document representation</span></a></li><li><a class="is-flex" href="#Word2Vec-1"><span class="mr-2">2.4.2</span><span>Word2Vec</span></a></li></ul></li></ul></li><li><a class="is-flex" href="#Natural-Language-Processing"><span class="mr-2">3</span><span>Natural Language Processing</span></a><ul class="menu-list"><li><a class="is-flex" href="#Language-Modelling"><span class="mr-2">3.1</span><span>Language Modelling</span></a><ul class="menu-list"><li><a class="is-flex" href="#Probabilitistic-Language-Modelling"><span class="mr-2">3.1.1</span><span>Probabilitistic Language Modelling</span></a></li><li><a class="is-flex" href="#Probability-Calculation"><span class="mr-2">3.1.2</span><span>Probability Calculation</span></a></li><li><a class="is-flex" href="#Sequence-Generation"><span class="mr-2">3.1.3</span><span>Sequence Generation</span></a></li><li><a class="is-flex" href="#Interpolation"><span class="mr-2">3.1.4</span><span>Interpolation</span></a></li></ul></li></ul></li></ul></div></div></div><div class="card widget"><div class="card-content"><h3 class="menu-label">Recent</h3><article class="media"><div class="media-content size-small"><p><time dateTime="2021-09-23T06:00:00.000Z">2021-09-23</time></p><p class="title is-6"><a class="link-muted" href="/2021/09/23/Document%20Analysis/">Document analysis</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/notes/">notes</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-09-16T06:00:00.000Z">2020-09-16</time></p><p class="title is-6"><a class="link-muted" href="/2020/09/16/xyzsas/">学生事务系统(xyzsas)</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/projects/">projects</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-08-11T06:00:00.000Z">2020-08-11</time></p><p class="title is-6"><a class="link-muted" href="/2020/08/11/paperReview/">Paper Revirew</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/Paper-Review/">Paper Review</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-08-11T06:00:00.000Z">2020-08-11</time></p><p class="title is-6"><a class="link-muted" href="/2020/08/11/OperatingSystems/">Operating Systems</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/notes/">notes</a></p></div></article><article class="media"><div class="media-content size-small"><p><time dateTime="2020-08-09T06:00:00.000Z">2020-08-09</time></p><p class="title is-6"><a class="link-muted" href="/2020/08/09/FoundationofConcurreny/">Foundation of Concurrency</a></p><p class="is-uppercase"><a class="link-muted" href="/categories/notes/">notes</a></p></div></article></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.svg" alt="Tina blog" height="28"></a><p class="size-small"><span>&copy; 2021 Tina</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Email" href="mailto:tinayutong0310@gmail.com"><i class="fa fa-envelope"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
             site: {
                 url: 'https://CutePikachu.github.io',
                 external_link: {"enable":true,"exclude":[]}
